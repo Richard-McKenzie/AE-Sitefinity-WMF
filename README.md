@@ -1,4 +1,4 @@
-SiteFinity
+Sitefinity
 ==========
 
-Repository of various SiteFinity tools and modules
+Repository of various Sitefinity tools and modules
