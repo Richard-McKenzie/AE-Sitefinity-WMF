@@ -1,0 +1,61 @@
+//Utility functions
+
+$font-em-base: 14 !default;
+
+@function em($target, $font-em-base: 14) {
+    @return ($target / $font-em-base) * 1em;
+}
+
+//TODO: Change to EM breakpoints
+@mixin breakpoint($point) {
+  @if $point == retina {
+    @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) { @content; }
+  }
+  @else if $point == phone {
+    @media (max-width: 599px) { @content; }
+  }
+  @else if $point == sw {
+		@media (min-width:30em) and (max-width:47.94em)  { @content; }
+  }
+  @else if $point == m {
+    @media (min-width: 48em) { @content; }
+  }
+  @else if $point == m-w {
+    @media (min-width: 60em) { @content; }
+  }
+  @else if $point == l {
+    @media (min-width: 72em) { @content; }
+  }
+}
+
+// http://compass-style.org/reference/compass/helpers/sprites/
+@mixin get-sprite($map, $sprite, $repeat: no-repeat, $height: true, $width: true) {
+ 
+  //http://compass-style.org/reference/compass/helpers/sprites/#sprite-file
+  $sprite-image: sprite-file($map, $sprite);
+  
+  // http://compass-style.org/reference/compass/helpers/sprites/#sprite-url
+  $sprite-map: sprite-url($map);
+  
+  // http://compass-style.org/reference/compass/helpers/sprites/#sprite-position
+  $sprite-position: sprite-position($map, $sprite);
+  
+  // Returns background
+  background: $sprite-map $sprite-position $repeat;
+  
+  // http://compass-style.org/reference/compass/helpers/image-dimensions/
+  // Checks to see if the user wants height returned
+  @if $height == true {
+    // Gets the height of the sprite-image
+    $sprite-height: image-height($sprite-image);
+    // Returns the height
+    height: $sprite-height; }
+    
+  // http://compass-style.org/reference/compass/helpers/image-dimensions/
+  // Checks to see if the user wants height returned
+  @if $width == true {
+    // Gets the width of the sprite-image
+    $sprite-width: image-width($sprite-image);
+    // Returns the width
+    width: $sprite-width; }
+}

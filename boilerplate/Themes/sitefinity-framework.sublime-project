@@ -1,0 +1,11 @@
+{
+	"folders":
+	[
+		{
+			"follow_symlinks": true,
+			"path": "Framework",
+      "folder_exclude_patterns": [".sass-cache", "css"],
+      "file_exclude_patterns": ["*.css"]
+		}
+	]
+}

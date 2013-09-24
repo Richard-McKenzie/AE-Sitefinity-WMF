@@ -1,0 +1,23 @@
+!!! 5
+//if lt IE 8
+	<html class="no-js lt-ie10 lt-ie9 lt-ie8" lang="en">
+//if IE 8
+	<html class="no-js lt-ie10 lt-ie9" lang="en">
+//if IE 9
+	<html class="no-js lt-ie10" lang="en">
+<!--[if gt IE 9]><!-->
+html(class='no-js', lang='en')
+	<!--<![endif]-->
+	head
+		title= Interior
+		include _head
+	body.template-interior
+		include _header
+		.container
+			.grid_9.push_3.main
+				block content
+					p Main Content
+			aside.grid_3.pull_9
+				include railnav
+		include _footer
+		include _scripts

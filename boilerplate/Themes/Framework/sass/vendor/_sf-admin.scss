@@ -1,0 +1,22 @@
+//Admin resets
+
+.sfPageBrowseAndEditToolbarWrp {
+	z-index: 5000;
+}
+
+//Sets content-box to sitefinity admin so global box-sizing can be changed
+.RadWindow, 
+.sfPageEditorToolbarWrapper .sfWorkflowMenuWrp .sfActionsDDL .rmSlide,
+.sfLayoutPropsContainer,
+.sfVisualLayoutEditor,
+.sfPageContainer,
+.sfPageEditor [class^="sf"],
+.sfPageEditor [class^="Rad"],
+.sfPageEditor [class^="rm"],
+.sfPageEditor [class^="rt"],
+.ZoneEditorToolboxContainer
+ {
+	-webkit-box-sizing: content-box;
+     -moz-box-sizing: content-box;
+          box-sizing: content-box;
+} 

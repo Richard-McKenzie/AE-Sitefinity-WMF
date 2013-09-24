@@ -1,0 +1,30 @@
+// Use Compass 
+$experimental-support-for-svg: true;
+@import "compass/css3";
+
+// Color Variables
+$color-base: #222;
+$color-primary: blue;
+
+// Grid
+$grid-gutter: 20px;
+
+// Fonts
+$font-sans: Arial, sans-serif;
+$font-serif: Times New Roman, serif;
+$font-body: $font-sans;
+
+// SASS Functions and Modules
+@import "modules/utilities";
+
+// Third Party Styles
+@import "vendor/normalize";
+@import "vendor/sf-boilerplate";
+@import "vendor/sf-admin";
+
+// Site Specific Styles
+@import "partials/sprites";
+@import "partials/grid-fluid";
+@import "partials/typography";
+@import "partials/base";
+@import "partials/print";

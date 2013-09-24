@@ -1,0 +1,1822 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"box-",
+				"box-sizing"
+			],
+			[
+				"up",
+				"uppercase"
+			],
+			[
+				"guided",
+				"guidedNavWrapper"
+			],
+			[
+				"toggle",
+				"toggleClass"
+			],
+			[
+				"text",
+				"text-align"
+			],
+			[
+				"threesi",
+				"threesixty-controller"
+			],
+			[
+				"imgPho",
+				"imgPhotoFull"
+			],
+			[
+				"line",
+				"line-height"
+			],
+			[
+				"linear",
+				"linear-gradient"
+			],
+			[
+				"verti",
+				"vertical-align"
+			],
+			[
+				"linea",
+				"linear-gradient"
+			],
+			[
+				"table",
+				"table-cell"
+			],
+			[
+				"sf",
+				"sfHover"
+			],
+			[
+				"no",
+				"nowrap"
+			],
+			[
+				"sear",
+				"searchWrapper"
+			],
+			[
+				"aside",
+				"page-aside-secondary"
+			],
+			[
+				"tet",
+				"text-align"
+			],
+			[
+				"natural",
+				"naturalHeight"
+			],
+			[
+				"Glo",
+				"GlobalSiteId"
+			],
+			[
+				"secti",
+				"sectionHeight"
+			],
+			[
+				"text-",
+				"text-indent"
+			],
+			[
+				"direct",
+				"directionsLink"
+			],
+			[
+				"main",
+				"main-content"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "Framework/config.rb",
+			"settings":
+			{
+				"buffer_size": 1662,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/Users/caleb.kester/Documents/GitHub/Sitefinity/boilerplate/README.md",
+			"settings":
+			{
+				"buffer_size": 98,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "Framework/_templates/interior-content.jade",
+			"settings":
+			{
+				"buffer_size": 2521,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "Framework/_templates/_footer.jade",
+			"settings":
+			{
+				"buffer_size": 55,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "Framework/_templates/_header.jade",
+			"settings":
+			{
+				"buffer_size": 50,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "Framework/_templates/interior.jade",
+			"settings":
+			{
+				"buffer_size": 718,
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 85.0,
+		"selected_items":
+		[
+			[
+				"ss jade",
+				"Set Syntax: Jade"
+			],
+			[
+				"reinden",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"encode",
+				"HTML: Encode Special Characters"
+			],
+			[
+				"reind",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"riend",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"sshtm",
+				"Set Syntax: HTML"
+			],
+			[
+				"ss html",
+				"Set Syntax: HTML"
+			],
+			[
+				"enco",
+				"HTML: Encode Special Characters"
+			],
+			[
+				"enc",
+				"HTML: Encode Special Characters"
+			],
+			[
+				"encod",
+				"HTML: Encode Special Characters"
+			],
+			[
+				"reinde",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"ss asp",
+				"Set Syntax: ASP"
+			],
+			[
+				"rein",
+				"Set Syntax: Regular Expression"
+			],
+			[
+				"ss htmlas",
+				"Set Syntax: HTML (ASP)"
+			],
+			[
+				"packageinst",
+				"Package Control: Install Package"
+			],
+			[
+				"reindent",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"packageup",
+				"Package Control: Upgrade Package"
+			],
+			[
+				"word",
+				"Word Wrap: Toggle"
+			],
+			[
+				"reindi",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"en",
+				"HTML: Encode Special Characters"
+			],
+			[
+				"packageremove",
+				"Package Control: Remove Package"
+			],
+			[
+				"packageremo",
+				"Package Control: Remove Package"
+			],
+			[
+				"packageremov",
+				"Package Control: Remove Package"
+			],
+			[
+				"package rem",
+				"Package Control: Remove Package"
+			],
+			[
+				"packagremov",
+				"Package Control: Remove Package"
+			],
+			[
+				"packg",
+				"Package Control: Disable Package"
+			],
+			[
+				"packagein",
+				"Package Control: Install Package"
+			],
+			[
+				"package dis",
+				"Package Control: Disable Package"
+			],
+			[
+				"reein",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"pacage in",
+				"Package Control: Install Package"
+			],
+			[
+				"package disa",
+				"Package Control: Disable Package"
+			],
+			[
+				"ss sass",
+				"Set Syntax: Sass"
+			],
+			[
+				"package disable",
+				"Package Control: Disable Package"
+			],
+			[
+				"ss css",
+				"Set Syntax: CSS"
+			],
+			[
+				"ss htm",
+				"Set Syntax: HTML5"
+			],
+			[
+				"ren",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"wr",
+				"Word Wrap: Toggle"
+			],
+			[
+				"ss php",
+				"Set Syntax: PHP"
+			],
+			[
+				"package list",
+				"Package Control: List Packages"
+			],
+			[
+				"package en",
+				"Package Control: Enable Package"
+			],
+			[
+				"package",
+				"Package Control: Remove Package"
+			],
+			[
+				"package u",
+				"Package Control: Upgrade Package"
+			],
+			[
+				"html",
+				"Set Syntax: HTML5"
+			],
+			[
+				"package remv",
+				"Package Control: Remove Package"
+			],
+			[
+				"ssmark",
+				"Set Syntax: Markdown"
+			],
+			[
+				"html enc",
+				"HTML: Encode Special Characters"
+			],
+			[
+				"packag",
+				"Package Control: Install Package"
+			],
+			[
+				"packa",
+				"Package Control: Install Package"
+			],
+			[
+				"special",
+				"HTML: Encode Special Characters"
+			],
+			[
+				"snippet",
+				"Snippet: #!/usr/bin/env"
+			],
+			[
+				"snippet font",
+				"Snippet: snippet-font"
+			],
+			[
+				"html spe",
+				"HTML: Encode Special Characters"
+			],
+			[
+				"package list ",
+				"Package Control: List Packages"
+			],
+			[
+				"packi",
+				"Package Control: Install Package"
+			],
+			[
+				"ss ja",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"wor",
+				"Word Wrap: Toggle"
+			],
+			[
+				"ss html asp",
+				"Set Syntax: HTML (ASP)"
+			],
+			[
+				"sscss",
+				"Set Syntax: CSS"
+			],
+			[
+				"pacl",
+				"Package Control: List Packages"
+			],
+			[
+				"lore",
+				"Snippet: Lorem ipsum"
+			],
+			[
+				"lorem",
+				"Snippet: Lorem ipsum"
+			],
+			[
+				"asp",
+				"Set Syntax: HTML (ASP)"
+			],
+			[
+				"ss h5",
+				"Set Syntax: HTML5"
+			],
+			[
+				"font",
+				"Code Folding: Fold Tag Attributes"
+			],
+			[
+				"pack",
+				"Package Control: List Packages"
+			],
+			[
+				"lip",
+				"Snippet: Lorem ipsum"
+			],
+			[
+				"wod",
+				"Word Wrap: Toggle"
+			],
+			[
+				"img",
+				"Snippet: img"
+			],
+			[
+				"ww",
+				"Word Wrap: Toggle"
+			],
+			[
+				"ssh5",
+				"Set Syntax: HTML5"
+			],
+			[
+				"package upgr",
+				"Package Control: Upgrade Package"
+			],
+			[
+				"package insta",
+				"Package Control: Install Package"
+			],
+			[
+				"list p",
+				"Package Control: List Packages"
+			],
+			[
+				"read",
+				"Project: Add Folder"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"wo",
+				"Word Wrap: Toggle"
+			],
+			[
+				"html ",
+				"Set Syntax: HTML5"
+			],
+			[
+				"iframe",
+				"Snippet: Google AJAX Libraries: Chrome Frame"
+			],
+			[
+				"wordwr",
+				"Word Wrap: Toggle"
+			],
+			[
+				"e",
+				"HTML: Encode Special Characters"
+			],
+			[
+				"pakcage",
+				"Package Control: Install Package"
+			],
+			[
+				"package ",
+				"Package Control: Install Package"
+			],
+			[
+				"packageinsta",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 386.0
+	},
+	"console":
+	{
+		"height": 125.0,
+		"history":
+		[
+			"30 /24. ",
+			"30 /24 ",
+			"39/32",
+			"20*16",
+			"30*16",
+			"16*40",
+			"14*60",
+			"16*60",
+			"20/380.",
+			"60/380.",
+			"380/60.",
+			"12/14.",
+			"14/12.",
+			"11/12.",
+			"25/14.",
+			"11/14.",
+			"256/14.",
+			"16*16.",
+			"8/11.",
+			"13/14.",
+			"26/14.",
+			"22/14.",
+			"18/14.",
+			"13/14.",
+			"20/14.",
+			"14/32.",
+			"32/14.",
+			"14/16.",
+			"960/1100.",
+			"960/16.",
+			"1100/1500.0",
+			"12/14.",
+			"15/13.",
+			"test"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/Users/caleb.kester/Documents/GitHub/Sitefinity/boilerplate/Themes/Framework/_templates/railnav.jade",
+		"/C/Users/caleb.kester/Documents/GitHub/Sitefinity/boilerplate/Themes/Framework/_templates/_scripts.jade",
+		"/C/Users/caleb.kester/Documents/GitHub/Sitefinity/boilerplate/Themes/Framework/js/jquery-functions.js",
+		"/C/Users/caleb.kester/Documents/GitHub/Sitefinity/boilerplate/Themes/Framework/js/jquery-plugins.js",
+		"/C/Users/caleb.kester/Documents/GitHub/Sitefinity/boilerplate/Themes/Framework/js/jquery-1.9.1.min.js",
+		"/C/Users/caleb.kester/Documents/GitHub/Sitefinity/boilerplate/Themes/sitefinity-framework.sublime-project",
+		"/C/Users/caleb.kester/Documents/GitHub/Sitefinity/sublimeproject.sublime-project",
+		"/C/sites/jcr/config.rb",
+		"/C/sites/jcr/cms/includes/sass/_grid-fluid.scss",
+		"/C/sites/jcr/cms/includes/js/jquery-functions.js",
+		"/C/sites/jcr/blog.jade",
+		"/C/sites/jcr/cms/includes/sass/_utilities.scss",
+		"/C/sites/jcr/cms/includes/sass/style.scss",
+		"/C/sites/jcr/blogTemplate.jade",
+		"/C/sites/jcr/railnav.jade",
+		"/C/sites/jcr/_footer.jade",
+		"/C/sites/jcr/_header.jade",
+		"/C/sites/jcr/productlisting.jade",
+		"/C/sites/jcr/cms/includes/sass/_typography.scss",
+		"/C/sites/jcr/licenses.jade",
+		"/C/sites/jcr/home.jade",
+		"/C/sites/jcr/interior.jade",
+		"/C/sites/jcr/interior1col.jade",
+		"/C/sites/jcr/interior2col.jade",
+		"/C/sites/jcr/software.jade",
+		"/C/sites/jcr/events.jade",
+		"/C/sites/jcr/jcr.sublime-project",
+		"/C/sites/jcr/software.html",
+		"/C/sites/jcr/product.html",
+		"/C/sites/jcr/cms/includes/js/jquery.hoverIntent.minified.js",
+		"/C/sites/jcr/product.jade",
+		"/C/sites/jcr/cms/includes/sass/_boilerplate.scss",
+		"/C/sites/jcr/interior-content.html",
+		"/C/sites/jcr/interior-content.jade",
+		"/C/sites/jcr/interior2col-content.jade",
+		"/C/sites/jcr/home.html",
+		"/C/sites/jcr/cms/images/layout/icons/arrow-left-thick.png",
+		"//cl-spasn-4wb01/wwwroot/templates.com/fedbox/templates/lincolnwood/index.html",
+		"//cl-stand-4wb02/wwwroot/idevsearch/SaaS/web/sites/beretta-en/controls/HawkNavigator.ascx",
+		"/C/sites/jcr - Copy/interior.html",
+		"/C/sites/jcr/base.jade",
+		"/C/sites/jcr/child.jade",
+		"//CL-TOTAL-4WB01/wwwroot/brightkey2013-design.com/Sitefinity 5.4/Projects/Default/Themes/BrightKey/Global/main.css",
+		"//CL-TOTAL-4WB01/wwwroot/brightkey2013-design.com/Sitefinity 5.4/Projects/Default/Themes/BrightKey/js/jquery-functions.js",
+		"/C/sites/jcr - Copy/_layouts/column3.html",
+		"/C/sites/jcr/cms/includes/css/style.css",
+		"/C/sites/jcr/_includes/header.html",
+		"/C/sites/jcr/_layouts/column3.html",
+		"/C/sites/jcr/sass/style.scss",
+		"/C/sites/jcr/index.html",
+		"/C/sites/jcr/_includes/footer.html",
+		"/C/sites/jcr/css/grid-fluid.css",
+		"/C/sites/jcr/cms/images/layout/icons/menu-visible.png",
+		"/C/sites/jcr/css/typography.css",
+		"/C/sites/jcr/_layouts/default.html",
+		"/C/sites/jcr/project.sublime-project",
+		"/C/sites/jcr/interior.html",
+		"/C/sites/jcr/css/boilerplate.css",
+		"/C/sites/jcr/css/main.css",
+		"/C/sites/jcr/sass/buttons.css",
+		"/C/sites/jcr/_posts/2013-08-12-welcome-to-jekyll.markdown",
+		"//CL-TOTAL-4WB01/wwwroot/berettaintl-staging.com/web/cms/includes/jquery-functions-store.js",
+		"//CL-TOTAL-4WB01/wwwroot/berettaintl-staging.com/web/modules/Store/Checkout.ascx",
+		"//CL-TOTAL-4WB01/wwwroot/berettaintl-staging.com/web/modules/Store/Cart.ascx",
+		"//CL-TOTAL-4WB01/wwwroot/berettaintl-staging.com/web/modules/search/HawkSearchResults.ascx",
+		"//CL-TOTAL-4WB01/wwwroot/berettaintl-staging.com/web/modules/search/HawkSearchItems.ascx",
+		"//CL-TOTAL-4WB01/wwwroot/berettaintl-staging.com/web/modules/search/HawkSearchResults.ascx.vb",
+		"//CL-TOTAL-4WB01/wwwroot/berettaintl-staging.com/web/modules/Store/Item/ItemReviews.ascx",
+		"//CL-TOTAL-4WB02/wwwroot/maplehurstfarms-design.com/cms/includes/mobile/jquery-functions-mobile.js",
+		"//CL-TOTAL-4WB01/wwwroot/berettaintl-staging.com/web/includes/functions.js.aspx",
+		"//CL-TOTAL-4WB01/wwwroot/berettaintl-staging.com/web/modules/Store/FindDealer.ascx",
+		"//cl-spasn-4wb01/wwwroot/templates.com/calebkester/jkcf/css/style.css",
+		"//CL-TOTAL-4WB02/wwwroot/maplehurstfarms-design.com/cms/includes/mobile/jquery-plugins-mobile.js",
+		"//CL-TOTAL-4WB01/wwwroot/berettaintl-staging.com/web/cms/includes/css/style.css",
+		"//CL-TOTAL-4WB01/wwwroot/berettaintl-staging.com/web/cms/includes/jquery-functions.js",
+		"//CL-TOTAL-4WB01/wwwroot/berettaintl-staging.com/web/modules/Store/Item/TabControls/ItemReviews.ascx",
+		"//CL-TOTAL-4WB01/wwwroot/berettaintl-staging.com/web/cms/templates/mobile/product-detail.html",
+		"//CL-TOTAL-4WB01/wwwroot/berettaintl-staging.com/web/cms/templates/mobile/interior.html",
+		"//CL-TOTAL-4WB01/wwwroot/berettaintl-staging.com/web/cms/templates/mobile/dealer.html",
+		"//CL-TOTAL-4WB01/wwwroot/berettaintl-staging.com/web/cms/templates/mobile/dealer-list.html",
+		"//CL-TOTAL-4WB01/wwwroot/berettaintl-staging.com/web/cms/templates/mobile/dealer-detail.html",
+		"//CL-TOTAL-4WB01/wwwroot/berettaintl-staging.com/web/cms/templates/mobile/bclub.html",
+		"//CL-TOTAL-4WB01/wwwroot/berettaintl-staging.com/web/cms/templates/mobile/product-list.html",
+		"//CL-TOTAL-4WB01/wwwroot/berettaintl-staging.com/web/modules/Store/Checkout.ascx.vb",
+		"//CL-TOTAL-4WB01/wwwroot/berettaintl-staging.com/web/modules/navigation/LeftNav.ascx",
+		"//CL-TOTAL-4WB01/wwwroot/berettaintl-staging.com/web/modules/Store/CheckoutLogin.ascx",
+		"//CL-TOTAL-4WB01/wwwroot/berettaintl-staging.com/web/modules/Store/Item/ItemReviewSummary.ascx",
+		"/C/sites/Framework/cms/includes/css/buttons.css",
+		"/C/sites/Framework/grid - Copy.md",
+		"//CL-TOTAL-4WB01/wwwroot/weathertech-racing-design.com/weathertech-racing/App_Master/col1.master",
+		"/C/Users/caleb.kester/Documents/Sublime Text 2 Build 2181 x64/Data/Packages/User/Preferences.sublime-settings",
+		"/C/sites/Framework/_config.yml",
+		"//cl-spasn-4wb01/wwwroot/templates.com/calebkester/projects/BerettaUSA.sublime-workspace",
+		"/C/Users/caleb.kester/Documents/GitHub/Framework/docs/grid.html",
+		"//CL-TOTAL-4WB01/wwwroot/@GMT-2013.07.09-12.00.25/berettaintl-staging.com/web/modules/Store/Checkout.ascx",
+		"//CL-TOTAL-4WB01/wwwroot/berettaintl-staging.com/cms/includes/store.css",
+		"/C/inetpub/Beretta.sublime-project",
+		"//CL-TOTAL-4WB01/wwwroot/berettaintl-staging.com/cms/includes/jquery-functions.js",
+		"//CL-TOTAL-4WB01/wwwroot/berettaintl-staging.com/cms/includes/css/hawksearch.css",
+		"//CL-TOTAL-4WB01/wwwroot/berettaintl-staging.com/web/modules/search/HawkSearch.ascx",
+		"//CL-TOTAL-4WB01/wwwroot/berettaintl-staging.com/cms/includes/css/style.css",
+		"//CL-TOTAL-4WB01/wwwroot/berettaintl-staging.com/web/modules/search/HawkSearchLeftNav.ascx",
+		"//CL-TOTAL-4WB01/wwwroot/berettaintl-staging.com/web/modules/search/HawkSearch.ascx.vb",
+		"//CL-TOTAL-4WB01/wwwroot/berettaintl-design.com/cms/templates/mobile/product-list.html",
+		"//CL-TOTAL-4WB01/wwwroot/berettaintl-staging.com/web/modules/mobile/StoreList.ascx",
+		"//CL-TOTAL-4WB01/wwwroot/berettaintl-staging.com/web/modules/members/Register.ascx.vb",
+		"//CL-TOTAL-4WB01/wwwroot/berettaintl-staging.com/web/modules/members/Register.ascx",
+		"//CL-TOTAL-4WB01/wwwroot/berettaintl-staging.com/cms/includes/css/mobile.css",
+		"//CL-TOTAL-4WB01/wwwroot/berettaintl-staging.com/cms/includes/js/jquery-mobile.js",
+		"//cl-spasn-4wb01/wwwroot/templates.com/calebkester/projects/BerettaUSA",
+		"//CL-TOTAL-4WB01/wwwroot/berettaintl-staging.com/web/modules/mobile/StoreList.ascx.vb",
+		"//CL-TOTAL-4WB01/wwwroot/berettaintl-design.com/cms/templates/mobile/interior.html",
+		"//CL-TOTAL-4WB01/wwwroot/berettaintl-staging.com/web/modules/faq/FAQ.ascx",
+		"//CL-TOTAL-4WB01/wwwroot/berettaintl-staging.com/cms/includes/css/global.css",
+		"//CL-TOTAL-4WB01/wwwroot/berettaintl-design.com/web/modules/PageHeadingMobile.ascx",
+		"//CL-TOTAL-4WB01/wwwroot/berettaintl-design.com/cms/templates/mobile/home.html",
+		"//CL-TOTAL-4WB01/wwwroot/manusdental-design.com/web/modules/locations/LocationDetail.ascx",
+		"//CL-TOTAL-4WB01/wwwroot/manusdental-design.com/web/modules/locations/LocationDetail.ascx.vb",
+		"//CL-TOTAL-4WB01/wwwroot/manusdental-design.com/web/modules/events/Event.ascx.vb",
+		"//CL-TOTAL-4WB01/wwwroot/manusdental-design.com/web/modules/events/Event.ascx",
+		"//CL-TOTAL-4WB01/wwwroot/manusdental-design.com/web/modules/events/Day.ascx",
+		"//CL-TOTAL-4WB01/wwwroot/manusdental-design.com/web/modules/events/Day.ascx.vb",
+		"//CL-TOTAL-4WB01/wwwroot/manusdental-design.com/web/modules/navigation/Breadcrumb.ascx",
+		"//CL-TOTAL-4WB01/wwwroot/manusdental-design.com/web/modules/navigation/Breadcrumb.ascx.vb",
+		"//CL-TOTAL-4WB01/wwwroot/manusdental-design.com/ckeditor/ckeditor.js",
+		"//CL-TOTAL-4WB01/wwwroot/berettaintl-staging.com/web/modules/navigation/TopNavMobile.ascx",
+		"//CL-TOTAL-4WB01/wwwroot/berettaintl-staging.com/web/modules/navigation/TopSubNavMobile.ascx",
+		"//CL-TOTAL-4WB01/wwwroot/berettaintl-staging.com/web/modules/navigation/TopNavMobile.ascx.vb"
+	],
+	"find":
+	{
+		"height": 36.0
+	},
+	"find_in_files":
+	{
+		"height": 92.0,
+		"where_history":
+		[
+			"",
+			"I:\\CL-TOTAL-4WB01\\berettaintl-design.com\\web\\modules,I:\\CL-TOTAL-4WB01\\berettaintl-design.com\\web\\controls",
+			"",
+			"Your Private Limo",
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"cms/includes",
+			"/cms/",
+			"itemList",
+			"Software",
+			"sectionHead",
+			"s_full_item",
+			"breakpoint(w)",
+			"breakpoint",
+			"modlistaside",
+			"/* ==========================================================================",
+			"meta",
+			"btn",
+			"grid_4.center",
+			"breakpoint",
+			"homehighl",
+			"modHead",
+			"h3.title: a",
+			"row",
+			".clearfix",
+			"border-radius",
+			"modshadow",
+			"metaItem",
+			"meta",
+			"icons",
+			"<a class",
+			"meta",
+			"metaItem",
+			"filterView",
+			"modlistproduct",
+			"paging",
+			"clearfix",
+			"right: 0.2em;",
+			"after",
+			"icons",
+			"sect",
+			"bottom",
+			"prev",
+			".filter",
+			"filter",
+			".filter",
+			"price",
+			"mdash",
+			"[",
+			"aside",
+			"has-child",
+			"li:hover",
+			"div.",
+			"\n				li",
+			"toggle",
+			".menuToggle",
+			".mainNavToggle",
+			".menuToggle",
+			"mainnav",
+			"content",
+			"content: ''",
+			".row\n",
+			".row",
+			"row",
+			"right",
+			"a.btn",
+			"btn",
+			"full",
+			"prefix_4",
+			"push_5",
+			"grid_7",
+			"push-2-5",
+			"col-2-5",
+			"col-3-5",
+			"inputFull",
+			"text",
+			"input",
+			"200",
+			"licensesSection",
+			"notifications",
+			"  }",
+			"  /* line",
+			"  /* line 1898",
+			"icons",
+			"icon",
+			"extend",
+			"(href=\"#\", alt=\"\")",
+			"scroller",
+			"				.meta\n								.metaIte",
+			"title\n							a.",
+			"						.title\n							a(href=\"#\", alt=\"\") AMP",
+			"a(href=\"#\", alt=\"\")",
+			"tabContent",
+			"•",
+			"/* line 1",
+			"tabHeader",
+			"tab",
+			"tabs",
+			"tabSection",
+			"i",
+			"tabsSection",
+			"<a class",
+			"10px",
+			"col-2-5",
+			"border-radius",
+			";\n",
+			"storeItem",
+			"gridpadright",
+			"right",
+			"storeItemFinePrint",
+			"FinePrint",
+			"				img",
+			"</",
+			"li",
+			"img",
+			":",
+			"toughness",
+			"3c",
+			"filter-options",
+			"0.5em",
+			"item",
+			"aside",
+			".btn",
+			"standout",
+			"\n		li",
+			"		li",
+			"		li ",
+			"item",
+			"1em",
+			"itemList",
+			"’",
+			"true, true",
+			"{{URL}}",
+			"object"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"lorem10",
+			"Sign up Email Newsletter",
+			"Your Private Limo",
+			"<% call DisplayDocType() %>\n<html>",
+			"\n<% call DisplayDocType() %>\n<html>",
+			"<html>"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 5,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "Framework/config.rb",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1662,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								309,
+								309
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 42.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "/C/Users/caleb.kester/Documents/GitHub/Sitefinity/boilerplate/README.md",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 98,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								98,
+								98
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Markdown/Markdown.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "Framework/_templates/interior-content.jade",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2521,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								226,
+								86
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Jade/Syntaxes/Jade.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "Framework/_templates/_footer.jade",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 55,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								55,
+								55
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Jade/Syntaxes/Jade.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "Framework/_templates/_header.jade",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 50,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								50,
+								50
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Jade/Syntaxes/Jade.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "Framework/_templates/interior.jade",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 718,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								718,
+								718
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Jade/Syntaxes/Jade.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 32.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.csslint_result_view":
+	{
+		"height": 100.0
+	},
+	"output.exec":
+	{
+		"height": 100.0
+	},
+	"output.sftp":
+	{
+		"height": 96.0
+	},
+	"project": "sitefinity-framework.sublime-project",
+	"replace":
+	{
+		"height": 62.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"railn",
+				"_templates\\railnav.jade"
+			],
+			[
+				"config",
+				"config.rb"
+			],
+			[
+				"jqueryfu",
+				"cms\\includes\\js\\jquery-functions.js"
+			],
+			[
+				"blog",
+				"blog.jade"
+			],
+			[
+				"util",
+				"cms\\includes\\sass\\_utilities.scss"
+			],
+			[
+				"grid",
+				"C:\\sites\\jcr\\cms\\includes\\sass\\_grid-fluid.scss"
+			],
+			[
+				"utilit",
+				"cms\\includes\\sass\\_utilities.scss"
+			],
+			[
+				"productlisting",
+				"productlisting.jade"
+			],
+			[
+				"tyop",
+				"cms\\includes\\sass\\_typography.scss"
+			],
+			[
+				"typo",
+				"cms\\includes\\sass\\_typography.scss"
+			],
+			[
+				"typg",
+				"cms\\includes\\sass\\_typography.scss"
+			],
+			[
+				"utili",
+				"cms\\includes\\sass\\_utilities.scss"
+			],
+			[
+				"software.jade",
+				"software.jade"
+			],
+			[
+				"software",
+				"software.html"
+			],
+			[
+				"product",
+				"product.html"
+			],
+			[
+				"style.scs",
+				"cms\\includes\\sass\\style.scss"
+			],
+			[
+				"hoverinten",
+				"cms\\includes\\js\\jquery.hoverIntent.minified.js"
+			],
+			[
+				"functions",
+				"cms\\includes\\js\\jquery-functions.js"
+			],
+			[
+				"stylesc",
+				"cms\\includes\\sass\\style.scss"
+			],
+			[
+				"inter",
+				"interior.jade"
+			],
+			[
+				"home.jade",
+				"home.jade"
+			],
+			[
+				"boiler",
+				"cms\\includes\\sass\\_boilerplate.scss"
+			],
+			[
+				"softa",
+				"software.jade"
+			],
+			[
+				"interior-cont",
+				"interior-content.html"
+			],
+			[
+				"functions.",
+				"cms\\includes\\js\\jquery-functions.js"
+			],
+			[
+				"header",
+				"_header.jade"
+			],
+			[
+				"typ",
+				"cms\\includes\\sass\\_typography.scss"
+			],
+			[
+				"footer",
+				"_footer.jade"
+			],
+			[
+				"interior",
+				"interior2col.jade"
+			],
+			[
+				"fluid",
+				"cms\\includes\\sass\\_grid-fluid.scss"
+			],
+			[
+				"home.html",
+				"home.html"
+			],
+			[
+				"interior.jade",
+				"interior.jade"
+			],
+			[
+				"typogr",
+				"cms\\includes\\sass\\_typography.scss"
+			],
+			[
+				"head",
+				"_header.jade"
+			],
+			[
+				"uti",
+				"cms\\includes\\sass\\_utilities.scss"
+			],
+			[
+				"intero",
+				"interior.jade"
+			],
+			[
+				"function",
+				"cms\\includes\\js\\jquery-functions.js"
+			],
+			[
+				"grid-f",
+				"cms\\includes\\sass\\_grid-fluid.scss"
+			],
+			[
+				"bo",
+				"cms\\includes\\sass\\_boilerplate.scss"
+			],
+			[
+				"typog",
+				"cms\\includes\\sass\\_typography.scss"
+			],
+			[
+				"fli",
+				"cms\\includes\\sass\\_grid-fluid.scss"
+			],
+			[
+				"grid-",
+				"cms\\includes\\sass\\_grid-fluid.scss"
+			],
+			[
+				"style.css",
+				"cms\\includes\\css\\style.css"
+			],
+			[
+				"style",
+				"cms\\includes\\sass\\style.scss"
+			],
+			[
+				"sass",
+				"sass\\style.scss"
+			],
+			[
+				"config.rb",
+				"config.rb"
+			],
+			[
+				"boil",
+				"css\\boilerplate.css"
+			],
+			[
+				"style.",
+				"web\\cms\\includes\\css\\style.css"
+			],
+			[
+				"store.css",
+				"web\\cms\\includes\\store.css"
+			],
+			[
+				"jquerystor",
+				"web\\cms\\includes\\jquery-functions-store.js"
+			],
+			[
+				"idevselections.js",
+				"web\\includes\\store\\IdevSelections.js"
+			],
+			[
+				"functions.js",
+				"web\\includes\\functions.js.aspx"
+			],
+			[
+				"tabcontrolsreview",
+				"web\\modules\\Store\\Item\\TabControls\\ItemReviews.ascx"
+			],
+			[
+				"itemreviews",
+				"web\\modules\\Store\\Item\\ItemReviews.ascx"
+			],
+			[
+				"jqueryfunctions",
+				"web\\cms\\includes\\jquery-functions.js"
+			],
+			[
+				"tabcontrolsitemrev",
+				"web\\modules\\Store\\Item\\TabControls\\ItemReviews.ascx"
+			],
+			[
+				"itemitemreview",
+				"web\\modules\\Store\\Item\\ItemReviews.ascx"
+			],
+			[
+				"itemreviewsummary",
+				"web\\modules\\Store\\Item\\ItemReviewSummary.ascx"
+			],
+			[
+				"reviewsummary",
+				"web\\modules\\Store\\Item\\ItemReviewSummary.ascx"
+			],
+			[
+				"checkout.ascx.vb",
+				"web/modules/Store/Checkout.ascx.vb"
+			],
+			[
+				"checkoutlogin",
+				"web/modules/Store/CheckoutLogin.ascx"
+			],
+			[
+				"checkout",
+				"web/modules/Store/Checkout.ascx"
+			],
+			[
+				"store.",
+				"cms/includes/store.css"
+			],
+			[
+				"hawcss",
+				"cms/includes/css/hawksearch.css"
+			],
+			[
+				"hawkleft",
+				"web/modules/search/HawkSearchLeftNav.ascx"
+			],
+			[
+				"hawksearchresul",
+				"web/modules/search/HawkSearchResults.ascx"
+			],
+			[
+				"hawksearch.ascx",
+				"web/modules/search/HawkSearch.ascx.vb"
+			],
+			[
+				"hawksearchleftn",
+				"web/modules/search/HawkSearchLeftNav.ascx"
+			],
+			[
+				"hawksearch",
+				"web/modules/search/HawkSearch.ascx"
+			],
+			[
+				"hawksearccss",
+				"cms/includes/css/hawksearch.css"
+			],
+			[
+				"mobile.css",
+				"Staging/cms/includes/css/mobile.css"
+			],
+			[
+				"mobile.js",
+				"Staging/cms/includes/js/jquery-mobile.js"
+			],
+			[
+				"product-list.",
+				"Design/cms/templates/mobile/product-list.html"
+			],
+			[
+				"register.as",
+				"web/modules/members/Register.ascx.vb"
+			],
+			[
+				"hawkcss",
+				"Staging/cms/includes/css/hawksearch.css"
+			],
+			[
+				"mobileinterior",
+				"Design/cms/templates/mobile/interior.html"
+			],
+			[
+				"topnavmobile.vb",
+				"Staging/web/modules/navigation/TopNavMobile.ascx.vb"
+			],
+			[
+				"topnav.ascx.vb",
+				"Staging/web/modules/navigation/TopNav.ascx.vb"
+			],
+			[
+				"mobilehome.h",
+				"Design/cms/templates/mobile/home.html"
+			],
+			[
+				"global.css",
+				"Staging/cms/includes/css/global.css"
+			],
+			[
+				"admin.css",
+				"Staging/cms/includes/admin.css"
+			],
+			[
+				"navigation/leftnav",
+				"Staging/web/modules/navigation/LeftNav.ascx"
+			],
+			[
+				"leftnavigation",
+				"Staging/web/modules/members/LeftNavigation.ascx"
+			],
+			[
+				"modulespoll.ascx",
+				"Staging/web/modules/polls/Poll.ascx"
+			],
+			[
+				"faq.css",
+				"Staging/cms/includes/subCSS/FAQs.css"
+			],
+			[
+				"faq",
+				"Staging/web/modules/faq/FAQ.ascx"
+			],
+			[
+				"events.css",
+				"Staging/cms/includes/subCSS/events.css"
+			],
+			[
+				"modules/events/event.ascx",
+				"Staging/web/modules/events/Event.ascx"
+			],
+			[
+				"eventssummary",
+				"Staging/web/modules/events/Summary.ascx"
+			],
+			[
+				"shortde",
+				"Staging/web/modules/Store/Item/ShortDescription.ascx"
+			],
+			[
+				"config.js",
+				"Staging/ckeditor/config.js"
+			],
+			[
+				"printinvoice",
+				"Staging/web/admin/store/orders/PrintInvoice.aspx.vb"
+			],
+			[
+				"global",
+				"Staging/cms/includes/css/global.css"
+			],
+			[
+				"banner",
+				"Staging/modules/Banners/Banners.vbproj"
+			],
+			[
+				"ctpe.css",
+				"Staging/web/includes/ctpe/ctpe.css"
+			],
+			[
+				"mobilehome.html",
+				"Design/cms/templates/mobile/home.html"
+			],
+			[
+				"quantity",
+				"Staging/web/modules/Store/Item/Quantity.ascx"
+			],
+			[
+				"storedimension.ascx",
+				"Staging/web/modules/Store/Item/Dimensions.ascx"
+			],
+			[
+				"dimen",
+				"Staging/web/modules/Store/Item/Dimensions.ascx.vb"
+			],
+			[
+				"jquery-functions",
+				"Staging/cms/includes/jquery-functions.js"
+			],
+			[
+				"gallery",
+				"Staging/web/modules/gallery/Gallery.ascx"
+			],
+			[
+				"photogallery.css",
+				"Staging/cms/includes/subCSS/photoGallery.css"
+			],
+			[
+				"socialshare",
+				"Staging/web/modules/SocialShare.ascx"
+			],
+			[
+				"storeorderdetails",
+				"Staging/web/controls/Store/OrderDetails.ascx"
+			],
+			[
+				"orderhistory",
+				"Staging/web/modules/members/OrderHistory/Detail.ascx"
+			],
+			[
+				"controsstoreshopping",
+				"Staging/web/controls/Store/StoreShoppingCart.ascx"
+			],
+			[
+				"stagingmodulesconfirm",
+				"Staging/web/modules/Store/Confirm.ascx"
+			],
+			[
+				"stagingjqueryui.css",
+				"Staging/cms/includes/jquery-ui.css"
+			],
+			[
+				"stagingmodulesstorecart",
+				"Staging/web/modules/Store/Cart.ascx"
+			],
+			[
+				"bclub",
+				"Staging/web/modules/members/BClub.ascx"
+			],
+			[
+				"itemvideo",
+				"Staging/web/modules/Store/Item/Video.ascx"
+			],
+			[
+				"storeservicecheckorder",
+				"Staging/web/modules/Store/Service/CheckOrder.ascx"
+			],
+			[
+				"storemainheader",
+				"Staging/web/modules/Store/Main/Header.ascx"
+			],
+			[
+				"modulescookieconsent",
+				"Staging/web/modules/cookieConsent/silkTide.ascx"
+			],
+			[
+				"silktide.ascx",
+				"Staging/web/modules/cookieConsent/silkTide.ascx.vb"
+			],
+			[
+				"silktide",
+				"Staging/web/modules/cookieConsent/silkTide.ascx"
+			],
+			[
+				"cookieconsent",
+				"Staging/web/modules/cookieConsent/silkTide.ascx"
+			],
+			[
+				"storeheader",
+				"Staging/web/modules/Store/Main/Header.ascx"
+			],
+			[
+				"socalshare",
+				"Staging/web/modules/SocialShare.ascx"
+			],
+			[
+				"stagingmodulesstoreorderascx",
+				"Staging/web/modules/Store/Service/CheckOrder.ascx"
+			],
+			[
+				"jqueryplugin",
+				"Staging/cms/includes/jquery-plugins.js"
+			],
+			[
+				"templateitem",
+				"Staging/cms/templates/store/item.html"
+			],
+			[
+				"stagingitemvideo",
+				"Staging/web/modules/Store/Item/Video.ascx"
+			],
+			[
+				"style.cs",
+				"Staging/cms/includes/css/style.css"
+			],
+			[
+				"stagingstore.css",
+				"Staging/cms/includes/store.css"
+			],
+			[
+				"staginggloba",
+				"Staging/cms/includes/css/global.css"
+			],
+			[
+				"stagingstyle",
+				"Staging/cms/includes/css/style.css"
+			],
+			[
+				"firearmdetail",
+				"Design/cms/templates/firearm-detail.html"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+			[
+				"mw",
+				"C:\\sites\\mwall.sublime-project"
+			],
+			[
+				"rosemon",
+				"C:\\inetpub\\rosemont.sublime-project"
+			],
+			[
+				"weather",
+				"C:\\inetpub\\WeatherTechRacing.sublime-project"
+			],
+			[
+				"rosemont",
+				"C:\\inetpub\\rosemont.sublime-project"
+			],
+			[
+				"rosem",
+				"C:\\inetpub\\rosemont.sublime-project"
+			],
+			[
+				"beretta",
+				"C:\\inetpub\\Beretta.sublime-project"
+			],
+			[
+				"berett",
+				"C:\\inetpub\\Beretta.sublime-project"
+			],
+			[
+				"beret",
+				"C:\\inetpub\\Beretta.sublime-project"
+			],
+			[
+				"fram",
+				"C:\\inetpub\\Framework.sublime-project"
+			],
+			[
+				"frame",
+				"C:\\inetpub\\Framework.sublime-project"
+			],
+			[
+				"rose",
+				"C:\\inetpub\\rosemont.sublime-project"
+			],
+			[
+				"",
+				"C:\\inetpub\\Framework.sublime-project"
+			],
+			[
+				"fra",
+				"C:\\inetpub\\Framework.sublime-project"
+			],
+			[
+				"framework",
+				"C:\\inetpub\\Framework.sublime-project"
+			],
+			[
+				"bere",
+				"C:\\inetpub\\Beretta.sublime-project"
+			],
+			[
+				"flowersh",
+				"C:\\inetpub\\FlowerShopping.sublime-project"
+			],
+			[
+				"jcr",
+				"C:\\sites\\jcr\\jcr.sublime-project"
+			],
+			[
+				"wea",
+				"C:\\inetpub\\WeatherTechRacing.sublime-project"
+			],
+			[
+				"weahter",
+				"C:\\inetpub\\WeatherTechRacing.sublime-project"
+			],
+			[
+				"we",
+				"C:\\inetpub\\WeatherTechRacing.sublime-project"
+			],
+			[
+				"weatherte",
+				"C:\\inetpub\\WeatherTechRacing.sublime-project"
+			],
+			[
+				"flower",
+				"/C/inetpub/FlowerShopping.sublime-project"
+			],
+			[
+				"bascom",
+				"/C/inetpub/BascomeProject.sublime-project"
+			],
+			[
+				"weat",
+				"/C/inetpub/WeatherTechRacing.sublime-project"
+			],
+			[
+				"hill",
+				"/C/inetpub/HillRoad.sublime-project"
+			],
+			[
+				"mis",
+				"//cl-spasn-4wb01/wwwroot/templates.com/calebkester/MiscWork.sublime-project"
+			],
+			[
+				"ber",
+				"//cl-spasn-4wb01/wwwroot/templates.com/calebkester/projects/BerettaUSA"
+			],
+			[
+				"weath",
+				"/C/inetpub/WeatherTechRacing.sublime-project"
+			],
+			[
+				"misc",
+				"//cl-spasn-4wb01/wwwroot/templates.com/calebkester/MiscWork.sublime-project"
+			],
+			[
+				"multisp",
+				"/C/inetpub/Multispec.sublime-project"
+			],
+			[
+				"multi",
+				"/C/inetpub/Multispec.sublime-project"
+			],
+			[
+				"per",
+				"//cl-spasn-4wb01/wwwroot/templates.com/calebkester3/performics.sublime-project"
+			],
+			[
+				"bas",
+				"/C/inetpub/BascomeProject.sublime-project"
+			],
+			[
+				"flo",
+				"/C/inetpub/FlowerShopping.sublime-project"
+			],
+			[
+				"beretat",
+				"/C/inetpub/BerettaShop.sublime-project"
+			],
+			[
+				"fun",
+				"/C/Users/caleb.kester/Documents/funinc.sublime-project"
+			],
+			[
+				"flow",
+				"/C/inetpub/FlowerShopping.sublime-project"
+			],
+			[
+				"fl",
+				"/C/inetpub/FlowerShopping.sublime-project"
+			],
+			[
+				"performi",
+				"//cl-spasn-4wb01/wwwroot/templates.com/calebkester3/performics.sublime-project"
+			],
+			[
+				"perf",
+				"//cl-spasn-4wb01/wwwroot/templates.com/calebkester3/performics.sublime-project"
+			],
+			[
+				"perform",
+				"//cl-spasn-4wb01/wwwroot/templates.com/calebkester3/performics.sublime-project"
+			],
+			[
+				"f",
+				"/C/Users/caleb.kester/Documents/funinc.sublime-project"
+			],
+			[
+				"funin",
+				"/C/Users/caleb.kester/Documents/funinc.sublime-project"
+			],
+			[
+				"npr",
+				"/C/Users/caleb.kester/Documents/NPR.sublime-project"
+			],
+			[
+				"dale",
+				"/C/Users/caleb.kester/Documents/dalecarnegie.sublime-project"
+			],
+			[
+				"funi",
+				"/C/Users/caleb.kester/Documents/funinc.sublime-project"
+			],
+			[
+				"np",
+				"/C/Users/caleb.kester/Documents/NPR.sublime-project"
+			],
+			[
+				"pr",
+				"/C/Users/caleb.kester/Documents/NPR.sublime-project"
+			],
+			[
+				"perfo",
+				"//cl-spasn-4wb01/wwwroot/templates.com/calebkester3/performics.sublime-project"
+			],
+			[
+				"p",
+				"//cl-spasn-4wb01/wwwroot/templates.com/calebkester3/performics.sublime-project"
+			],
+			[
+				"perfor",
+				"//cl-spasn-4wb01/wwwroot/templates.com/calebkester3/performics.sublime-project"
+			],
+			[
+				"le",
+				"//cl-cgc-4wb01/wwwroot/less-sandbox-design.com/Less-Sandbox.sublime-project"
+			],
+			[
+				"less",
+				"//cl-cgc-4wb01/wwwroot/less-sandbox-design.com/Less-Sandbox.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 240.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

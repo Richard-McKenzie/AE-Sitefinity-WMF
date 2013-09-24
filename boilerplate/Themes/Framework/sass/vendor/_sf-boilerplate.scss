@@ -1,0 +1,58 @@
+/*================================================================
+                 Boilerplate - Base Styles 
+================================================================*/
+
+$font-body: Arial, sans-serif !default;
+$link-selection: #b3d4fc !default;
+$color-base: #222 !default;
+
+html, button, input, select, textarea { color: $color-base; }
+body { font-family: $font-body; line-height: 1.4; overflow-y: scroll;}
+
+::-moz-selection { background: $link-selection; text-shadow: none; }
+::selection { background: $link-selection; text-shadow: none; }
+
+hr { display: block; height: 1px; border: 0; border-top: 1px solid #ccc; margin: 1em 0; padding: 0;}
+img { vertical-align: middle; }
+fieldset {border: 0;margin: 0; padding: 0; }
+textarea { resize: vertical; }
+
+.ir { background-color: transparent; border: 0; overflow: hidden; *text-indent: -9999px; }
+.ir:before { content: ""; display: block; width: 0; height: 100%; }
+
+.hidden { display: none !important; visibility: hidden; }
+.visuallyhidden { border: 0; clip: rect(0 0 0 0); height: 1px;  margin: -1px; overflow: hidden; padding: 0; position: absolute; width: 1px; }
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus { clip: auto; height: auto; margin: 0; overflow: visible; position: static; width: auto; }
+
+.invisible { visibility: hidden; }
+.clearfix:before, .clearfix:after { content: " "; display: table; }
+.clearfix:after { clear: both; }
+.clearfix { *zoom: 1; }
+
+.hide {display:none;}
+.smallest {font-size:.8em;}
+.smaller {font-size:.9em;}
+.larger {font-size:1.1em;}
+.largest {font-size:1.2em;}
+.bold {font-weight:bold;}
+.italic {font-style:italic;}
+.strike {text-decoration:line-through;}
+.red {color:#f00;}
+.blue { color:#00f; }
+.green {color:#390;}
+.lgreen {color:#97937d;}
+.vtop {vertical-align:top;}
+.center {text-align:center;}
+.right {text-align:right;}
+.left {text-align:left;}
+.nowrap {white-space:nowrap;}
+.breakforprint {page-break-after:always;}
+.clear {overflow:hidden; clear:both; height:0; margin:0; font-size:1px; line-height:0;}
+.skip {position:absolute; left:-10000px; width:1px; height:1px; overflow:hidden;}
+.floatRight {float: right}
+.floatLeft {float: left}
+
+.important {color: red; font-weight: bold; text-transform: uppercase; }
+
+*, *:before, *:after { @include box-sizing(border-box); }

@@ -1,0 +1,13 @@
+/* ================================================================
+   PRIMARY LAYOUT STYLES 
+   ================================================================ */
+
+
+a {
+	color: $color-primary;
+	text-decoration: none;
+
+	&:hover, &:focus {
+		text-decoration: underline;
+	}
+}
