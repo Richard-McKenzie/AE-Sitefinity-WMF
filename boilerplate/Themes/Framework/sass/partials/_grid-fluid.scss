@@ -14,38 +14,16 @@ $grid-gutter: 20px !default;
 	padding:0px; 
 	width: 87%;
 	min-width:16em; 
-	-webkit-transition: all .1s linear;
-	   -moz-transition: all .1s linear;
-	    -ms-transition: all .1s linear; 
-	     -o-transition: all .1s linear;
-	        transition: all .1s linear;
+	@include transition(all 0.1s linear);
+	@include clearfix;
 }
 
-.container:before, .container:after { content: " "; display: table; }
-.container:after { clear: both; }
-.container { *zoom: 1; }
-
-.row:before, .row:after { content: " "; display: table; }
-.row:after { clear: both; }
-.row { *zoom: 1; }
-
 .container [class*="grid_"] { padding:0 $grid-gutter/2; }
-
-.row > [class*="grid_"] {padding: 0; }
 
 .gutterless { padding:0 $grid-gutter/2; }
 .gutterless > [class*="grid_"] { padding:0; }
 
-/* Responsive item specific */
-
-@media only screen and (max-width:47.94em) {
-	.s_full_item {
-		width: 100%;
-	}	
-}
-
-/* 16px baseline (256px) s = small */
-@media only screen and (min-width:16em) {
+@include breakpoint(s){
 	.container [class*="grid_"] {
 		position:relative;
 		float: left;
@@ -55,8 +33,7 @@ $grid-gutter: 20px !default;
 	.s_full_grid[class*="grid_"] { width: 100%; }
 }
 
-/* 16px baseline (480px - 767px) sw = small wide */
-@include breakpoint(sw){
+@include breakpoint(s-m){
 	.sw_1half [class*="grid_"] { width:50%; }
 	.sw_1half [class*="push_"] { left:50%; }
 	.sw_1half [class*="pull_"] { left:-50%; }
@@ -66,7 +43,6 @@ $grid-gutter: 20px !default;
 	.sw_1third [class*="pull_"] { left:-33.333%; }
 }
 
-/* 16px baseline (768px) m = medium */
 @include breakpoint(m){
 	.container .grid_1  { width:8.333%; }
 	.container .grid_2  { width:16.666%; }
@@ -132,23 +108,9 @@ $grid-gutter: 20px !default;
 	.container .suffix_10 { margin-right:83.333%; }
 	.container .suffix_11 { margin-right:91.666%; }
 	.container .suffix_12 { margin-right:100%; }
-
-	.row > [class*="grid_"] {
-		padding: 0 $grid-gutter;
-	}
-
-	.row > [class*="grid_"]:first-child {
-		padding-left: 0;
-	}
-
-	.row > [class*="grid_"]:last-child {
-		padding-right: 0;
-	}
-		
 }
 
-/* 16px baseline (768px - 959px) m = medium */ 
-@include breakpoint(sw){
+@include breakpoint(m-l){
 	.m_1half [class*="grid_"] { width:50%; }
 	.m_1half [class*="push_"] { left:50%; }
 	.m_1half [class*="pull_"] { left:-50%; }
@@ -174,12 +136,10 @@ $grid-gutter: 20px !default;
 	.m_2thirds_right [class*="pull_"] { left:0; }	
 }
 
-/* 16px baseline (960px - 1139px) m-w = medium wide*/ 
-@include breakpoint(m-w){
+@include breakpoint(l){
 
 }
 
-/* 16px baseline (1140px) l = large */ 
-@include breakpoint(l) {
+@include breakpoint(xl) {
 	
 }
