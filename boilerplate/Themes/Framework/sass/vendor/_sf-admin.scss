@@ -1,8 +1,8 @@
 //Admin resets
 
-.sfPageBrowseAndEditToolbarWrp {
-	z-index: 5000;
-}
+// .sfPageBrowseAndEditToolbarWrp {
+// 	z-index: 5000;
+// }
 
 //Sets content-box to sitefinity admin so global box-sizing can be changed
 .RadWindow, 
@@ -19,4 +19,4 @@
 	-webkit-box-sizing: content-box;
      -moz-box-sizing: content-box;
           box-sizing: content-box;
-} 
+}

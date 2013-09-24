@@ -23,8 +23,9 @@ javascripts_dir = "js"
 # sass-convert -R --from scss --to sass sass scss && rm -rf sass && mv scss sass
 preferred_syntax = :scss
 
-line_comments = false # by Compass.app 
-output_style = :compact # by Compass.app 
+line_comments = true # by Compass.app 
+#output_style = :compact # by Compass.app 
+output_style = :expanded # by Compass.app 
 
 # Make a copy of sprites with a name that has no uniqueness of the hash.
 on_sprite_saved do |filename|

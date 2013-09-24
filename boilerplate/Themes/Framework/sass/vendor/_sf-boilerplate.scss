@@ -1,6 +1,6 @@
-/*================================================================
-                 Boilerplate - Base Styles 
-================================================================*/
+/* ================================================================
+   Boilerplate - Base Styles 
+   ================================================================ */
 
 $font-body: Arial, sans-serif !default;
 $link-selection: #b3d4fc !default;
@@ -26,11 +26,8 @@ textarea { resize: vertical; }
 .visuallyhidden.focusable:focus { clip: auto; height: auto; margin: 0; overflow: visible; position: static; width: auto; }
 
 .invisible { visibility: hidden; }
-.clearfix:before, .clearfix:after { content: " "; display: table; }
-.clearfix:after { clear: both; }
-.clearfix { *zoom: 1; }
+.clearfix{ @include clearfix; }
 
-.hide {display:none;}
 .smallest {font-size:.8em;}
 .smaller {font-size:.9em;}
 .larger {font-size:1.1em;}
@@ -38,18 +35,11 @@ textarea { resize: vertical; }
 .bold {font-weight:bold;}
 .italic {font-style:italic;}
 .strike {text-decoration:line-through;}
-.red {color:#f00;}
-.blue { color:#00f; }
-.green {color:#390;}
-.lgreen {color:#97937d;}
-.vtop {vertical-align:top;}
-.center {text-align:center;}
-.right {text-align:right;}
-.left {text-align:left;}
+.align-center {text-align:center;}
+.align-right {text-align: right;}
+.align-left {text-align: left;}
 .nowrap {white-space:nowrap;}
 .breakforprint {page-break-after:always;}
-.clear {overflow:hidden; clear:both; height:0; margin:0; font-size:1px; line-height:0;}
-.skip {position:absolute; left:-10000px; width:1px; height:1px; overflow:hidden;}
 .floatRight {float: right}
 .floatLeft {float: left}
 
