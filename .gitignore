@@ -2,9 +2,11 @@
 # Caches #
 ###################
 .sass-cache
-.sublime-project
-.sublime-workspace
 
+# Files #
+###################
+*.sublime-project
+*.sublime-workspace
 
 # Compiled source #
 ###################
