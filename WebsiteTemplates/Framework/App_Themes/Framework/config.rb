@@ -2,10 +2,10 @@
 # require 'animation'
 
 http_path = "../"
-css_dir = "css"
+css_dir = "Global"
 sass_dir = "sass"
-images_dir = "images"
-javascripts_dir = "js"
+images_dir = "Images"
+javascripts_dir = "JS"
 
 # You can select your preferred output style here (can be overridden via the command line):
 # output_style = :expanded or :nested or :compact or :compressed

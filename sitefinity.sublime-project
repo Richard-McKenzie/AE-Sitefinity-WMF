@@ -1,0 +1,11 @@
+{
+	"folders":
+	[
+		{
+			"follow_symlinks": true,
+			"path": "C:\\Users\\caleb.kester\\Documents\\GitHub\\Sitefinity",
+			"file_exclude_patterns": ["*.css", "*.sublime-project"],
+			"folder_exclude_patterns": [".sass-cache", "css"]
+		}
+	]
+}

@@ -100,50 +100,67 @@
 	"buffers":
 	[
 		{
-			"file": "Framework/config.rb",
+			"contents": "#Boilerplate Documentation\n\n##Prepros Config\n - Options\n   - More -> Filter Patterns - Add `.js` \n\n##Sass Structure\n - http://thesassway.com/beginner/how-to-structure-a-sass-project\n\n##SF Info\n - Folder Structure\n   - http://www.sitefinity.com/documentation/documentationarticles/designer-s-guide/website-templates-file-structure\n - http://www.sitefinity.com/documentation/documentationarticles/designer-s-guide\n\n\n\n\nApply Theme Globally\n - Administration -> Settings -> Advanced -> Appearance -> `DefaultFrontEndTheme` change the name.\n\n\n\n Add this to web.config inside one of the <system.webServer> (should be already added)\n\n```\n<httpProtocol>\n  <customHeaders>\n    <add name=\"X-UA-Compatible\" value=\"IE=edge\" />\n  </customHeaders>\n</httpProtocol>\n```\n",
+			"file": "WebsiteTemplates/README.md",
+			"file_size": 652,
+			"file_write_time": 130251123662845345,
 			"settings":
 			{
-				"buffer_size": 1662,
+				"buffer_size": 754,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "/C/Users/caleb.kester/Documents/GitHub/Sitefinity/boilerplate/README.md",
+			"contents": "<%@ Master Language=\"C#\" AutoEventWireup=\"true\" %>\n<!DOCTYPE html>\n<!--[if lt IE 8]><html class=\"no-js lt-ie10 lt-ie9 lt-ie8\" lang=\"en\"><![endif]-->\n<!--[if IE 8]>   <html class=\"no-js lt-ie10 lt-ie9\" lang=\"en\"><![endif]-->\n<!--[if IE 9]>   <html class=\"no-js lt-ie10\" lang=\"en\"><![endif]-->\n<!--[if gt IE 9]><!-->\n<html lang=\"en\" class=\"no-js\"><!--<![endif]-->\n	<head runat=\"server\">\n		<title></title>\n		<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n		<meta name=\"msapplication-window\" content=\"width=1024;height=768\" />\n		<%-- Use as Needed\n		<meta name=\"msapplication-starturl\" content=\"./\" />\n		<meta name=\"msapplication-navbutton-color\" content=\"#E72C53\" />\n		<meta name=\"msapplication-TileColor\" content=\"#E72C53\" />\n		<meta name=\"msapplication-TileImage\" content=\"/Sitefinity/WebsiteTemplates/Boilerplate/App_Themes/Boilerplate/Icons/apple-touch-icon-144-precomposed.png\" />\n		<link rel=\"shortcut icon\" href=\"/Sitefinity/WebsiteTemplates/Boilerplate/App_Themes/Boilerplate/Icons/favicon.ico\" />\n		<link rel=\"shortcut icon\" href=\"/Sitefinity/WebsiteTemplates/Boilerplate/App_Themes/Boilerplate/Icons/apple-touch-icon-144-precomposed.png\" />\n		<link rel=\"apple-touch-icon-precomposed\" sizes=\"144x144\" href=\"/Sitefinity/WebsiteTemplates/Boilerplate/App_Themes/Boilerplate/Icons/apple-touch-icon-144-precomposed.png\" />\n		<link rel=\"apple-touch-icon-precomposed\" sizes=\"114x114\" href=\"/Sitefinity/WebsiteTemplates/Boilerplate/App_Themes/Boilerplate/Icons/apple-touch-icon-114-precomposed.png\" />\n		<link rel=\"apple-touch-icon-precomposed\" sizes=\"72x72\" href=\"/Sitefinity/WebsiteTemplates/Boilerplate/App_Themes/Boilerplate/Icons/apple-touch-icon-72-precomposed.png\" />\n		<link rel=\"apple-touch-icon-precomposed\" href=\"/Sitefinity/WebsiteTemplates/Boilerplate/App_Themes/Boilerplate/Icons/apple-touch-icon-57-precomposed.png\" />\n		--%>\n\n		<!-- Needs to be linked correctly -->\n		<!-- <link rel=\"stylesheet\" href=\"../css/main.css\"> -->\n		<!-- Needs to be linked correctly -->\n		<!-- <script src=\"../js/modernizr.custom.js\"></script>-->\n	</head>\n	<body class=\"template-XXXXX\">\n		<form id=\"form1\" runat=\"server\">\n			<asp:ScriptManager ID=\"ScriptManager1\" runat=\"server\" />\n			<header class=\"header\"> \n				<div class=\"container\">\n					<div class=\"grid_12\">\n						<asp:contentplaceholder id=\"Header\" runat=\"server\" />\n					</div>\n				</div>\n			</header>\n			<div class=\"container\">\n				<div class=\"grid_12\">\n					<asp:contentplaceholder id=\"Content\" runat=\"server\" />\n				</di\n			</div>\n			<footer class=\"footer\">\n				<div class=\"container\">\n					<div class=\"grid_12\">\n						<asp:contentplaceholder id=\"Footer\" runat=\"server\" />\n					</div>\n				</div>\n			</footer>\n			<!--\n			<script src=\"../js/jquery-1.9.1.min.js\"></script>\n			<script src=\"../js/respond.min.js\"></script>\n			<script src=\"../js/lodash.compat.min.js\"></script>\n			<script src=\"../js/jquery.fitvids.js\"></script>\n			<script src=\"../js/jquery-plugins.js\"></script>\n			-->\n		</form>\n	</body>\n	</html>\n\n	</body>\n	</html>",
+			"file": "//CL-TOTAL-4WB01/wwwroot/sitefinitybox.com/App_Data/Sitefinity/WebsiteTemplates/Framework/App_Master/template.master",
+			"file_size": 3065,
+			"file_write_time": 130251153129126694,
 			"settings":
 			{
-				"buffer_size": 98,
+				"buffer_size": 3002,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "Framework/_templates/interior-content.jade",
+			"file": "WebsiteTemplates/Framework/App_Master/Framework.master",
 			"settings":
 			{
-				"buffer_size": 2521,
+				"buffer_size": 2749,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "<%@ Master Language=\"C#\" AutoEventWireup=\"true\" %>\n<%@ Register Src=\"~/App_Data/Sitefinity/WebsiteTemplates/Boilerplate/App_Master/MetaData.ascx\" TagPrefix=\"uc\" TagName=\"MetaData\" %>\n<%@ Register Assembly=\"Telerik.Sitefinity\" Namespace=\"Telerik.Sitefinity.Web.UI\" TagPrefix=\"sf\" %>\n<%@ Register Assembly=\"Telerik.Sitefinity\" Namespace=\"Telerik.Sitefinity.Web.UI.PublicControls\" TagPrefix=\"sf\" %>\n<%@ Import Namespace=\"Telerik.Sitefinity.Localization\" %>\n<!DOCTYPE html>\n<!--[if lt IE 8]><html class=\"no-js lt-ie10 lt-ie9 lt-ie8\" lang=\"en\"><![endif]-->\n<!--[if IE 8]>   <html class=\"no-js lt-ie10 lt-ie9\" lang=\"en\"><![endif]-->\n<!--[if IE 9]>   <html class=\"no-js lt-ie10\" lang=\"en\"><![endif]-->\n<!--[if gt IE 9]><!-->\n<html lang=\"en\" class=\"no-js\"><!--<![endif]-->\n<head id=\"head\" runat=\"server\">\n	<meta http-equiv=\"content-type\" content=\"text/html; charset=utf-8\" />\n	<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\n	<uc:MetaData runat=\"server\" ID=\"FalafelMetaData\" />\n	<sf:javascriptembedcontrol id=\"script1\" runat=\"server\" scriptembedposition=\"InPlace\" url=\"/Sitefinity/WebsiteTemplates/Boilerplate/App_Themes/Boilerplate/js/modernizr.custom.js\" />\n	<sf:resourcelinks id=\"ResourceLinks1\" runat=\"server\">\n		<sf:ResourceFile JavaScriptLibrary=\"JQuery\" />\n		<%--<sf:ResourceFile Name=\"Telerik.Sitefinity.Resources.Scripts.Kendo.kendo.all.min.js\" />--%>\n	</sf:resourcelinks>\n</head>\n<body class=\"template-XXXXX\">\n	<form id=\"aspnetForm\" runat=\"server\">\n		<telerik:RadScriptManager ID=\"RadScriptManager1\" EnableScriptGlobalization=\"True\" EnableScriptLocalization=\"False\" runat=\"server\" ></telerik:RadScriptManager>\n		<div id=\"PublicWrapper\"\n		<a href=\"#main\" id=\"sfSkip\" class=\"visuallyhidden\"><asp:Literal ID=\"skipToMainContentLiteral\" runat=\"server\" Text='<%$Resources:PageResources, SkipToTheMainContent %>' /></a>\n		<header class=\"header\"> \n			<div class=\"container\">\n				<div class=\"grid_12\">\n					<asp:contentplaceholder id=\"Header\" runat=\"server\" />\n				</div>\n			</div>\n		</header>\n		<div class=\"container\">\n			<div class=\"grid_12\" role=\"main\">\n				<asp:contentplaceholder id=\"Content\" runat=\"server\" />\n			</di\n		</div>\n		<footer class=\"footer\" role=\"contentinfo\">\n			<div class=\"container\">\n				<div class=\"grid_12\">\n					<asp:contentplaceholder id=\"Footer\" runat=\"server\" />\n				</div>\n			</div>\n		</footer>\n\n		<div id=\"ScriptWrapper\" runat=\"server\">\n		<%--\n			<script type=\"text/javascript\" src=\"/Sitefinity/WebsiteTemplates/Boilerplate/App_Themes/Boilerplate/js/jquery-plugins.js\"></script>\n			<script type=\"text/javascript\" src=\"/Sitefinity/WebsiteTemplates/Boilerplate/App_Themes/Boilerplate/js/jquery-functions.js\"></script>\n		--%>\n			<asp:ContentPlaceHolder ID=\"cph_scriptsandstyles\" runat=\"server\" />\n		</div>\n	</form>\n</body>\n</html>\n",
+			"file": "//CL-TOTAL-4WB01/wwwroot/sitefinitybox.com/App_Data/Sitefinity/WebsiteTemplates/Framework/App_Master/Framework.master",
+			"file_size": 2752,
+			"file_write_time": 130251200809265970,
+			"settings":
+			{
+				"buffer_size": 2775,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "//CL-TOTAL-4WB01/wwwroot/sitefinitybox.com/App_Data/Sitefinity/WebsiteTemplates/Boilerplate/App_Master/Boilerplate.master",
+			"settings":
+			{
+				"buffer_size": 2749,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "//CL-TOTAL-4WB01/wwwroot/sitefinitybox.com/App_Data/Sitefinity/WebsiteTemplates/Boilerplate/App_Themes/Boilerplate/config.rb",
+			"settings":
+			{
+				"buffer_size": 1707,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "Framework/_templates/_footer.jade",
+			"file": "//CL-TOTAL-4WB01/wwwroot/sitefinitybox.com/App_Data/Sitefinity/WebsiteTemplates/Boilerplate/App_Themes/Boilerplate/templates/_head.jade",
 			"settings":
 			{
-				"buffer_size": 55,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "Framework/_templates/_header.jade",
-			"settings":
-			{
-				"buffer_size": 50,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "Framework/_templates/interior.jade",
-			"settings":
-			{
-				"buffer_size": 718,
+				"buffer_size": 241,
 				"line_ending": "Windows"
 			}
 		}
@@ -151,9 +168,53 @@
 	"build_system": "",
 	"command_palette":
 	{
-		"height": 85.0,
+		"height": 160.0,
 		"selected_items":
 		[
+			[
+				"ss css",
+				"Set Syntax: CSS"
+			],
+			[
+				"reind",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"reinde",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"ss htmlasp",
+				"Set Syntax: HTML (ASP)"
+			],
+			[
+				"package list",
+				"Package Control: List Packages"
+			],
+			[
+				"packagein",
+				"Package Control: Install Package"
+			],
+			[
+				"packageen",
+				"Package Control: Enable Package"
+			],
+			[
+				"packagedis",
+				"Package Control: Disable Package"
+			],
+			[
+				"package dis",
+				"Package Control: Disable Package"
+			],
+			[
+				"reindent",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"wor",
+				"Word Wrap: Toggle"
+			],
 			[
 				"ss jade",
 				"Set Syntax: Jade"
@@ -165,10 +226,6 @@
 			[
 				"encode",
 				"HTML: Encode Special Characters"
-			],
-			[
-				"reind",
-				"Indentation: Reindent Lines"
 			],
 			[
 				"riend",
@@ -195,10 +252,6 @@
 				"HTML: Encode Special Characters"
 			],
 			[
-				"reinde",
-				"Indentation: Reindent Lines"
-			],
-			[
 				"ss asp",
 				"Set Syntax: ASP"
 			],
@@ -213,10 +266,6 @@
 			[
 				"packageinst",
 				"Package Control: Install Package"
-			],
-			[
-				"reindent",
-				"Indentation: Reindent Lines"
 			],
 			[
 				"packageup",
@@ -259,14 +308,6 @@
 				"Package Control: Disable Package"
 			],
 			[
-				"packagein",
-				"Package Control: Install Package"
-			],
-			[
-				"package dis",
-				"Package Control: Disable Package"
-			],
-			[
 				"reein",
 				"Indentation: Reindent Lines"
 			],
@@ -287,10 +328,6 @@
 				"Package Control: Disable Package"
 			],
 			[
-				"ss css",
-				"Set Syntax: CSS"
-			],
-			[
 				"ss htm",
 				"Set Syntax: HTML5"
 			],
@@ -305,10 +342,6 @@
 			[
 				"ss php",
 				"Set Syntax: PHP"
-			],
-			[
-				"package list",
-				"Package Control: List Packages"
 			],
 			[
 				"package en",
@@ -373,10 +406,6 @@
 			[
 				"ss ja",
 				"Set Syntax: JavaScript"
-			],
-			[
-				"wor",
-				"Word Wrap: Toggle"
 			],
 			[
 				"ss html asp",
@@ -494,6 +523,10 @@
 		"height": 125.0,
 		"history":
 		[
+			"60*14",
+			"72*16",
+			"60*16",
+			"16*48",
 			"30 /24. ",
 			"30 /24 ",
 			"39/32",
@@ -541,12 +574,68 @@
 	},
 	"file_history":
 	[
+		"/C/Users/caleb.kester/Documents/GitHub/Sitefinity/WebsiteTemplates/Framework/App_Master/Boilerplate.master",
+		"//CL-TOTAL-4WB01/wwwroot/sitefinitybox.com/App_Data/Sitefinity/WebsiteTemplates/Boilerplate/App_Master/Boilerplate.master",
+		"/C/Users/caleb.kester/Documents/GitHub/Sitefinity/WebsiteTemplates/Framework/App_Themes/Framework/Styles/icons.css",
+		"/C/Users/caleb.kester/Documents/GitHub/Sitefinity/WebsiteTemplates/Framework/App_Themes/Framework/Styles/BrowseAndEdit.css",
+		"//CL-TOTAL-4WB01/wwwroot/sitefinitybox.com/App_Data/Sitefinity/WebsiteTemplates/Boilerplate/App_Themes/Boilerplate/templates/_footer.jade",
+		"/C/Users/caleb.kester/Documents/GitHub/Sitefinity/WebsiteTemplates/Framework/App_Themes/Framework/sass/vendor/_sf-admin.scss",
+		"//CL-TOTAL-4WB01/wwwroot/sitefinitybox.com/App_Data/Sitefinity/WebsiteTemplates/Boilerplate/App_Themes/Boilerplate/Global/cssLoadOrder.xml",
+		"//CL-TOTAL-4WB01/wwwroot/sitefinitybox.com/App_Data/Sitefinity/WebsiteTemplates/Boilerplate/JS/script.bottom.min.js",
+		"//CL-TOTAL-4WB01/wwwroot/sitefinitybox.com/App_Data/Sitefinity/WebsiteTemplates/Boilerplate/App_Master/MetaData.ascx",
+		"//CL-TOTAL-4WB01/wwwroot/sitefinitybox.com/App_Data/Sitefinity/WebsiteTemplates/Boilerplate/readme.md",
+		"//CL-TOTAL-4WB01/wwwroot/sitefinitybox.com/App_Data/Sitefinity/WebsiteTemplates/Boilerplate/App_Themes/Boilerplate/Global/sfnormalize.css",
+		"//CL-TOTAL-4WB01/wwwroot/sitefinitybox.com/App_Data/Sitefinity/WebsiteTemplates/Boilerplate/App_Themes/Boilerplate/Global/sfproject.css",
+		"//CL-TOTAL-4WB01/wwwroot/sitefinitybox.com/App_Data/Sitefinity/WebsiteTemplates/Boilerplate/JS/script.top.min.js",
+		"//CL-TOTAL-4WB01/wwwroot/sitefinitybox.com/App_Data/Sitefinity/WebsiteTemplates/Framework/App_Themes/Framework/Global/cssLoadOrder.xml",
+		"//CL-TOTAL-4WB01/wwwroot/sitefinitybox.com/App_Data/Sitefinity/WebsiteTemplates/Boilerplate/App_Themes/Boilerplate/Global/sfproject.min.css",
+		"//CL-TOTAL-4WB01/wwwroot/sitefinitybox.com/App_Data/Sitefinity/WebsiteTemplates/Boilerplate/App_Themes/Boilerplate/Global/sfnormalize.min.css",
+		"//CL-TOTAL-4WB01/wwwroot/sitefinitybox.com/web.config",
+		"/C/Users/caleb.kester/Documents/GitHub/Sitefinity/boilerplate/App_Themes/Framework/config.rb",
+		"/C/Users/caleb.kester/Documents/GitHub/Sitefinity/boilerplate/Themes/Framework/sass/modules/_utilities.scss",
+		"/C/Users/caleb.kester/Documents/GitHub/Sitefinity/boilerplate/README.md",
+		"//CL-TOTAL-4WB01/wwwroot/sitefinitybox.com/App_Data/Sitefinity/WebsiteTemplates/Framework/App_Themes/Framework/css/main.css",
+		"//CL-TOTAL-4WB01/wwwroot/sitefinitybox.com/App_Data/Sitefinity/WebsiteTemplates/Framework/App_Themes/Framework/Global/main.css",
+		"/C/Users/caleb.kester/Documents/GitHub/Sitefinity/boilerplate/App_Master/template.master",
+		"/C/Users/caleb.kester/Documents/GitHub/Sitefinity/README.md",
+		"/C/Users/caleb.kester/Documents/GitHub/Sitefinity/sitefinity.sublime-project",
+		"/C/Users/caleb.kester/Documents/GitHub/Sitefinity/.gitignore",
+		"/C/Users/caleb.kester/Documents/GitHub/Sitefinity/boilerplate/App_Themes/Framework/templates/interior-content.html",
+		"/C/Users/caleb.kester/Documents/GitHub/Sitefinity/boilerplate/Themes/Framework/config.rb",
+		"/C/Users/caleb.kester/Documents/GitHub/Sitefinity/boilerplate/Themes/Framework/sass/partials/_base.scss",
+		"/C/Users/caleb.kester/Documents/GitHub/Sitefinity/boilerplate/Themes/Framework/sass/main.scss",
+		"/C/Users/caleb.kester/Documents/GitHub/Sitefinity/boilerplate/Themes/Framework/templates/interior-content.html",
+		"/C/Users/caleb.kester/Documents/GitHub/Sitefinity/boilerplate/Themes/Framework/sass/partials/_sprites.scss",
+		"/C/Users/caleb.kester/Documents/GitHub/Sitefinity/boilerplate/Themes/Framework/sass/partials/_typography.scss",
+		"/C/Users/caleb.kester/Documents/GitHub/Sitefinity/boilerplate/Themes/Framework/sass/partials/_print.scss",
+		"/C/Users/caleb.kester/Documents/GitHub/Sitefinity/boilerplate/Themes/Framework/css/main.css",
+		"/C/Users/caleb.kester/Documents/GitHub/Sitefinity/boilerplate/Themes/Framework/sass/partials/_grid-fluid.scss",
+		"/C/Users/caleb.kester/Documents/GitHub/Sitefinity/boilerplate/Themes/Framework/templates/_head.jade",
+		"/C/Users/caleb.kester/Documents/GitHub/Sitefinity/boilerplate/Themes/Framework/sass/vendor/_sf-admin.scss",
+		"/C/Users/caleb.kester/Documents/GitHub/Sitefinity/boilerplate/Themes/Framework/sass/vendor/_sf-boilerplate.scss",
+		"/C/Users/caleb.kester/Documents/GitHub/Sitefinity/boilerplate/Themes/Framework/sass/vendor/_sfadmin.scss",
+		"/C/Users/caleb.kester/Documents/GitHub/Sitefinity/boilerplate/Themes/Framework/templates/interior.jade",
+		"/C/Users/caleb.kester/Documents/GitHub/Sitefinity/boilerplate/Themes/Framework/templates/_footer.jade",
+		"//CL-TOTAL-4WB01/wwwroot/championparking-design.com/web/modules/navigation/TopNav.ascx.vb",
+		"//CL-TOTAL-4WB01/wwwroot/championparking-design.com/web/modules/navigation/TopNav.ascx",
+		"//CL-TOTAL-4WB01/wwwroot/championparking-design.com/cms/modules/Header.ascx",
+		"/C/Users/caleb.kester/Documents/GitHub/Sitefinity/boilerplate/Themes/Framework/templates/_header.jade",
+		"/C/Users/caleb.kester/Documents/GitHub/Sitefinity/boilerplate/Themes/Framework/sass/vendor/_boilerplate.scss",
+		"/C/Users/caleb.kester/Documents/GitHub/Sitefinity/boilerplate/Themes/Framework/css/style.css",
+		"/C/Users/caleb.kester/Documents/GitHub/Sitefinity/boilerplate/Themes/Framework/css/admin.css",
+		"/C/Users/caleb.kester/Documents/GitHub/Sitefinity/boilerplate/Themes/sitefinity-framework.sublime-project",
+		"/C/Users/caleb.kester/Documents/GitHub/Sitefinity/boilerplate/Themes/Framework/sass/vendor/_admin.scss",
+		"/C/Users/caleb.kester/Documents/GitHub/Sitefinity/boilerplate/Themes/Framework/templates/_scripts.jade",
+		"/C/Users/caleb.kester/Documents/GitHub/Sitefinity/boilerplate/Themes/Framework/sass/partials/_utilities.scss",
+		"/C/Users/caleb.kester/Documents/GitHub/Sitefinity/boilerplate/Themes/Framework/_templates/_footer.jade",
+		"/C/Users/caleb.kester/Documents/GitHub/Sitefinity/boilerplate/Themes/Framework/_templates/_header.jade",
+		"/C/Users/caleb.kester/Documents/GitHub/Sitefinity/boilerplate/Themes/Framework/_templates/interior-content.jade",
+		"/C/Users/caleb.kester/Documents/GitHub/Sitefinity/boilerplate/Themes/Framework/_templates/interior.jade",
 		"/C/Users/caleb.kester/Documents/GitHub/Sitefinity/boilerplate/Themes/Framework/_templates/railnav.jade",
 		"/C/Users/caleb.kester/Documents/GitHub/Sitefinity/boilerplate/Themes/Framework/_templates/_scripts.jade",
 		"/C/Users/caleb.kester/Documents/GitHub/Sitefinity/boilerplate/Themes/Framework/js/jquery-functions.js",
 		"/C/Users/caleb.kester/Documents/GitHub/Sitefinity/boilerplate/Themes/Framework/js/jquery-plugins.js",
 		"/C/Users/caleb.kester/Documents/GitHub/Sitefinity/boilerplate/Themes/Framework/js/jquery-1.9.1.min.js",
-		"/C/Users/caleb.kester/Documents/GitHub/Sitefinity/boilerplate/Themes/sitefinity-framework.sublime-project",
 		"/C/Users/caleb.kester/Documents/GitHub/Sitefinity/sublimeproject.sublime-project",
 		"/C/sites/jcr/config.rb",
 		"/C/sites/jcr/cms/includes/sass/_grid-fluid.scss",
@@ -612,63 +701,7 @@
 		"//CL-TOTAL-4WB02/wwwroot/maplehurstfarms-design.com/cms/includes/mobile/jquery-functions-mobile.js",
 		"//CL-TOTAL-4WB01/wwwroot/berettaintl-staging.com/web/includes/functions.js.aspx",
 		"//CL-TOTAL-4WB01/wwwroot/berettaintl-staging.com/web/modules/Store/FindDealer.ascx",
-		"//cl-spasn-4wb01/wwwroot/templates.com/calebkester/jkcf/css/style.css",
-		"//CL-TOTAL-4WB02/wwwroot/maplehurstfarms-design.com/cms/includes/mobile/jquery-plugins-mobile.js",
-		"//CL-TOTAL-4WB01/wwwroot/berettaintl-staging.com/web/cms/includes/css/style.css",
-		"//CL-TOTAL-4WB01/wwwroot/berettaintl-staging.com/web/cms/includes/jquery-functions.js",
-		"//CL-TOTAL-4WB01/wwwroot/berettaintl-staging.com/web/modules/Store/Item/TabControls/ItemReviews.ascx",
-		"//CL-TOTAL-4WB01/wwwroot/berettaintl-staging.com/web/cms/templates/mobile/product-detail.html",
-		"//CL-TOTAL-4WB01/wwwroot/berettaintl-staging.com/web/cms/templates/mobile/interior.html",
-		"//CL-TOTAL-4WB01/wwwroot/berettaintl-staging.com/web/cms/templates/mobile/dealer.html",
-		"//CL-TOTAL-4WB01/wwwroot/berettaintl-staging.com/web/cms/templates/mobile/dealer-list.html",
-		"//CL-TOTAL-4WB01/wwwroot/berettaintl-staging.com/web/cms/templates/mobile/dealer-detail.html",
-		"//CL-TOTAL-4WB01/wwwroot/berettaintl-staging.com/web/cms/templates/mobile/bclub.html",
-		"//CL-TOTAL-4WB01/wwwroot/berettaintl-staging.com/web/cms/templates/mobile/product-list.html",
-		"//CL-TOTAL-4WB01/wwwroot/berettaintl-staging.com/web/modules/Store/Checkout.ascx.vb",
-		"//CL-TOTAL-4WB01/wwwroot/berettaintl-staging.com/web/modules/navigation/LeftNav.ascx",
-		"//CL-TOTAL-4WB01/wwwroot/berettaintl-staging.com/web/modules/Store/CheckoutLogin.ascx",
-		"//CL-TOTAL-4WB01/wwwroot/berettaintl-staging.com/web/modules/Store/Item/ItemReviewSummary.ascx",
-		"/C/sites/Framework/cms/includes/css/buttons.css",
-		"/C/sites/Framework/grid - Copy.md",
-		"//CL-TOTAL-4WB01/wwwroot/weathertech-racing-design.com/weathertech-racing/App_Master/col1.master",
-		"/C/Users/caleb.kester/Documents/Sublime Text 2 Build 2181 x64/Data/Packages/User/Preferences.sublime-settings",
-		"/C/sites/Framework/_config.yml",
-		"//cl-spasn-4wb01/wwwroot/templates.com/calebkester/projects/BerettaUSA.sublime-workspace",
-		"/C/Users/caleb.kester/Documents/GitHub/Framework/docs/grid.html",
-		"//CL-TOTAL-4WB01/wwwroot/@GMT-2013.07.09-12.00.25/berettaintl-staging.com/web/modules/Store/Checkout.ascx",
-		"//CL-TOTAL-4WB01/wwwroot/berettaintl-staging.com/cms/includes/store.css",
-		"/C/inetpub/Beretta.sublime-project",
-		"//CL-TOTAL-4WB01/wwwroot/berettaintl-staging.com/cms/includes/jquery-functions.js",
-		"//CL-TOTAL-4WB01/wwwroot/berettaintl-staging.com/cms/includes/css/hawksearch.css",
-		"//CL-TOTAL-4WB01/wwwroot/berettaintl-staging.com/web/modules/search/HawkSearch.ascx",
-		"//CL-TOTAL-4WB01/wwwroot/berettaintl-staging.com/cms/includes/css/style.css",
-		"//CL-TOTAL-4WB01/wwwroot/berettaintl-staging.com/web/modules/search/HawkSearchLeftNav.ascx",
-		"//CL-TOTAL-4WB01/wwwroot/berettaintl-staging.com/web/modules/search/HawkSearch.ascx.vb",
-		"//CL-TOTAL-4WB01/wwwroot/berettaintl-design.com/cms/templates/mobile/product-list.html",
-		"//CL-TOTAL-4WB01/wwwroot/berettaintl-staging.com/web/modules/mobile/StoreList.ascx",
-		"//CL-TOTAL-4WB01/wwwroot/berettaintl-staging.com/web/modules/members/Register.ascx.vb",
-		"//CL-TOTAL-4WB01/wwwroot/berettaintl-staging.com/web/modules/members/Register.ascx",
-		"//CL-TOTAL-4WB01/wwwroot/berettaintl-staging.com/cms/includes/css/mobile.css",
-		"//CL-TOTAL-4WB01/wwwroot/berettaintl-staging.com/cms/includes/js/jquery-mobile.js",
-		"//cl-spasn-4wb01/wwwroot/templates.com/calebkester/projects/BerettaUSA",
-		"//CL-TOTAL-4WB01/wwwroot/berettaintl-staging.com/web/modules/mobile/StoreList.ascx.vb",
-		"//CL-TOTAL-4WB01/wwwroot/berettaintl-design.com/cms/templates/mobile/interior.html",
-		"//CL-TOTAL-4WB01/wwwroot/berettaintl-staging.com/web/modules/faq/FAQ.ascx",
-		"//CL-TOTAL-4WB01/wwwroot/berettaintl-staging.com/cms/includes/css/global.css",
-		"//CL-TOTAL-4WB01/wwwroot/berettaintl-design.com/web/modules/PageHeadingMobile.ascx",
-		"//CL-TOTAL-4WB01/wwwroot/berettaintl-design.com/cms/templates/mobile/home.html",
-		"//CL-TOTAL-4WB01/wwwroot/manusdental-design.com/web/modules/locations/LocationDetail.ascx",
-		"//CL-TOTAL-4WB01/wwwroot/manusdental-design.com/web/modules/locations/LocationDetail.ascx.vb",
-		"//CL-TOTAL-4WB01/wwwroot/manusdental-design.com/web/modules/events/Event.ascx.vb",
-		"//CL-TOTAL-4WB01/wwwroot/manusdental-design.com/web/modules/events/Event.ascx",
-		"//CL-TOTAL-4WB01/wwwroot/manusdental-design.com/web/modules/events/Day.ascx",
-		"//CL-TOTAL-4WB01/wwwroot/manusdental-design.com/web/modules/events/Day.ascx.vb",
-		"//CL-TOTAL-4WB01/wwwroot/manusdental-design.com/web/modules/navigation/Breadcrumb.ascx",
-		"//CL-TOTAL-4WB01/wwwroot/manusdental-design.com/web/modules/navigation/Breadcrumb.ascx.vb",
-		"//CL-TOTAL-4WB01/wwwroot/manusdental-design.com/ckeditor/ckeditor.js",
-		"//CL-TOTAL-4WB01/wwwroot/berettaintl-staging.com/web/modules/navigation/TopNavMobile.ascx",
-		"//CL-TOTAL-4WB01/wwwroot/berettaintl-staging.com/web/modules/navigation/TopSubNavMobile.ascx",
-		"//CL-TOTAL-4WB01/wwwroot/berettaintl-staging.com/web/modules/navigation/TopNavMobile.ascx.vb"
+		"//cl-spasn-4wb01/wwwroot/templates.com/calebkester/jkcf/css/style.css"
 	],
 	"find":
 	{
@@ -691,6 +724,25 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"JS",
+			"cpw_main",
+			"InPlace",
+			"sf",
+			"PublicControls",
+			"Telerik.Sitefinity.Web.UI",
+			"requestlimits",
+			"system.webserver",
+			"div",
+			"$grid-gutter",
+			"    ",
+			"  ",
+			"#b3d4fc",
+			"10px",
+			"import \"",
+			"\"",
+			"../",
+			"size",
+			"$context",
 			"cms/includes",
 			"/cms/",
 			"itemList",
@@ -799,26 +851,7 @@
 			"				img",
 			"</",
 			"li",
-			"img",
-			":",
-			"toughness",
-			"3c",
-			"filter-options",
-			"0.5em",
-			"item",
-			"aside",
-			".btn",
-			"standout",
-			"\n		li",
-			"		li",
-			"		li ",
-			"item",
-			"1em",
-			"itemList",
-			"’",
-			"true, true",
-			"{{URL}}",
-			"object"
+			"img"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -842,51 +875,24 @@
 	"groups":
 	[
 		{
-			"selected": 5,
+			"selected": 3,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "Framework/config.rb",
+					"file": "WebsiteTemplates/README.md",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1662,
+						"buffer_size": 754,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								309,
-								309
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Ruby/Ruby.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 42.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "/C/Users/caleb.kester/Documents/GitHub/Sitefinity/boilerplate/README.md",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 98,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								98,
-								98
+								645,
+								645
 							]
 						],
 						"settings":
@@ -900,52 +906,79 @@
 					"type": "text"
 				},
 				{
-					"buffer": 2,
-					"file": "Framework/_templates/interior-content.jade",
+					"buffer": 1,
+					"file": "//CL-TOTAL-4WB01/wwwroot/sitefinitybox.com/App_Data/Sitefinity/WebsiteTemplates/Framework/App_Master/template.master",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2521,
+						"buffer_size": 3002,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								226,
-								86
+								2683,
+								2195
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Jade/Syntaxes/Jade.tmLanguage"
+							"syntax": "Packages/ASP/HTML-ASP.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 450.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "WebsiteTemplates/Framework/App_Master/Framework.master",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2749,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1864,
+								1865
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/ASP/HTML-ASP.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 90.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 3,
-					"file": "Framework/_templates/_footer.jade",
+					"file": "//CL-TOTAL-4WB01/wwwroot/sitefinitybox.com/App_Data/Sitefinity/WebsiteTemplates/Framework/App_Master/Framework.master",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 55,
+						"buffer_size": 2775,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								55,
-								55
+								1663,
+								1663
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Jade/Syntaxes/Jade.tmLanguage"
+							"syntax": "Packages/ASP/HTML-ASP.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -955,24 +988,24 @@
 				},
 				{
 					"buffer": 4,
-					"file": "Framework/_templates/_header.jade",
+					"file": "//CL-TOTAL-4WB01/wwwroot/sitefinitybox.com/App_Data/Sitefinity/WebsiteTemplates/Boilerplate/App_Master/Boilerplate.master",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 50,
+						"buffer_size": 2749,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								50,
-								50
+								0,
+								0
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Jade/Syntaxes/Jade.tmLanguage"
+							"syntax": "Packages/ASP/HTML-ASP.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -982,19 +1015,46 @@
 				},
 				{
 					"buffer": 5,
-					"file": "Framework/_templates/interior.jade",
+					"file": "//CL-TOTAL-4WB01/wwwroot/sitefinitybox.com/App_Data/Sitefinity/WebsiteTemplates/Boilerplate/App_Themes/Boilerplate/config.rb",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 718,
+						"buffer_size": 1707,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								718,
-								718
+								1357,
+								1357
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "//CL-TOTAL-4WB01/wwwroot/sitefinitybox.com/App_Data/Sitefinity/WebsiteTemplates/Boilerplate/App_Themes/Boilerplate/templates/_head.jade",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 241,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								182,
+								182
 							]
 						],
 						"settings":
@@ -1053,7 +1113,7 @@
 	{
 		"height": 96.0
 	},
-	"project": "sitefinity-framework.sublime-project",
+	"project": "sitefinity.sublime-project",
 	"replace":
 	{
 		"height": 62.0
@@ -1064,6 +1124,34 @@
 		"height": 0.0,
 		"selected_items":
 		[
+			[
+				"utili",
+				"sass\\modules\\_utilities.scss"
+			],
+			[
+				"boiler",
+				"sass\\vendor\\_boilerplate.scss"
+			],
+			[
+				"util",
+				"sass\\modules\\_utilities.scss"
+			],
+			[
+				"gridf",
+				"sass\\partials\\_grid-fluid.scss"
+			],
+			[
+				"spri",
+				"sass\\partials\\_sprites.scss"
+			],
+			[
+				"main",
+				"sass\\main.scss"
+			],
+			[
+				"typogra",
+				"sass\\partials\\_typography.scss"
+			],
 			[
 				"railn",
 				"_templates\\railnav.jade"
@@ -1079,10 +1167,6 @@
 			[
 				"blog",
 				"blog.jade"
-			],
-			[
-				"util",
-				"cms\\includes\\sass\\_utilities.scss"
 			],
 			[
 				"grid",
@@ -1107,10 +1191,6 @@
 			[
 				"typg",
 				"cms\\includes\\sass\\_typography.scss"
-			],
-			[
-				"utili",
-				"cms\\includes\\sass\\_utilities.scss"
 			],
 			[
 				"software.jade",
@@ -1147,10 +1227,6 @@
 			[
 				"home.jade",
 				"home.jade"
-			],
-			[
-				"boiler",
-				"cms\\includes\\sass\\_boilerplate.scss"
 			],
 			[
 				"softa",
@@ -1559,22 +1635,6 @@
 			[
 				"style.cs",
 				"Staging/cms/includes/css/style.css"
-			],
-			[
-				"stagingstore.css",
-				"Staging/cms/includes/store.css"
-			],
-			[
-				"staginggloba",
-				"Staging/cms/includes/css/global.css"
-			],
-			[
-				"stagingstyle",
-				"Staging/cms/includes/css/style.css"
-			],
-			[
-				"firearmdetail",
-				"Design/cms/templates/firearm-detail.html"
 			]
 		],
 		"width": 0.0
@@ -1584,6 +1644,18 @@
 		"height": 500.0,
 		"selected_items":
 		[
+			[
+				"weat",
+				"C:\\inetpub\\WeatherTechRacing.sublime-project"
+			],
+			[
+				"we",
+				"C:\\inetpub\\WeatherTechRacing.sublime-project"
+			],
+			[
+				"site",
+				"C:\\Users\\caleb.kester\\Documents\\GitHub\\Sitefinity\\boilerplate\\Themes\\sitefinity-framework.sublime-workspace"
+			],
 			[
 				"mw",
 				"C:\\sites\\mwall.sublime-project"
@@ -1661,10 +1733,6 @@
 				"C:\\inetpub\\WeatherTechRacing.sublime-project"
 			],
 			[
-				"we",
-				"C:\\inetpub\\WeatherTechRacing.sublime-project"
-			],
-			[
 				"weatherte",
 				"C:\\inetpub\\WeatherTechRacing.sublime-project"
 			],
@@ -1675,10 +1743,6 @@
 			[
 				"bascom",
 				"/C/inetpub/BascomeProject.sublime-project"
-			],
-			[
-				"weat",
-				"/C/inetpub/WeatherTechRacing.sublime-project"
 			],
 			[
 				"hill",

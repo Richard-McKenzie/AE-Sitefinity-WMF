@@ -624,6 +624,11 @@ textarea {
   box-sizing: content-box;
 }
 
+/* line 24, ../sass/vendor/_sf-admin.scss */
+body.standard.sfPageEditor.zeContentMode div#ScriptWrapper:before {
+  content: "-- ONLY PLACE STYLE WIDGETS AND SCRIPT WIDGETS BELOW THIS AREA --";
+}
+
 /* ================================================================
    IMAGE SPRITES
    ================================================================ */

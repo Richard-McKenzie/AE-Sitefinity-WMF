@@ -1,0 +1,55 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" %>
+<%@ Register Src="~/App_Data/Sitefinity/WebsiteTemplates/Boilerplate/App_Master/MetaData.ascx" TagPrefix="uc" TagName="MetaData" %>
+<%@ Register Assembly="Telerik.Sitefinity" Namespace="Telerik.Sitefinity.Web.UI" TagPrefix="sf" %>
+<%@ Register Assembly="Telerik.Sitefinity" Namespace="Telerik.Sitefinity.Web.UI.PublicControls" TagPrefix="sf" %>
+<%@ Import Namespace="Telerik.Sitefinity.Localization" %>
+<!DOCTYPE html>
+<!--[if lt IE 8]><html class="no-js lt-ie10 lt-ie9 lt-ie8" lang="en"><![endif]-->
+<!--[if IE 8]>   <html class="no-js lt-ie10 lt-ie9" lang="en"><![endif]-->
+<!--[if IE 9]>   <html class="no-js lt-ie10" lang="en"><![endif]-->
+<!--[if gt IE 9]><!-->
+<html lang="en" class="no-js"><!--<![endif]-->
+<head id="head" runat="server">
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<uc:MetaData runat="server" ID="FalafelMetaData" />
+	<sf:javascriptembedcontrol id="script1" runat="server" scriptembedposition="InPlace" url="/Sitefinity/WebsiteTemplates/Boilerplate/App_Themes/Boilerplate/js/modernizr.custom.js" />
+	<sf:resourcelinks id="ResourceLinks1" runat="server">
+		<sf:ResourceFile JavaScriptLibrary="JQuery" />
+		<%--<sf:ResourceFile Name="Telerik.Sitefinity.Resources.Scripts.Kendo.kendo.all.min.js" />--%>
+	</sf:resourcelinks>
+</head>
+<body class="template-XXXXX">
+	<form id="aspnetForm" runat="server">
+		<telerik:RadScriptManager ID="RadScriptManager1" EnableScriptGlobalization="True" EnableScriptLocalization="False" runat="server" ></telerik:RadScriptManager>
+		<a href="#main" id="sfSkip" class="visuallyhidden"><asp:Literal ID="skipToMainContentLiteral" runat="server" Text='<%$Resources:PageResources, SkipToTheMainContent %>' /></a>
+		<header class="header"> 
+			<div class="container">
+				<div class="grid_12">
+					<asp:contentplaceholder id="Header" runat="server" />
+				</div>
+			</div>
+		</header>
+		<div class="container">
+			<div class="grid_12" role="main">
+				<asp:contentplaceholder id="Content" runat="server" />
+			</div>
+		</div>
+		<footer class="footer" role="contentinfo">
+			<div class="container">
+				<div class="grid_12">
+					<asp:contentplaceholder id="Footer" runat="server" />
+				</div>
+			</div>
+		</footer>
+
+		<div id="ScriptWrapper" runat="server">
+		<%--
+			<script type="text/javascript" src="/Sitefinity/WebsiteTemplates/Boilerplate/App_Themes/Boilerplate/js/jquery-plugins.js"></script>
+			<script type="text/javascript" src="/Sitefinity/WebsiteTemplates/Boilerplate/App_Themes/Boilerplate/js/jquery-functions.js"></script>
+		--%>
+			<asp:ContentPlaceHolder ID="cph_scriptsandstyles" runat="server" />
+		</div>
+	</form>
+</body>
+</html>

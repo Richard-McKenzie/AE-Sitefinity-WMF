@@ -20,3 +20,7 @@
      -moz-box-sizing: content-box;
           box-sizing: content-box;
 }
+
+body.standard.sfPageEditor.zeContentMode div#ScriptWrapper:before {
+  content: "-- ONLY PLACE STYLE WIDGETS AND SCRIPT WIDGETS BELOW THIS AREA --";
+}
