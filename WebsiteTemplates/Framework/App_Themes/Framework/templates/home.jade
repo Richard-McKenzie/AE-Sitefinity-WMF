@@ -10,14 +10,12 @@ html(class='no-js', lang='en')
 	<!--<![endif]-->
 	head
 		title= Interior
-		include _head
+		include partials/_head
 	body.template-interior
-		include _header
+		include partials/_header
 		.container
-			.grid_9.push_3.main
-				block content
-					p Main Content
-			aside.grid_3.pull_9
-				include railnav
-		include _footer
-		include _scripts
+			.grid-12.main
+					p Main Content 
+					include partials/_tabs
+		include partials/_footer
+		include partials/_scripts

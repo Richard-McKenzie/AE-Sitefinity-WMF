@@ -1,0 +1,117 @@
+/* ================================================================
+   Menu Styles
+   ================================================================ */
+
+.menu-toggle {
+
+	.no-js {
+		display: none; 
+	}
+
+	@include breakpoint(l) {
+		display: none;
+	}
+
+}
+
+.menu, .menu li, .menu ul {
+	display: block;
+	margin: 0;
+	padding: 0;
+}
+
+.menu { 
+	display: none; 
+
+	&.active {
+		display: block;
+	}
+
+	li {
+		position: relative;
+	}
+
+	a {
+		position: relative;
+		z-index: 1;
+		display: block;
+		padding: 1em;
+		text-decoration: none;
+		color: #5a5a5a;
+		background: #e8e8e8;
+
+		&:hover,
+		&:focus {
+			background: #dcdcdc;
+			text-decoration: none;
+		}
+	}
+
+	ul {
+		display: none;
+
+		&.active {
+			display: block;
+		}
+
+		a {
+			padding-left: 2em;
+		}
+	}
+
+	.menu-sub-expand {
+		position: absolute;
+		z-index: 10;
+		top: 0;
+		right: 0;
+		cursor: pointer;  
+
+		&:before {
+			content: '\2b';
+		}
+
+		&.active:before {
+			content: '\2013';
+		}
+	}
+
+	// Large Device Styles
+	@include breakpoint(l){
+		display: table;
+		width: 100%;
+
+		> li {
+			display: table-cell;
+		}
+
+		.menu-sub-expand {
+			display: none; 
+		}
+
+		.menu-item-wrap {
+			position: relative;
+		}
+
+		ul {
+			position: absolute;
+			top: 100%;
+			left: 0;
+			width: 100%;
+
+			// Might need to change this, this is to over ride the active state added by mobile
+			&.active {
+				display: none;
+			}
+		}
+
+		ul ul {
+			top: 0;
+			left: 100%;
+		}
+
+		> li:hover > .menu-item-wrap > ul,
+		li:hover > ul{
+			display: block;
+		}
+	}
+}

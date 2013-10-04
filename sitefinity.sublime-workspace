@@ -100,10 +100,7 @@
 	"buffers":
 	[
 		{
-			"contents": "#Boilerplate Documentation\n\n##Prepros Config\n - Options\n   - More -> Filter Patterns - Add `.js` \n\n##Sass Structure\n - http://thesassway.com/beginner/how-to-structure-a-sass-project\n\n##SF Info\n - Folder Structure\n   - http://www.sitefinity.com/documentation/documentationarticles/designer-s-guide/website-templates-file-structure\n - http://www.sitefinity.com/documentation/documentationarticles/designer-s-guide\n\n\n\n\nApply Theme Globally\n - Administration -> Settings -> Advanced -> Appearance -> `DefaultFrontEndTheme` change the name.\n\n\n\n Add this to web.config inside one of the <system.webServer> (should be already added)\n\n```\n<httpProtocol>\n  <customHeaders>\n    <add name=\"X-UA-Compatible\" value=\"IE=edge\" />\n  </customHeaders>\n</httpProtocol>\n```\n",
 			"file": "WebsiteTemplates/README.md",
-			"file_size": 652,
-			"file_write_time": 130251123662845345,
 			"settings":
 			{
 				"buffer_size": 754,
@@ -111,56 +108,34 @@
 			}
 		},
 		{
-			"contents": "<%@ Master Language=\"C#\" AutoEventWireup=\"true\" %>\n<!DOCTYPE html>\n<!--[if lt IE 8]><html class=\"no-js lt-ie10 lt-ie9 lt-ie8\" lang=\"en\"><![endif]-->\n<!--[if IE 8]>   <html class=\"no-js lt-ie10 lt-ie9\" lang=\"en\"><![endif]-->\n<!--[if IE 9]>   <html class=\"no-js lt-ie10\" lang=\"en\"><![endif]-->\n<!--[if gt IE 9]><!-->\n<html lang=\"en\" class=\"no-js\"><!--<![endif]-->\n	<head runat=\"server\">\n		<title></title>\n		<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n		<meta name=\"msapplication-window\" content=\"width=1024;height=768\" />\n		<%-- Use as Needed\n		<meta name=\"msapplication-starturl\" content=\"./\" />\n		<meta name=\"msapplication-navbutton-color\" content=\"#E72C53\" />\n		<meta name=\"msapplication-TileColor\" content=\"#E72C53\" />\n		<meta name=\"msapplication-TileImage\" content=\"/Sitefinity/WebsiteTemplates/Boilerplate/App_Themes/Boilerplate/Icons/apple-touch-icon-144-precomposed.png\" />\n		<link rel=\"shortcut icon\" href=\"/Sitefinity/WebsiteTemplates/Boilerplate/App_Themes/Boilerplate/Icons/favicon.ico\" />\n		<link rel=\"shortcut icon\" href=\"/Sitefinity/WebsiteTemplates/Boilerplate/App_Themes/Boilerplate/Icons/apple-touch-icon-144-precomposed.png\" />\n		<link rel=\"apple-touch-icon-precomposed\" sizes=\"144x144\" href=\"/Sitefinity/WebsiteTemplates/Boilerplate/App_Themes/Boilerplate/Icons/apple-touch-icon-144-precomposed.png\" />\n		<link rel=\"apple-touch-icon-precomposed\" sizes=\"114x114\" href=\"/Sitefinity/WebsiteTemplates/Boilerplate/App_Themes/Boilerplate/Icons/apple-touch-icon-114-precomposed.png\" />\n		<link rel=\"apple-touch-icon-precomposed\" sizes=\"72x72\" href=\"/Sitefinity/WebsiteTemplates/Boilerplate/App_Themes/Boilerplate/Icons/apple-touch-icon-72-precomposed.png\" />\n		<link rel=\"apple-touch-icon-precomposed\" href=\"/Sitefinity/WebsiteTemplates/Boilerplate/App_Themes/Boilerplate/Icons/apple-touch-icon-57-precomposed.png\" />\n		--%>\n\n		<!-- Needs to be linked correctly -->\n		<!-- <link rel=\"stylesheet\" href=\"../css/main.css\"> -->\n		<!-- Needs to be linked correctly -->\n		<!-- <script src=\"../js/modernizr.custom.js\"></script>-->\n	</head>\n	<body class=\"template-XXXXX\">\n		<form id=\"form1\" runat=\"server\">\n			<asp:ScriptManager ID=\"ScriptManager1\" runat=\"server\" />\n			<header class=\"header\"> \n				<div class=\"container\">\n					<div class=\"grid_12\">\n						<asp:contentplaceholder id=\"Header\" runat=\"server\" />\n					</div>\n				</div>\n			</header>\n			<div class=\"container\">\n				<div class=\"grid_12\">\n					<asp:contentplaceholder id=\"Content\" runat=\"server\" />\n				</di\n			</div>\n			<footer class=\"footer\">\n				<div class=\"container\">\n					<div class=\"grid_12\">\n						<asp:contentplaceholder id=\"Footer\" runat=\"server\" />\n					</div>\n				</div>\n			</footer>\n			<!--\n			<script src=\"../js/jquery-1.9.1.min.js\"></script>\n			<script src=\"../js/respond.min.js\"></script>\n			<script src=\"../js/lodash.compat.min.js\"></script>\n			<script src=\"../js/jquery.fitvids.js\"></script>\n			<script src=\"../js/jquery-plugins.js\"></script>\n			-->\n		</form>\n	</body>\n	</html>\n\n	</body>\n	</html>",
-			"file": "//CL-TOTAL-4WB01/wwwroot/sitefinitybox.com/App_Data/Sitefinity/WebsiteTemplates/Framework/App_Master/template.master",
-			"file_size": 3065,
-			"file_write_time": 130251153129126694,
+			"file": "WebsiteTemplates/Framework/App_Themes/Framework/templates/home.jade",
 			"settings":
 			{
-				"buffer_size": 3002,
+				"buffer_size": 485,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "WebsiteTemplates/Framework/App_Master/Framework.master",
+			"file": "WebsiteTemplates/Framework/App_Themes/Framework/sass/partials/_menu.scss",
 			"settings":
 			{
-				"buffer_size": 2749,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"contents": "<%@ Master Language=\"C#\" AutoEventWireup=\"true\" %>\n<%@ Register Src=\"~/App_Data/Sitefinity/WebsiteTemplates/Boilerplate/App_Master/MetaData.ascx\" TagPrefix=\"uc\" TagName=\"MetaData\" %>\n<%@ Register Assembly=\"Telerik.Sitefinity\" Namespace=\"Telerik.Sitefinity.Web.UI\" TagPrefix=\"sf\" %>\n<%@ Register Assembly=\"Telerik.Sitefinity\" Namespace=\"Telerik.Sitefinity.Web.UI.PublicControls\" TagPrefix=\"sf\" %>\n<%@ Import Namespace=\"Telerik.Sitefinity.Localization\" %>\n<!DOCTYPE html>\n<!--[if lt IE 8]><html class=\"no-js lt-ie10 lt-ie9 lt-ie8\" lang=\"en\"><![endif]-->\n<!--[if IE 8]>   <html class=\"no-js lt-ie10 lt-ie9\" lang=\"en\"><![endif]-->\n<!--[if IE 9]>   <html class=\"no-js lt-ie10\" lang=\"en\"><![endif]-->\n<!--[if gt IE 9]><!-->\n<html lang=\"en\" class=\"no-js\"><!--<![endif]-->\n<head id=\"head\" runat=\"server\">\n	<meta http-equiv=\"content-type\" content=\"text/html; charset=utf-8\" />\n	<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\n	<uc:MetaData runat=\"server\" ID=\"FalafelMetaData\" />\n	<sf:javascriptembedcontrol id=\"script1\" runat=\"server\" scriptembedposition=\"InPlace\" url=\"/Sitefinity/WebsiteTemplates/Boilerplate/App_Themes/Boilerplate/js/modernizr.custom.js\" />\n	<sf:resourcelinks id=\"ResourceLinks1\" runat=\"server\">\n		<sf:ResourceFile JavaScriptLibrary=\"JQuery\" />\n		<%--<sf:ResourceFile Name=\"Telerik.Sitefinity.Resources.Scripts.Kendo.kendo.all.min.js\" />--%>\n	</sf:resourcelinks>\n</head>\n<body class=\"template-XXXXX\">\n	<form id=\"aspnetForm\" runat=\"server\">\n		<telerik:RadScriptManager ID=\"RadScriptManager1\" EnableScriptGlobalization=\"True\" EnableScriptLocalization=\"False\" runat=\"server\" ></telerik:RadScriptManager>\n		<div id=\"PublicWrapper\"\n		<a href=\"#main\" id=\"sfSkip\" class=\"visuallyhidden\"><asp:Literal ID=\"skipToMainContentLiteral\" runat=\"server\" Text='<%$Resources:PageResources, SkipToTheMainContent %>' /></a>\n		<header class=\"header\"> \n			<div class=\"container\">\n				<div class=\"grid_12\">\n					<asp:contentplaceholder id=\"Header\" runat=\"server\" />\n				</div>\n			</div>\n		</header>\n		<div class=\"container\">\n			<div class=\"grid_12\" role=\"main\">\n				<asp:contentplaceholder id=\"Content\" runat=\"server\" />\n			</di\n		</div>\n		<footer class=\"footer\" role=\"contentinfo\">\n			<div class=\"container\">\n				<div class=\"grid_12\">\n					<asp:contentplaceholder id=\"Footer\" runat=\"server\" />\n				</div>\n			</div>\n		</footer>\n\n		<div id=\"ScriptWrapper\" runat=\"server\">\n		<%--\n			<script type=\"text/javascript\" src=\"/Sitefinity/WebsiteTemplates/Boilerplate/App_Themes/Boilerplate/js/jquery-plugins.js\"></script>\n			<script type=\"text/javascript\" src=\"/Sitefinity/WebsiteTemplates/Boilerplate/App_Themes/Boilerplate/js/jquery-functions.js\"></script>\n		--%>\n			<asp:ContentPlaceHolder ID=\"cph_scriptsandstyles\" runat=\"server\" />\n		</div>\n	</form>\n</body>\n</html>\n",
-			"file": "//CL-TOTAL-4WB01/wwwroot/sitefinitybox.com/App_Data/Sitefinity/WebsiteTemplates/Framework/App_Master/Framework.master",
-			"file_size": 2752,
-			"file_write_time": 130251200809265970,
-			"settings":
-			{
-				"buffer_size": 2775,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "//CL-TOTAL-4WB01/wwwroot/sitefinitybox.com/App_Data/Sitefinity/WebsiteTemplates/Boilerplate/App_Master/Boilerplate.master",
-			"settings":
-			{
-				"buffer_size": 2749,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "//CL-TOTAL-4WB01/wwwroot/sitefinitybox.com/App_Data/Sitefinity/WebsiteTemplates/Boilerplate/App_Themes/Boilerplate/config.rb",
-			"settings":
-			{
-				"buffer_size": 1707,
+				"buffer_size": 1466,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "//CL-TOTAL-4WB01/wwwroot/sitefinitybox.com/App_Data/Sitefinity/WebsiteTemplates/Boilerplate/App_Themes/Boilerplate/templates/_head.jade",
+			"file": "WebsiteTemplates/Framework/App_Themes/Framework/sass/main.scss",
 			"settings":
 			{
-				"buffer_size": 241,
+				"buffer_size": 654,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "WebsiteTemplates/Framework/App_Themes/Framework/templates/partials/_menu.jade",
+			"settings":
+			{
+				"buffer_size": 248,
 				"line_ending": "Windows"
 			}
 		}
@@ -168,20 +143,24 @@
 	"build_system": "",
 	"command_palette":
 	{
-		"height": 160.0,
+		"height": 310.0,
 		"selected_items":
 		[
-			[
-				"ss css",
-				"Set Syntax: CSS"
-			],
 			[
 				"reind",
 				"Indentation: Reindent Lines"
 			],
 			[
+				"reinden",
+				"Indentation: Reindent Lines"
+			],
+			[
 				"reinde",
 				"Indentation: Reindent Lines"
+			],
+			[
+				"ss css",
+				"Set Syntax: CSS"
 			],
 			[
 				"ss htmlasp",
@@ -218,10 +197,6 @@
 			[
 				"ss jade",
 				"Set Syntax: Jade"
-			],
-			[
-				"reinden",
-				"Indentation: Reindent Lines"
 			],
 			[
 				"encode",
@@ -574,12 +549,39 @@
 	},
 	"file_history":
 	[
-		"/C/Users/caleb.kester/Documents/GitHub/Sitefinity/WebsiteTemplates/Framework/App_Master/Boilerplate.master",
+		"/C/Users/caleb.kester/Documents/GitHub/Sitefinity/WebsiteTemplates/Framework/App_Themes/Framework/templates/partials/_tabs.jade",
+		"/C/Users/caleb.kester/Documents/GitHub/Sitefinity/WebsiteTemplates/Framework/App_Themes/Framework/js/jquery-functions.js",
+		"/C/Users/caleb.kester/Documents/GitHub/Sitefinity/WebsiteTemplates/Framework/App_Themes/Framework/sass/partials/_tabs.scss",
+		"/C/Users/caleb.kester/Documents/GitHub/Sitefinity/WebsiteTemplates/Framework/App_Themes/Framework/sass/partials/_tabs",
+		"/C/Users/caleb.kester/Documents/GitHub/Sitefinity/WebsiteTemplates/Framework/App_Themes/Framework/templates/partials/_scripts.jade",
+		"/C/Users/caleb.kester/Documents/GitHub/Sitefinity/WebsiteTemplates/Framework/App_Themes/Framework/templates/partials/_footer.jade",
+		"/C/Users/caleb.kester/Documents/GitHub/Sitefinity/WebsiteTemplates/Framework/App_Themes/Framework/templates/partials/_nav.jade",
+		"/C/Users/caleb.kester/Documents/GitHub/Sitefinity/WebsiteTemplates/Framework/App_Themes/Framework/templates/partials/_head.jade",
+		"/C/Users/caleb.kester/Documents/GitHub/Sitefinity/WebsiteTemplates/Framework/App_Themes/Framework/templates/partials/_header.jade",
+		"/C/Users/caleb.kester/Documents/GitHub/Sitefinity/WebsiteTemplates/Framework/App_Themes/Framework/sass/partials/_print.scss",
+		"/C/Users/caleb.kester/Documents/GitHub/Sitefinity/WebsiteTemplates/Framework/App_Themes/Framework/sass/partials/_typography.scss",
+		"/C/Users/caleb.kester/Documents/GitHub/Sitefinity/WebsiteTemplates/Framework/App_Themes/Framework/sass/partials/_grid-fluid.scss",
+		"/C/Users/caleb.kester/Documents/GitHub/Sitefinity/WebsiteTemplates/Framework/App_Themes/Framework/sass/partials/_sprites.scss",
+		"/C/Users/caleb.kester/Documents/GitHub/Sitefinity/WebsiteTemplates/Framework/App_Themes/Framework/sass/partials/_base.scss",
+		"/C/Users/caleb.kester/Documents/GitHub/Sitefinity/WebsiteTemplates/Framework/App_Themes/Framework/sass/vendor/_sf-boilerplate.scss",
+		"/C/Users/caleb.kester/Documents/GitHub/Sitefinity/WebsiteTemplates/Framework/App_Themes/Framework/sass/vendor/_sf-admin.scss",
+		"/C/Users/caleb.kester/Documents/GitHub/Sitefinity/WebsiteTemplates/Framework/App_Themes/Framework/sass/vendor/_normalize.scss",
+		"/C/Users/caleb.kester/Documents/GitHub/Sitefinity/WebsiteTemplates/README.md",
+		"//CL-TOTAL-4WB01/wwwroot/sitefinitybox.com/App_Data/Sitefinity/WebsiteTemplates/Framework/App_Master/template.master",
+		"/C/Users/caleb.kester/Documents/GitHub/Sitefinity/WebsiteTemplates/Framework/App_Themes/Framework/templates/_footer.jade",
+		"//CL-TOTAL-4WB01/wwwroot/sitefinitybox.com/App_Data/Sitefinity/WebsiteTemplates/Boilerplate/App_Themes/Boilerplate/config.rb",
 		"//CL-TOTAL-4WB01/wwwroot/sitefinitybox.com/App_Data/Sitefinity/WebsiteTemplates/Boilerplate/App_Master/Boilerplate.master",
+		"/C/Users/caleb.kester/Documents/GitHub/Sitefinity/WebsiteTemplates/Framework/App_Themes/Framework/sass/modules/_utilities.scss",
+		"/C/Users/caleb.kester/Documents/GitHub/Sitefinity/WebsiteTemplates/Framework/App_Themes/Framework/templates/_head.jade",
+		"//CL-TOTAL-4WB01/wwwroot/sitefinitybox.com/App_Data/Sitefinity/WebsiteTemplates/Boilerplate/App_Themes/Boilerplate/templates/_head.jade",
+		"/C/Users/caleb.kester/Documents/GitHub/Sitefinity/sitefinity.sublime-project",
+		"/C/Users/caleb.kester/Documents/GitHub/Sitefinity/.gitignore",
+		"//CL-TOTAL-4WB01/wwwroot/sitefinitybox.com/App_Data/Sitefinity/WebsiteTemplates/Framework/App_Master/Framework.master",
+		"/C/Users/caleb.kester/Documents/GitHub/Sitefinity/WebsiteTemplates/Framework/App_Master/Framework.master",
+		"/C/Users/caleb.kester/Documents/GitHub/Sitefinity/WebsiteTemplates/Framework/App_Master/Boilerplate.master",
 		"/C/Users/caleb.kester/Documents/GitHub/Sitefinity/WebsiteTemplates/Framework/App_Themes/Framework/Styles/icons.css",
 		"/C/Users/caleb.kester/Documents/GitHub/Sitefinity/WebsiteTemplates/Framework/App_Themes/Framework/Styles/BrowseAndEdit.css",
 		"//CL-TOTAL-4WB01/wwwroot/sitefinitybox.com/App_Data/Sitefinity/WebsiteTemplates/Boilerplate/App_Themes/Boilerplate/templates/_footer.jade",
-		"/C/Users/caleb.kester/Documents/GitHub/Sitefinity/WebsiteTemplates/Framework/App_Themes/Framework/sass/vendor/_sf-admin.scss",
 		"//CL-TOTAL-4WB01/wwwroot/sitefinitybox.com/App_Data/Sitefinity/WebsiteTemplates/Boilerplate/App_Themes/Boilerplate/Global/cssLoadOrder.xml",
 		"//CL-TOTAL-4WB01/wwwroot/sitefinitybox.com/App_Data/Sitefinity/WebsiteTemplates/Boilerplate/JS/script.bottom.min.js",
 		"//CL-TOTAL-4WB01/wwwroot/sitefinitybox.com/App_Data/Sitefinity/WebsiteTemplates/Boilerplate/App_Master/MetaData.ascx",
@@ -598,8 +600,6 @@
 		"//CL-TOTAL-4WB01/wwwroot/sitefinitybox.com/App_Data/Sitefinity/WebsiteTemplates/Framework/App_Themes/Framework/Global/main.css",
 		"/C/Users/caleb.kester/Documents/GitHub/Sitefinity/boilerplate/App_Master/template.master",
 		"/C/Users/caleb.kester/Documents/GitHub/Sitefinity/README.md",
-		"/C/Users/caleb.kester/Documents/GitHub/Sitefinity/sitefinity.sublime-project",
-		"/C/Users/caleb.kester/Documents/GitHub/Sitefinity/.gitignore",
 		"/C/Users/caleb.kester/Documents/GitHub/Sitefinity/boilerplate/App_Themes/Framework/templates/interior-content.html",
 		"/C/Users/caleb.kester/Documents/GitHub/Sitefinity/boilerplate/Themes/Framework/config.rb",
 		"/C/Users/caleb.kester/Documents/GitHub/Sitefinity/boilerplate/Themes/Framework/sass/partials/_base.scss",
@@ -676,32 +676,7 @@
 		"//CL-TOTAL-4WB01/wwwroot/brightkey2013-design.com/Sitefinity 5.4/Projects/Default/Themes/BrightKey/js/jquery-functions.js",
 		"/C/sites/jcr - Copy/_layouts/column3.html",
 		"/C/sites/jcr/cms/includes/css/style.css",
-		"/C/sites/jcr/_includes/header.html",
-		"/C/sites/jcr/_layouts/column3.html",
-		"/C/sites/jcr/sass/style.scss",
-		"/C/sites/jcr/index.html",
-		"/C/sites/jcr/_includes/footer.html",
-		"/C/sites/jcr/css/grid-fluid.css",
-		"/C/sites/jcr/cms/images/layout/icons/menu-visible.png",
-		"/C/sites/jcr/css/typography.css",
-		"/C/sites/jcr/_layouts/default.html",
-		"/C/sites/jcr/project.sublime-project",
-		"/C/sites/jcr/interior.html",
-		"/C/sites/jcr/css/boilerplate.css",
-		"/C/sites/jcr/css/main.css",
-		"/C/sites/jcr/sass/buttons.css",
-		"/C/sites/jcr/_posts/2013-08-12-welcome-to-jekyll.markdown",
-		"//CL-TOTAL-4WB01/wwwroot/berettaintl-staging.com/web/cms/includes/jquery-functions-store.js",
-		"//CL-TOTAL-4WB01/wwwroot/berettaintl-staging.com/web/modules/Store/Checkout.ascx",
-		"//CL-TOTAL-4WB01/wwwroot/berettaintl-staging.com/web/modules/Store/Cart.ascx",
-		"//CL-TOTAL-4WB01/wwwroot/berettaintl-staging.com/web/modules/search/HawkSearchResults.ascx",
-		"//CL-TOTAL-4WB01/wwwroot/berettaintl-staging.com/web/modules/search/HawkSearchItems.ascx",
-		"//CL-TOTAL-4WB01/wwwroot/berettaintl-staging.com/web/modules/search/HawkSearchResults.ascx.vb",
-		"//CL-TOTAL-4WB01/wwwroot/berettaintl-staging.com/web/modules/Store/Item/ItemReviews.ascx",
-		"//CL-TOTAL-4WB02/wwwroot/maplehurstfarms-design.com/cms/includes/mobile/jquery-functions-mobile.js",
-		"//CL-TOTAL-4WB01/wwwroot/berettaintl-staging.com/web/includes/functions.js.aspx",
-		"//CL-TOTAL-4WB01/wwwroot/berettaintl-staging.com/web/modules/Store/FindDealer.ascx",
-		"//cl-spasn-4wb01/wwwroot/templates.com/calebkester/jkcf/css/style.css"
+		"/C/sites/jcr/_includes/header.html"
 	],
 	"find":
 	{
@@ -724,6 +699,29 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"tabNav",
+			"tabSection",
+			"tabHeader",
+			"tabPanel",
+			"tabHeader",
+			"tabNav",
+			"tabContent",
+			"tabSection",
+			"1",
+			"menu-item-wrap",
+			"menu-sub-expand",
+			"breakpoint(m",
+			"(m",
+			"m",
+			"menuItemWrap",
+			"menuSubExpand",
+			"navmain",
+			"_",
+			"suffix_",
+			"prefix_",
+			"pull_",
+			"push_",
+			"grid_",
 			"JS",
 			"cpw_main",
 			"InPlace",
@@ -828,30 +826,7 @@
 			"				.meta\n								.metaIte",
 			"title\n							a.",
 			"						.title\n							a(href=\"#\", alt=\"\") AMP",
-			"a(href=\"#\", alt=\"\")",
-			"tabContent",
-			"•",
-			"/* line 1",
-			"tabHeader",
-			"tab",
-			"tabs",
-			"tabSection",
-			"i",
-			"tabsSection",
-			"<a class",
-			"10px",
-			"col-2-5",
-			"border-radius",
-			";\n",
-			"storeItem",
-			"gridpadright",
-			"right",
-			"storeItemFinePrint",
-			"FinePrint",
-			"				img",
-			"</",
-			"li",
-			"img"
+			"a(href=\"#\", alt=\"\")"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -891,8 +866,8 @@
 						"selection":
 						[
 							[
-								645,
-								645
+								0,
+								0
 							]
 						],
 						"settings":
@@ -907,78 +882,78 @@
 				},
 				{
 					"buffer": 1,
-					"file": "//CL-TOTAL-4WB01/wwwroot/sitefinitybox.com/App_Data/Sitefinity/WebsiteTemplates/Framework/App_Master/template.master",
+					"file": "WebsiteTemplates/Framework/App_Themes/Framework/templates/home.jade",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 3002,
+						"buffer_size": 485,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2683,
-								2195
+								82,
+								82
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/ASP/HTML-ASP.tmLanguage"
+							"syntax": "Packages/Jade/Syntaxes/Jade.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 450.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 2,
-					"file": "WebsiteTemplates/Framework/App_Master/Framework.master",
+					"file": "WebsiteTemplates/Framework/App_Themes/Framework/sass/partials/_menu.scss",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2749,
+						"buffer_size": 1466,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1864,
-								1865
+								0,
+								1466
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/ASP/HTML-ASP.tmLanguage"
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 90.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 3,
-					"file": "//CL-TOTAL-4WB01/wwwroot/sitefinitybox.com/App_Data/Sitefinity/WebsiteTemplates/Framework/App_Master/Framework.master",
+					"file": "WebsiteTemplates/Framework/App_Themes/Framework/sass/main.scss",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2775,
+						"buffer_size": 654,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1663,
-								1663
+								438,
+								438
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/ASP/HTML-ASP.tmLanguage"
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -988,73 +963,19 @@
 				},
 				{
 					"buffer": 4,
-					"file": "//CL-TOTAL-4WB01/wwwroot/sitefinitybox.com/App_Data/Sitefinity/WebsiteTemplates/Boilerplate/App_Master/Boilerplate.master",
+					"file": "WebsiteTemplates/Framework/App_Themes/Framework/templates/partials/_menu.jade",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2749,
+						"buffer_size": 248,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/ASP/HTML-ASP.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"file": "//CL-TOTAL-4WB01/wwwroot/sitefinitybox.com/App_Data/Sitefinity/WebsiteTemplates/Boilerplate/App_Themes/Boilerplate/config.rb",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1707,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1357,
-								1357
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Ruby/Ruby.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 6,
-					"file": "//CL-TOTAL-4WB01/wwwroot/sitefinitybox.com/App_Data/Sitefinity/WebsiteTemplates/Boilerplate/App_Themes/Boilerplate/templates/_head.jade",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 241,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								182,
-								182
+								180,
+								180
 							]
 						],
 						"settings":
@@ -1124,6 +1045,42 @@
 		"height": 0.0,
 		"selected_items":
 		[
+			[
+				"function",
+				"WebsiteTemplates\\Framework\\App_Themes\\Framework\\js\\jquery-functions.js"
+			],
+			[
+				"script",
+				"WebsiteTemplates\\Framework\\App_Themes\\Framework\\templates\\partials\\_scripts.jade"
+			],
+			[
+				"footer",
+				"WebsiteTemplates\\Framework\\App_Themes\\Framework\\templates\\partials\\_footer.jade"
+			],
+			[
+				"functions",
+				"WebsiteTemplates\\Framework\\App_Themes\\Framework\\js\\jquery-functions.js"
+			],
+			[
+				"menu.jade",
+				"WebsiteTemplates\\Framework\\App_Themes\\Framework\\templates\\partials\\_menu.jade"
+			],
+			[
+				"header",
+				"WebsiteTemplates\\Framework\\App_Themes\\Framework\\templates\\partials\\_header.jade"
+			],
+			[
+				"head",
+				"WebsiteTemplates\\Framework\\App_Themes\\Framework\\templates\\partials\\_head.jade"
+			],
+			[
+				"nav",
+				"WebsiteTemplates\\Framework\\App_Themes\\Framework\\templates\\partials\\_nav.jade"
+			],
+			[
+				"head.jade",
+				"WebsiteTemplates\\Framework\\App_Themes\\Framework\\templates\\_head.jade"
+			],
 			[
 				"utili",
 				"sass\\modules\\_utilities.scss"
@@ -1213,10 +1170,6 @@
 				"cms\\includes\\js\\jquery.hoverIntent.minified.js"
 			],
 			[
-				"functions",
-				"cms\\includes\\js\\jquery-functions.js"
-			],
-			[
 				"stylesc",
 				"cms\\includes\\sass\\style.scss"
 			],
@@ -1241,16 +1194,8 @@
 				"cms\\includes\\js\\jquery-functions.js"
 			],
 			[
-				"header",
-				"_header.jade"
-			],
-			[
 				"typ",
 				"cms\\includes\\sass\\_typography.scss"
-			],
-			[
-				"footer",
-				"_footer.jade"
 			],
 			[
 				"interior",
@@ -1273,20 +1218,12 @@
 				"cms\\includes\\sass\\_typography.scss"
 			],
 			[
-				"head",
-				"_header.jade"
-			],
-			[
 				"uti",
 				"cms\\includes\\sass\\_utilities.scss"
 			],
 			[
 				"intero",
 				"interior.jade"
-			],
-			[
-				"function",
-				"cms\\includes\\js\\jquery-functions.js"
 			],
 			[
 				"grid-f",
@@ -1619,22 +1556,6 @@
 			[
 				"stagingmodulesstoreorderascx",
 				"Staging/web/modules/Store/Service/CheckOrder.ascx"
-			],
-			[
-				"jqueryplugin",
-				"Staging/cms/includes/jquery-plugins.js"
-			],
-			[
-				"templateitem",
-				"Staging/cms/templates/store/item.html"
-			],
-			[
-				"stagingitemvideo",
-				"Staging/web/modules/Store/Item/Video.ascx"
-			],
-			[
-				"style.cs",
-				"Staging/cms/includes/css/style.css"
 			]
 		],
 		"width": 0.0
@@ -1644,6 +1565,14 @@
 		"height": 500.0,
 		"selected_items":
 		[
+			[
+				"metlife",
+				"C:\\sites\\Metlife\\Metlife.sublime-project"
+			],
+			[
+				"metli",
+				"C:\\sites\\Metlife\\Metlife.sublime-project"
+			],
 			[
 				"weat",
 				"C:\\inetpub\\WeatherTechRacing.sublime-project"

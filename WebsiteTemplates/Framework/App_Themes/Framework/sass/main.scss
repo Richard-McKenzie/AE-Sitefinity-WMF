@@ -14,6 +14,8 @@ $font-sans: Arial, sans-serif;
 $font-serif: Times New Roman, serif;
 $font-body: Trebuchet;
 
+$body-bg: #fff;
+ 
 // SASS Functions and Modules
 @import "modules/utilities";
 
@@ -26,5 +28,7 @@ $font-body: Trebuchet;
 @import "partials/sprites";
 @import "partials/grid-fluid";
 @import "partials/typography";
+@import "partials/menu";
+@import "partials/tabs";
 @import "partials/base";
 @import "partials/print";
