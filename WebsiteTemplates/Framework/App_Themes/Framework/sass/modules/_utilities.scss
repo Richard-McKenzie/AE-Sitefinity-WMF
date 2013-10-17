@@ -75,27 +75,27 @@ $breakpoint-xl: 72em !default;
 	@if $point == retina {
 		@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) { @content; }
 	}
-	// 16px baseline (256px) s = small
+	// 16px baseline (256px) s = small (16em)
 	@else if $point == s {
 		@media (min-width: $breakpoint-s) { @content; }
 	}
-	// 16px baseline (256px - 767px) s-m = small TO medium
+	// 16px baseline (256px - 767px) s-m = small TO medium (16em - 47.938)
 	@else if $point == s-m {
 		@media (min-width:$breakpoint-s) and (max-width:$breakpoint-m - 0.1em)  { @content; }
 	}
-	// 16px baseline (768px) m = medium
+	// 16px baseline (768px) m = medium (48em)
 	@else if $point == m {
 		@media (min-width: $breakpoint-m) { @content; }
 	}
-	// 16px baseline (768px - 959px) m-l = medium TO large
+	// 16px baseline (768px - 959px) m-l = medium TO large (48em - 59.938)
 	@else if $point == m-l {
 		@media (min-width:$breakpoint-m) and (max-width:$breakpoint-l - 0.1em)  { @content; }
 	}
-	// 16px baseline (960px) l = large
+	// 16px baseline (960px) l = large (60em)
 	@else if $point == l {
 		@media (min-width: $breakpoint-l) { @content; }
 	}
-	// 16px baseline (1152px) lx = extra large
+	// 16px baseline (1152px) lx = extra large (72em)
 	@else if $point == xl {
 		@media (min-width: $breakpoint-xl) { @content; }
 	}
