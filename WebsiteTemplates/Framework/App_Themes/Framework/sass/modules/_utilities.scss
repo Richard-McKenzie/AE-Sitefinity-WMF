@@ -83,7 +83,15 @@ $breakpoint-xl: 72em !default;
 	@else if $point == s-m {
 		@media (min-width:$breakpoint-s) and (max-width:$breakpoint-m - 0.1em)  { @content; }
 	}
+<<<<<<< HEAD
+	// 16px baseline (256px - 959px) s-l = small TO large
+	@else if $point == s-l {
+		@media (min-width:$breakpoint-s) and (max-width:$breakpoint-l - 0.1em)  { @content; }
+	}
+	// 16px baseline (768px) m = medium
+=======
 	// 16px baseline (768px) m = medium (48em)
+>>>>>>> 5ef32de3bb124e47eae459afded2cbb0cf31f5b7
 	@else if $point == m {
 		@media (min-width: $breakpoint-m) { @content; }
 	}
