@@ -7,8 +7,9 @@ There are some sample layouts in the CustomLayouts folder. To use them paste thi
 	<sections>
 		<add enabled="True" title="Framework Layouts" description="Base Framework regions for layout management." name="Framework">
 			<tools>
-				<add enabled="True" type="Telerik.Sitefinity.Web.UI.LayoutControl" title="Grid 8 (Main) - 4" description="Grid 8 (Main) - 4" cssClass="test" layoutTemplate="~/App_Data/Sitefinity/WebsiteTemplates/Framework/CustomLayouts/Grid-8-4.ascx" visibilityMode="None" name="grid-8main-4" />
-				<add enabled="True" type="Telerik.Sitefinity.Web.UI.LayoutControl" title="Grid 4 - 8 (Main)" description="Grid 4 - 8 (Main)" cssClass="test" layoutTemplate="~/App_Data/Sitefinity/WebsiteTemplates/Framework/CustomLayouts/Grid-4-8.ascx" visibilityMode="None" name="grid-4-8main" />
+				<add title="Grid 8 - 4" description="Grid 8 - 4" cssClass="test" layoutTemplate="~/App_Data/Sitefinity/WebsiteTemplates/Framework/CustomLayouts/Grid-8-4.ascx" visibilityMode="None" name="grid-8main-4" enabled="True" type="Telerik.Sitefinity.Web.UI.LayoutControl" />
+				<add title="Grid 4 - 8" description="Grid 4 - 8" cssClass="test" layoutTemplate="~/App_Data/Sitefinity/WebsiteTemplates/Framework/CustomLayouts/Grid-4-8.ascx" visibilityMode="None" name="grid-4-8" enabled="True" type="Telerik.Sitefinity.Web.UI.LayoutControl" />
+				<add title="Grid 4 - 8 (Main)" description="Grid 4 - 8. Column 8 appears first on small devices." cssClass="test" layoutTemplate="~/App_Data/Sitefinity/WebsiteTemplates/Framework/CustomLayouts/Grid-4-8main.ascx" visibilityMode="None" name="grid-4-8main" enabled="True" type="Telerik.Sitefinity.Web.UI.LayoutControl" />
 			</tools>
 		</add>
 	</sections>
