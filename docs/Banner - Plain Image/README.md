@@ -1,6 +1,7 @@
 #Plain Image Banner
 This just contains an image and a link
-```HTML
+
+```ascx
 <%@ Control Language="C#" %>
 <%@ Register Assembly="Telerik.Sitefinity" Namespace="Telerik.Sitefinity.DynamicModules.Web.UI.Frontend" TagPrefix="sf" %>
 <%@ Register Assembly="Telerik.Sitefinity" Namespace="Telerik.Sitefinity.Web.UI.Fields" TagPrefix="sf" %>

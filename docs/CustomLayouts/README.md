@@ -1,8 +1,8 @@
 #Custom Layouts
 
-There are some sample layouts in the CustomLayouts folder. To use them paste this in your config file after the last </toolbox>: App_data\Sitefinity\Configuration\ToolboxesConfig.config
+There are some sample layouts in the CustomLayouts folder. To use them paste this in your config file after the last `</toolbox>`: App_data\Sitefinity\Configuration\ToolboxesConfig.config
 
-```
+```xml
 <toolbox name="PageLayouts">
 	<sections>
 		<add enabled="True" title="Framework Layouts" description="Base Framework regions for layout management." name="Framework">
@@ -21,10 +21,14 @@ There are some sample layouts in the CustomLayouts folder. To use them paste thi
 - sf_colsOut - This allows the ability to adjust column width/spacing in the admin as well as add classes to each column.
 - sf_colsIn (required) - This is where content can go. 
 
+###Oddities and Bugs
+ - When you edit the CustomLayout file, you need to go back into the page template that it's used on and save the page to refresh the CustomLayout.
+ - If you add a new layout, you'll need the admin to recognize it. This is done by just loading up Settings -> Administration -> Toolboxes -> PageLayouts -> Framework -> Tools . Just by loading up this page it will recognize your new layout.
+
 ##Basic Layout
 Stripped out version of the layout control. Just allows you to change the class of the container.
 
-```html
+```ascx
 <div runat="server" class="sf_cols container">
 	<div runat="server" class="sf_colsIn grid-8">
 	</div>
@@ -35,7 +39,7 @@ Stripped out version of the layout control. Just allows you to change the class 
 
 ##Sitefinity Base Layout
 
-```html
+```ascx
 <div runat="server" class="sf_cols container">
     <div runat="server" class="sf_colsOut grid-8">
         <div runat="server" class="sf_colsIn">
