@@ -10,17 +10,29 @@
 .sfLayoutPropsContainer,
 .sfVisualLayoutEditor,
 .sfPageContainer,
-.sfPageEditor [class^="sf"],
+// .sfPageEditor [class^="sf"], // Removing this as it breaks grids in the admin
 .sfPageEditor [class^="Rad"],
 .sfPageEditor [class^="rm"],
 .sfPageEditor [class^="rt"],
-.ZoneEditorToolboxContainer
+.sfPageBrowseAndEditToolbarWrp,
+.sfOpenBrowseAndEditMenuLnk,
+.ZoneEditorToolboxContainer,
+.ZoneEditorToolboxContainer *,
+.ZoneEditorToolboxContainer *:before,
+.ZoneEditorToolboxContainer *:after
  {
 	-webkit-box-sizing: content-box;
      -moz-box-sizing: content-box;
           box-sizing: content-box;
 }
 
-body.standard.sfPageEditor.zeContentMode div#ScriptWrapper:before {
+.ZoneEditorToolboxContainer h2 {
+	font-family: arial, sans-serif;
+}
+
+body.sfPageEditor.zeContentMode div#ScriptWrapper .RadDockZone:before {
   content: "-- ONLY PLACE STYLE WIDGETS AND SCRIPT WIDGETS BELOW THIS AREA --";
+  display: block;
+  text-align: center;
+  font-size: 12px;
 }
