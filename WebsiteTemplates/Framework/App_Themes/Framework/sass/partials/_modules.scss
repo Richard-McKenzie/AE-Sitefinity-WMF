@@ -1,0 +1,212 @@
+
+/* ==========================================================================
+   Global Modules
+   ========================================================================== */
+
+.mod{
+	position: relative;
+}
+
+.mod + .mod {
+	margin-top: 1em;
+}
+
+.modHead {
+	margin-bottom: 0.5em;
+}
+
+/*Clearfix */
+.modHead:after { 
+	content:'';
+	display: table;
+	clear: both;
+}
+
+.modHead .title {
+	display: inline-block;
+	margin: 0;
+}
+
+.modHead .more { 
+	float: right;
+	font-size: 0.8em;
+	margin-top: 0.5em;
+	margin-left: 0.5em;
+}
+
+.modContent{
+	padding: 1em;
+}
+
+
+/* Item Lists Content
+   ========================================================================== */
+
+.itemList { 
+	margin:0; 
+	padding:0; 
+	list-style:none; 
+}
+
+.item { 
+	display: table;
+	padding: 0.5em 0; 
+	width: 100%;
+	border-top: 1px solid #ccc; 
+}
+
+.item:first-child { 
+	border-top:0; 
+	padding-top:0; 
+}
+
+.item:last-child { 
+	padding-bottom: 0; 
+}
+
+.item > .itemContent {
+	display: table-cell;
+	width: 100%;
+	vertical-align: top;
+}
+
+.itemContent .title { 
+	margin:0; 
+}
+
+.itemList .itemContent p { 
+	margin: 0; 
+}
+
+.itemContent .date { 
+	font-size:.85em; 
+}
+
+
+/* Item Media
+   ========================================================================== */
+
+.aside { 
+	display: table-cell;
+	padding: 0 15px 0 0; 
+	text-align: center;
+}
+
+.caption {
+	display: block;
+	font-size: 0.8em;
+	line-height: 1.2em;
+}
+
+
+/* Media Queries for Item Lists 
+  ========================================================================== */
+
+@media (max-width : 400px) { 
+	.item { display: block; }
+	.item > .itemContent { display: block;}
+	.item > .aside { display: block;}
+}
+
+
+/* News
+   ========================================================================== */
+
+.article > .aside {
+	float:right; 
+	margin: 1em;
+}
+
+.meta {
+	margin:0.5em 0;
+}
+
+.metaItem {
+	float: left;
+}
+
+.meta .social-tools{
+	float: right;
+}
+
+
+/* ==========================================================================
+   Filters
+   ========================================================================== */
+
+.filter {
+	padding: 1em;
+	border: 1px solid #444444;
+	background: #cccccc;
+}
+
+.filter-options {
+	float: left;
+}
+
+.filter-actions {
+	float: right;
+}
+
+
+/* Pagination
+   ========================================================================== */
+
+.paging {
+	padding: 1em;
+}
+
+.paging-results { 
+	float: left;
+}
+
+.paging-list {
+	float: right;
+}
+
+.paging-list ul {
+	display: block;
+	padding: 0;
+	margin: 0;
+}
+
+.paging-list li {
+	display: block;
+	padding: 0;
+	margin: 0;
+	border: 1px solid #002B40;
+	border-left-width: 0;
+	float: left;
+}
+
+.paging-list li:first-child {
+	border-left-width: 1px;
+}
+
+.paging-list li a,
+.paging-list li span {
+	display: block;
+	min-width: 30px;
+	padding: 2px 5px;
+	text-align: center;
+}
+
+.paging-list li a {
+	/* Link State */
+}
+
+.paging-list li span {
+	/* Current Page State */
+}
+
+.paging-list li.disabled { 
+	display: none;
+}
+
+.paging-list li.disabled+li { 
+	border-left-width: 1px;
+}
+
+.paging-list li.disabled+.all {
+	border-left-width: 0;
+}

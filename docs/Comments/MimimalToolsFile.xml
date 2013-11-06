@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<root>
+	<modules>
+		<module name="RadEditorStatistics" dockingZone="Bottom" visible="false" />
+		<module name="RadEditorDomInspector" visible="false" />
+		<module name="RadEditorNodeInspector" visible="false" />
+		<module name="RadEditorHtmlInspector" visible="false" />
+	</modules>
+	<tools>
+		<tool name="Bold" shortcut="CTRL+B"/>
+		<tool name="Italic" shortcut="CTRL+I"/>
+		<tool separator="true"/>
+		<tool name="LinkManager" shortcut="CTRL+K"/>
+		<tool name="Unlink" shortcut="CTRL+SHIFT+K"/>
+		<tool separator="true"/>
+		<tool name="AjaxSpellCheck"/>
+	</tools>
+</root>
