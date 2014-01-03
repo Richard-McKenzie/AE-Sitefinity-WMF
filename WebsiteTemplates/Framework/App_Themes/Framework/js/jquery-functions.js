@@ -1,6 +1,61 @@
 
 jQuery(function($) {
 
+
+	/* Owl Carousel */
+
+	$(".slideshow").owlCarousel({
+		autoPlay : 10000,
+		stopOnHover : true,
+		navigation:false,
+		paginationSpeed : 1000,
+		goToFirstSpeed : 2000,
+		singleItem : true,
+		autoHeight : true,
+		// Navigation
+		navigation : true,
+		navigationText : ["Prev","Next"],
+		rewindNav : true,
+		scrollPerPage : false,
+		transitionStyle:"fade"
+	});
+
+	
+	/* Photo Galleries */
+
+	$('.popup').each(function(){
+		$(this).magnificPopup({ 
+			type: 'image'
+		});		
+	});
+
+	$('.popupimage').each(function(){
+		if (/(jpg|gif|png|JPG|GIF|PNG|JPEG|jpeg)$/.test($(this).attr('href'))){
+			$(this).magnificPopup({ 
+				type: 'image'
+			});
+		};
+	});
+
+	$('.gallery').each(function() { // the containers for all your galleries
+		$(this).magnificPopup({
+			delegate: '[data-popup=true]', // the selector for gallery item
+			type: 'image',
+			gallery: {
+				enabled:true
+			}
+		});
+	}); 
+
+	$('.sfproductImgsList').each(function() { // the containers for all your galleries
+		$(this).magnificPopup({
+			delegate: '[rel=fancybox]', // the selector for gallery item
+			type: 'image',
+			gallery: {
+				enabled: true
+			}
+		});
+	}); 
 	//Resizes videos to fit containers
 	$(".container").fitVids();
 

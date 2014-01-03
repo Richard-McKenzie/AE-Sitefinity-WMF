@@ -3,7 +3,8 @@
 $font-em-base: 14 !default;
 $main-font-size: 16px !default;
 
-$breakpoint-s: 16em !default;
+$breakpoint-s: 0em !default;
+$breakpoint-sm: 32em !default;
 $breakpoint-m: 48em !default;
 $breakpoint-l: 60em !default;
 $breakpoint-xl: 72em !default;
@@ -75,33 +76,34 @@ $breakpoint-xl: 72em !default;
 	@if $point == retina {
 		@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) { @content; }
 	}
-	// 16px baseline (256px) s = small (16em)
+	// 16px baseline (256px) s = small
 	@else if $point == s {
 		@media (min-width: $breakpoint-s) { @content; }
 	}
-	// 16px baseline (256px - 767px) s-m = small TO medium (16em - 47.938)
+	@else if $point == sm {
+		@media (min-width: $breakpoint-sm) { @content; }
+	}
+	// 16px baseline (256px - 767px) s-m = small TO medium
 	@else if $point == s-m {
 		@media (min-width:$breakpoint-s) and (max-width:$breakpoint-m - 0.1em)  { @content; }
 	}
-
 	// 16px baseline (256px - 959px) s-l = small TO large
 	@else if $point == s-l {
 		@media (min-width:$breakpoint-s) and (max-width:$breakpoint-l - 0.1em)  { @content; }
 	}
 	// 16px baseline (768px) m = medium
-	// 16px baseline (768px) m = medium (48em)
 	@else if $point == m {
 		@media (min-width: $breakpoint-m) { @content; }
 	}
-	// 16px baseline (768px - 959px) m-l = medium TO large (48em - 59.938)
+	// 16px baseline (768px - 959px) m-l = medium TO large
 	@else if $point == m-l {
 		@media (min-width:$breakpoint-m) and (max-width:$breakpoint-l - 0.1em)  { @content; }
 	}
-	// 16px baseline (960px) l = large (60em)
+	// 16px baseline (960px) l = large
 	@else if $point == l {
 		@media (min-width: $breakpoint-l) { @content; }
 	}
-	// 16px baseline (1152px) lx = extra large (72em)
+	// 16px baseline (1152px) lx = extra large
 	@else if $point == xl {
 		@media (min-width: $breakpoint-xl) { @content; }
 	}

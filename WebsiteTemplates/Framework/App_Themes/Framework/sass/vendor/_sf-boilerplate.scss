@@ -14,7 +14,9 @@ body { font-family: $font-body; line-height: 1.4; overflow-y: scroll; background
 ::selection { background: $link-selection; text-shadow: none; }
 
 hr { display: block; height: 1px; border: 0; border-top: 1px solid #ccc; margin: 1em 0; padding: 0;}
-img { vertical-align: middle; }
+img { vertical-align: middle; width: auto; height: auto; max-width: 100%; }
+.image-fluid, .image-fluid img { max-width: none; width: 100%; height: auto; }
+
 fieldset {border: 0;margin: 0; padding: 0; }
 textarea { resize: vertical; }
 
@@ -45,5 +47,15 @@ textarea { resize: vertical; }
 .floatLeft {float: left}
 
 .important {color: red; font-weight: bold; text-transform: uppercase; }
+.nowrap { white-space: nowrap }
 
 *, *:before, *:after { @include box-sizing(border-box); }
+
+// Text input areas
+.sfreContentArea {
+	background: #fff;
+}
+
+.Sitefinity.RadEditor, .Sitefinity.RadEditor * {
+	font-family: inherit;
+}

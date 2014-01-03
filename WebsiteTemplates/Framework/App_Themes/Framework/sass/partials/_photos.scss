@@ -1,0 +1,80 @@
+/* ================================================================
+   Photos Styles
+   ================================================================ */
+
+.gallery {
+	display: block;
+	margin: 0;
+	padding: 0;
+	font-size:50px;
+	text-align: center;
+
+	li {
+		position: relative;
+		display: inline-block;
+		margin: 0;
+		padding: 0;
+		@include x-rem(font-size, 14px);
+	}
+}
+
+.gallery-item {
+	display: block;
+	width: 114px;
+	height: 114px;
+	overflow: hidden;
+	@include transition(all 0.2s ease-out);
+	@include box-shadow(0 0 0em $color-base);
+
+	@include breakpoint(m) {
+		width: 180px;
+		height: 167px;	
+	}
+
+	@include breakpoint(l) {
+		width: 153px;
+		height: 153px;	
+	}
+
+	@include breakpoint(xl) {
+		width: 184px;
+		height: 167px;	
+	}
+
+	&:hover, &:focus {
+		@include box-shadow(0 0 1em $color-base);
+	}
+	
+	img {
+		min-width: 200px;
+		min-height: 167px;
+		max-width: initial;
+	}
+}
+
+.gallery-item-comment {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	display: inline-block;
+	padding: 4px 8px;
+	text-transform: uppercase;
+	background-color: #6A737B;
+	color: #fff;
+	text-decoration: none;
+	@include x-rem(font-size, 11px);
+	@include x-rem(line-height, 12px);
+
+	&:after{
+		@extend .icomoon-bubbles;
+		padding-left: 2px;
+	}
+
+	&:hover, &:focus {
+		background-color: darken(#6A737B, 5%);
+	}
+
+	&.sfcommentsEmpty {
+		display: none;
+	}
+}

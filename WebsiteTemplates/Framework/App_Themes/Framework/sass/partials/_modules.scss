@@ -3,93 +3,114 @@
    Global Modules
    ========================================================================== */
 
-.mod{
+.mod {
 	position: relative;
+	margin-bottom: $grid-gutter;
 }
 
-.mod + .mod {
-	margin-top: 1em;
-}
-
-.modHead {
-	margin-bottom: 0.5em;
-}
-
-/*Clearfix */
-.modHead:after { 
-	content:'';
-	display: table;
-	clear: both;
-}
-
-.modHead .title {
+.back, .sfimageBack, a.sfimageBack {
+	position: relative;
 	display: inline-block;
+	margin-bottom: 1em;
+	@include x-rem(padding-left, 10px);
+	font-family: $font-sans;
+	text-transform: uppercase;
+	color: $color-grey;
+	text-decoration: none;
+
+	&:before {
+		@extend .icomoon-back;
+		position: absolute;
+		display: inline-block;
+		@include x-rem(top, 5px);
+		left: 0;
+	}
+
+	&:hover, &:focus {
+		text-decoration: underline;
+	}
+}
+
+.mod-title .title {
 	margin: 0;
-}
-
-.modHead .more { 
-	float: right;
-	font-size: 0.8em;
-	margin-top: 0.5em;
-	margin-left: 0.5em;
-}
-
-.modContent{
-	padding: 1em;
 }
 
 
 /* Item Lists Content
    ========================================================================== */
 
-.itemList { 
+.mod-list { 
 	margin:0; 
 	padding:0; 
 	list-style:none; 
+
+	.item + .item {
+		margin-top: $grid-gutter;
+	}
+
+	.item {
+		position: relative;
+		padding: $grid-gutter;
+		background: hsl(0, 0%, 95%);
+
+		.title { 
+			margin:0; 
+
+			a {
+				text-decoration: none;
+
+				&:hover, &:focus {
+					text-decoration: underline;
+				}
+			}
+		}
+		
+		.meta {
+			margin-bottom: 1em;
+		}
+
+		.desc {
+			margin-bottom: 0.5em;
+		}
+
+		.more {
+			position: absolute;
+			right: $grid-gutter;
+			bottom: $grid-gutter / 3;
+			text-transform: uppercase;
+			text-decoration: none;
+			font-family: $font-sans;
+			color: #6a737b;
+			@include x-rem(font-size, 12px);
+
+			&:hover, &:focus {
+				text-decoration: underline;
+			}
+		}
+	}
 }
 
-.item { 
-	display: table;
-	padding: 0.5em 0; 
-	width: 100%;
-	border-top: 1px solid #ccc; 
-}
+.item-content {
 
-.item:first-child { 
-	border-top:0; 
-	padding-top:0; 
+	@include breakpoint(m) {
+		display: table-cell;
+		vertical-align: top;
+	}
 }
-
-.item:last-child { 
-	padding-bottom: 0; 
-}
-
-.item > .itemContent {
-	display: table-cell;
-	width: 100%;
-	vertical-align: top;
-}
-
-.itemContent .title { 
-	margin:0; 
-}
-
-.itemList .itemContent p { 
-	margin: 0; 
-}
-
-.itemContent .date { 
-	font-size:.85em; 
-}
-
 
 /* Item Media
    ========================================================================== */
 
 .aside { 
-	display: table-cell;
-	padding: 0 15px 0 0; 
 	text-align: center;
+	margin: 0 auto;
+
+	@include breakpoint(m) {
+		display: table-cell;
+		padding: 0 15px 0 0; 
+		margin: 0;
+		vertical-align: top;
+	}
 }
 
 .caption {
@@ -102,33 +123,87 @@
 /* Media Queries for Item Lists 
   ========================================================================== */
 
-@media (max-width : 400px) { 
-	.item { display: block; }
-	.item > .itemContent { display: block;}
-	.item > .aside { display: block;}
+// @media (max-width : 400px) { 
+// 	.item { display: block; }
+// 	.item > .item-content { display: block;}
+// 	.item > .aside { display: block;}
+// }
+
+
+/* Banner
+   ========================================================================== */
+
+.mod-banner {
+	text-align: center;
 }
 
+
+/* Events
+   ========================================================================== */
+
+.mod.event-banner {
+	margin-bottom: 0;
+}
+
+.mod-list {
+
+	.item {
+		display: block;
+
+		@include breakpoint(m) {
+			display: table;
+			width: 100%;
+		}
+	}
+
+	.media {
+		position: relative;
+		display: block;
+	}
+
+	.postStamp {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		@include opacity(0.9);
+	}
+
+	.aside {
+		width: 165px;
+	}
+}
+
+.mod-events {
+	@extend .mod-list;
+
+	.media {
+		min-height: 71px;
+	}
+}
 
 /* News
    ========================================================================== */
 
+.news.mod {
+	margin-bottom: 0;
+}
+
 .article > .aside {
-	float:right; 
+	float: right; 
 	margin: 1em;
 }
 
 .meta {
+	@include clearfix;
 	margin:0.5em 0;
 }
 
-.metaItem {
-	float: left;
+.meta-item {
+	float: left;	
+	margin-right: 0.5em;
+	font-family: Oswald, sans-serif;
+	text-transform: uppercase;
 }
-
-.meta .social-tools{
-	float: right;
-}
-
 
 /* ==========================================================================
    Filters
@@ -152,61 +227,100 @@
 /* Pagination
    ========================================================================== */
 
-.paging {
-	padding: 1em;
+.pager {
+	@extend .clearfix;
+	text-align: right;
+	margin-top: 1em;
+
+	a {
+		display: inline-block;
+		padding: 2px 7px;
+		text-decoration: none;
+		font-family: $font-sans;
+		background: hsl(0, 0%, 95%);
+		@include transition(all 0.2s ease-out);
+		margin-left: 3px;
+
+		&:hover, &:focus, &.sf_PagerCurrent{
+			color: $color-base;
+			background: hsl(0, 0%, 90%);
+		}
+	}
 }
 
-.paging-results { 
+.pager-archive {
 	float: left;
+	margin-top: 1em;
+
+	+ .pager {
+		float: right;
+	}
+
+	a {
+		display: inline-block;
+		padding: 2px 7px;
+		text-decoration: none;
+		font-family: $font-sans;
+		background: hsl(0, 0%, 95%);
+		@include transition(all 0.2s ease-out);
+		margin-right: 3px;
+
+		&:hover, &:focus {
+			color: $color-base;
+			background: hsl(0, 0%, 90%);
+		}
+	}
 }
 
-.paging-list {
-	float: right;
+/* Tags
+   ========================================================================== */
+
+.meta-tags {
+	margin-right: 0;
+	@include breakpoint(m) {
+		float: right;	
+	}
 }
 
-.paging-list ul {
-	display: block;
-	padding: 0;
+.sfTagsList {
+	display: inline-block;
 	margin: 0;
-}
-
-.paging-list li {
-	display: block;
 	padding: 0;
-	margin: 0;
-	border: 1px solid #002B40;
-	border-left-width: 0;
-	float: left;
+
+	li {
+		display: inline-block;
+		margin: 0;
+		padding: 0;
+	}
+
+	span {
+		display: inline-block;
+		padding: 4px 8px;
+		@include x-rem(font-size, 11px);
+		@include x-rem(line-height, 12px);
+		text-transform: uppercase;
+	}
 }
 
-.paging-list li:first-child {
-	border-left-width: 1px;
+/* News - Detail
+   ========================================================================== */
+
+.news-detail .content {
+	p:first-child {
+		margin-top: 0;
+	}
 }
 
-.paging-list li a,
-.paging-list li span {
-	display: block;
-	min-width: 30px;
-	padding: 2px 5px;
-	text-align: center;
+
+/* Video - Detail
+   ========================================================================== */
+
+.mod-video {
+	.desc {
+		padding-top: $grid-gutter;
+	}
 }
 
-.paging-list li a {
-	/* Link State */
-}
-
-.paging-list li span {
-	/* Current Page State */
-}
-
-.paging-list li.disabled { 
-	display: none;
-}
-
-.paging-list li.disabled+li { 
-	border-left-width: 1px;
-}
-
-.paging-list li.disabled+.all {
-	border-left-width: 0;
+.mod-videos {
+	@extend .mod-list;
 }

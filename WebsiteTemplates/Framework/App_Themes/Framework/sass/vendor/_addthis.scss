@@ -1,0 +1,8 @@
+/* ==========================================================================
+   Add This 
+   Styles to be included if we use addthis
+   ========================================================================== */
+
+.addthis-smartlayers * {
+	@include box-sizing(content-box);
+}

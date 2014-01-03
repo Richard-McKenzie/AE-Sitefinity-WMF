@@ -1,5 +1,4 @@
-﻿<%@ Control Language="C#" %>
-<%-- Add as needed
+﻿<%-- Add as needed
 <meta name="HandheldFriendly" content="True" />
 <meta http-equiv="cleartype" content="on" />
 <meta name="title" content="HTML5 Boilerplate template for Sitefinity compatible with Sitefinity v6" />
@@ -14,6 +13,7 @@
 <meta name="msapplication-TileColor" content="#E72C53" />
 <meta name="msapplication-TileImage" content="/Sitefinity/WebsiteTemplates/Boilerplate/App_Themes/Boilerplate/Icons/apple-touch-icon-144-precomposed.png" />
 --%>
+
 <link rel="shortcut icon" href="/Sitefinity/WebsiteTemplates/Boilerplate/App_Themes/Boilerplate/Icons/favicon.ico" />
 <link rel="shortcut icon" href="/Sitefinity/WebsiteTemplates/Boilerplate/App_Themes/Boilerplate/Icons/apple-touch-icon-144-precomposed.png" />
 <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/Sitefinity/WebsiteTemplates/Boilerplate/App_Themes/Boilerplate/Icons/apple-touch-icon-144-precomposed.png" />

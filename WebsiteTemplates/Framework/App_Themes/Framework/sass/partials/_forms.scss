@@ -1,0 +1,23 @@
+/* ================================================================
+   Form Styles
+   ================================================================ */
+
+.sfFormBox, .sfFormBlock {
+
+	.sfTxt {
+		width: 100%;
+	}
+	
+	.sfTxtLbl {
+		margin-top: 0.2em;
+		display: inline-block;
+	}
+}
+
+.sfFormSubmit {
+	margin: 0.5em 0;
+
+	[type="button"], [type="submit"] {
+		@extend .btn;
+	}
+}

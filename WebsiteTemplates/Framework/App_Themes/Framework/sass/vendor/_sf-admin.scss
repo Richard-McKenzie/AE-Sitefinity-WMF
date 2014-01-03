@@ -19,11 +19,10 @@
 .ZoneEditorToolboxContainer,
 .ZoneEditorToolboxContainer *,
 .ZoneEditorToolboxContainer *:before,
-.ZoneEditorToolboxContainer *:after
- {
-	-webkit-box-sizing: content-box;
-     -moz-box-sizing: content-box;
-          box-sizing: content-box;
+.ZoneEditorToolboxContainer *:after,
+#fancybox-wrap,
+#fancybox-wrap *{
+	@include box-sizing(content-box);
 }
 
 .ZoneEditorToolboxContainer h2 {
@@ -35,4 +34,21 @@ body.sfPageEditor.zeContentMode div#ScriptWrapper .RadDockZone:before {
   display: block;
   text-align: center;
   font-size: 12px;
+}
+
+// Hide Add This SmartLayers
+.sfPageEditor .addthis-smartlayers{
+	display: none;
+}
+
+// Test style to figure out if we can hide the min height
+
+.zeContentMode .sfPageContainer .RadDock_Sitefinity .rdContent {
+	// background: rgba(red, 0.5);
+	min-height: 15px;
+}
+
+// Move the tools up on the front end
+html .sfPageBrowseAndEditToolbarWrp {
+	top: 5% !important;
 }

@@ -17,13 +17,13 @@ Template for a simple main navigation. Strips out the Sitefinity and Kendo style
 				<navigation:NavigationTemplate>
 					<Template>
 						<li>
-							<a runat="server" href='<%# (bool)Eval("HasChildNodes") ? "javascript:void(0)" : Eval("Url") %>' target='<%# (bool)Eval("HasChildNodes") ? "" : NavigationUtilities.GetLinkTarget(Container.DataItem)%>'><%# Eval("Title") %></a>
+							<a runat="server" href='<%# Eval("Url") %>' target='<%# (bool)Eval("HasChildNodes") ? "" : NavigationUtilities.GetLinkTarget(Container.DataItem)%>'><%# Eval("Title") %></a>
 							<ul runat="server" id="childNodesContainer"></ul>
 						</li>
 					</Template>
 					<SelectedTemplate>
 						<li class="active">
-							<a runat="server" href='<%# (bool)Eval("HasChildNodes") ? "javascript:void(0)" : Eval("Url") %>' target='<%# (bool)Eval("HasChildNodes") ? "" : NavigationUtilities.GetLinkTarget(Container.DataItem)%>'><%# Eval("Title") %></a>
+							<a runat="server" href='<%# Eval("Url") %>' target='<%# (bool)Eval("HasChildNodes") ? "" : NavigationUtilities.GetLinkTarget(Container.DataItem)%>'><%# Eval("Title") %></a>
 							<ul runat="server" id="childNodesContainer"></ul>
 						</li>
 					</SelectedTemplate>

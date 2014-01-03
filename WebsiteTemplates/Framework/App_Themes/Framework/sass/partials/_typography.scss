@@ -17,3 +17,52 @@ h3 {
 h4 {
 
 }
+
+p {
+	margin: 0 0 1em;
+}
+
+ul {
+	padding-left: 1.5em;
+}
+
+a {
+	color: #011226;
+	text-decoration: underline;
+
+	&:hover, &:focus {
+		text-decoration: none;
+	}
+}
+
+table {
+	margin: 1em 0;
+  border: 1px solid #ccc;
+}
+
+td {
+	border: 1px solid #ccc;
+	background: hsl(0, 0%, 90%);
+	padding: 0.2em 0.4em;
+}
+
+tr:nth-child(2n) td {
+    background: #fff;
+}
+
+.btn {
+	display: inline-block;
+	padding: 0.4em 1.5em;
+	background: $color-action;
+	color: $color-grey;
+	border: 0;
+	font-family: $font-sans;
+	font-weight: 700;
+	text-transform: uppercase;
+	@include transition(all 0.2s ease-out);
+
+	&:hover, &:focus {
+		text-decoration: none;
+		background: darken($color-action, 10%);
+	}
+}
