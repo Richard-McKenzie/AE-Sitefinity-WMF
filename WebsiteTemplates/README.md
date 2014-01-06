@@ -5,6 +5,8 @@
 - More -> Filter Patterns - Add `.js` 
 - Refresh project
 - SCSS file -> Enable `full compass support` and `Use config.rb`
+- On older sites, if you get an svg error, on your main.scss file replace the experiemental-support-for-svg line with `
+$svg-gradient-shim-threshold: 0.1;`
 
 ##Sass Structure
 - http://thesassway.com/beginner/how-to-structure-a-sass-project
