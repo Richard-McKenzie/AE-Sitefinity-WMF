@@ -4,6 +4,7 @@ Here's the Widget Template for the news listing that we used with (MetLife Stadi
 
 ##Current and Future Events
 - Filter Expression `Visible = true AND Status = Live AND (EventStart >= DateTime.UtcNow OR EventEnd >= DateTime.UtcNow)`
+- 
 ```html
 <%@ Control Language="C#" %>
 <%@ Register TagPrefix="sf" Namespace="Telerik.Sitefinity.Web.UI.ContentUI" Assembly="Telerik.Sitefinity" %>
@@ -54,6 +55,7 @@ Here's the Widget Template for the news listing that we used with (MetLife Stadi
 
 ##Event Archive
 - Filter Expression `Visible = true AND Status = Live AND (EventStart <= DateTime.UtcNow OR EventEnd <= DateTime.UtcNow)`
+
 ```html
 <%@ Control Language="C#" %>
 <%@ Register TagPrefix="sf" Namespace="Telerik.Sitefinity.Web.UI.ContentUI" Assembly="Telerik.Sitefinity" %>
