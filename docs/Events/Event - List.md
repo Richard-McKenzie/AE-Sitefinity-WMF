@@ -3,8 +3,9 @@
 Here's the Widget Template for the news listing that we used with (MetLife Stadium)[http://www.metlifestadium.com/events-tickets/event-calendar]. This uses some custom fields for the events so make sure you have them. Also requires custom taxonomies to be installed.
 
 ##Current and Future Events
-- Filter Expression `Visible = true AND Status = Live AND (EventStart >= DateTime.UtcNow OR EventEnd >= DateTime.UtcNow)`
-- 
+
+Filter Expression `Visible = true AND Status = Live AND (EventStart >= DateTime.UtcNow OR EventEnd >= DateTime.UtcNow)`
+
 ```html
 <%@ Control Language="C#" %>
 <%@ Register TagPrefix="sf" Namespace="Telerik.Sitefinity.Web.UI.ContentUI" Assembly="Telerik.Sitefinity" %>
@@ -54,7 +55,8 @@ Here's the Widget Template for the news listing that we used with (MetLife Stadi
 ```
 
 ##Event Archive
-- Filter Expression `Visible = true AND Status = Live AND (EventStart <= DateTime.UtcNow OR EventEnd <= DateTime.UtcNow)`
+
+Filter Expression `Visible = true AND Status = Live AND (EventStart <= DateTime.UtcNow OR EventEnd <= DateTime.UtcNow)`
 
 ```html
 <%@ Control Language="C#" %>
