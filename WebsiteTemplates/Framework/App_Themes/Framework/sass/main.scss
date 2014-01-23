@@ -1,5 +1,5 @@
 // Use Compass 
-$experimental-support-for-svg: true;
+$svg-gradient-shim-threshold: 0.1;
 @import "compass/css3";
 
 // Color Variables
