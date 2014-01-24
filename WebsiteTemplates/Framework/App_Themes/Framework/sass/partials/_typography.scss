@@ -37,7 +37,7 @@ a {
 
 table {
 	margin: 1em 0;
-  border: 1px solid #ccc;
+	border: 1px solid #ccc;
 }
 
 td {
@@ -47,14 +47,14 @@ td {
 }
 
 tr:nth-child(2n) td {
-    background: #fff;
+	background: #fff;
 }
 
 .btn {
 	display: inline-block;
 	padding: 0.4em 1.5em;
-	background: $color-action;
-	color: $color-grey;
+	background: $color-primary;
+	color: #fff;
 	border: 0;
 	font-family: $font-sans;
 	font-weight: 700;
@@ -63,6 +63,6 @@ tr:nth-child(2n) td {
 
 	&:hover, &:focus {
 		text-decoration: none;
-		background: darken($color-action, 10%);
+		background: darken($color-primary, 10%);
 	}
 }
