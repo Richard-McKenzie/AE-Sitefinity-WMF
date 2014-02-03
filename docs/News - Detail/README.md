@@ -18,13 +18,16 @@
         </div>
     </layouttemplate>
     <itemtemplate>
-        <h1 class="sfnewsTitle">
+        <h1 class="title">
             <asp:Literal Text='<%# Eval("Title") %>' runat="server" />
         </h1>
-        <div class="sfnewsAuthorAndDate">
-            <asp:Literal Text="<%$ Resources:Labels, By %>" runat="server" /> 
-            <sf:PersonProfileView runat="server" /> | <sf:FieldListView ID="PublicationDate" runat="server" 
-                Format="{PublicationDate.ToLocal():MMM dd, yyyy}" />
+        <div class="meta">
+        	<div class="meta-item">
+            <asp:Literal Text="<%$ Resources:Labels, By %>" runat="server" /> <sf:PersonProfileView runat="server" />
+          </div>
+          <div class="meta-item">
+            <sf:FieldListView ID="PublicationDate" runat="server" Format="{PublicationDate.ToLocal():MMM dd, yyyy}" />
+          </div>
         </div>
         <sf:ContentBrowseAndEditToolbar ID="BrowseAndEditToolbar" runat="server" Mode="Edit,Delete,Unpublish"></sf:ContentBrowseAndEditToolbar>
         <sf:FieldListView ID="summary" runat="server" Text="{0}" Properties="Summary" WrapperTagName="div" WrapperTagCssClass="sfnewsSummary"  /> 
