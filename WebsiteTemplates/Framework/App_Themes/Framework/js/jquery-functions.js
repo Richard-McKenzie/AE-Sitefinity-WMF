@@ -4,21 +4,21 @@ jQuery(function($) {
 
 	/* Owl Carousel */
 
-	$(".slideshow").owlCarousel({
-		autoPlay : 10000,
-		stopOnHover : true,
-		navigation:false,
-		paginationSpeed : 1000,
-		goToFirstSpeed : 2000,
-		singleItem : true,
-		autoHeight : true,
-		// Navigation
-		navigation : true,
-		navigationText : ["Prev","Next"],
-		rewindNav : true,
-		scrollPerPage : false,
-		transitionStyle:"fade"
-	});
+	// $(".slideshow").owlCarousel({
+	// 	autoPlay : 10000,
+	// 	stopOnHover : true,
+	// 	navigation:false,
+	// 	paginationSpeed : 1000,
+	// 	goToFirstSpeed : 2000,
+	// 	singleItem : true,
+	// 	autoHeight : true,
+	// 	// Navigation
+	// 	navigation : true,
+	// 	navigationText : ["Prev","Next"],
+	// 	rewindNav : true,
+	// 	scrollPerPage : false,
+	// 	transitionStyle:"fade"
+	// });
 
 	
 	/* Photo Galleries */
