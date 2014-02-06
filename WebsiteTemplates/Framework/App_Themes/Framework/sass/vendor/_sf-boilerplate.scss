@@ -51,6 +51,8 @@ textarea { resize: vertical; }
 
 *, *:before, *:after { @include box-sizing(border-box); }
 
+a[target="_blank"] {cursor: alias}
+
 // Text input areas
 .sfreContentArea {
 	background: #fff;
