@@ -10,8 +10,8 @@ Template for a simple main navigation. Strips out the Sitefinity and Kendo style
 
 <navigation:SitefinitySiteMapDataSource runat="server" ID="dataSource" />
 
-<div class="<%= this.GetCssClass() %>">
-	<ul runat="server" id="navigationUl">
+<nav class="<%= this.GetCssClass() %>">
+	<ul runat="server" id="navigationUl" role="navigation" class="menu">
 		<navigation:NavigationContainer runat="server" DataSourceID="dataSource">
 			<Templates>
 				<navigation:NavigationTemplate>
@@ -31,5 +31,5 @@ Template for a simple main navigation. Strips out the Sitefinity and Kendo style
 			</Templates>
 		</navigation:NavigationContainer>
 	</ul>
-</div>
+</nav>
 ```
