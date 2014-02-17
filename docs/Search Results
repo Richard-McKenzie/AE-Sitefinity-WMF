@@ -1,0 +1,31 @@
+#Search Results
+
+In sitefinity search results can not be modified through the widget editor. Below is a generic styling of the search results page
+
+##Example CSS
+```SCSS
+
+.sfsearchResultTitle{
+	display:block;
+	margin-top:15px; //Give some space from the result above
+	padding-top:10px; 
+	font-size:1.3em;
+	border-top:1px solid #cccccc;
+	font-weight:bold;
+}
+.sfsearchResultHighLighter{
+	margin-left:0px;
+	background:lighten($color-primary, 28%);
+	padding:10px;
+}
+.sfsearchResultUrl {
+	margin-left: 0px;
+	padding: 5px 0;
+	position:relative;
+	&:before{
+		content:'URL: ';
+		padding-right:10px;
+	}
+}
+
+```
