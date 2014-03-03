@@ -29,17 +29,18 @@ namespace SitefinityWebApp.Custom.Navigation
             if (currentURL != null)
             {
                 SiteMapNode currentNode = SiteMapBase.GetCurrentNode();
+                SiteMapNode TempParentNode = !currentNode.ParentNode.Title.Equals("Pages") ? currentNode.ParentNode : currentNode;
                 SiteMapNode sectionHead = null;
-                SiteMapNode TempParentNode = null;
-
-                while (sectionHead == null)
+                
+                if (TempParentNode.ParentNode != null)
                 {
-                    TempParentNode = TempParentNode != null ? TempParentNode.ParentNode : currentNode.ParentNode;
-                    if (TempParentNode.ParentNode.Url.Replace("~", "").Equals("/"))
+                    while ( !TempParentNode.ParentNode.Title.Equals("Pages"))
                     {
-                        sectionHead = TempParentNode;
+                        TempParentNode = TempParentNode.ParentNode; 
                     }
                 }
+
+                sectionHead = TempParentNode;
 
                 if (sectionHead != null)
                 {

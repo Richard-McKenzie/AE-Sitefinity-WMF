@@ -1,5 +1,7 @@
 #Custom Layouts
 
+##NOTE: There might be a bug with these custom layouts in Sf 6.3+ . Further testing has to be done and we'll test in Sf 7. If you experience erratic behavior with content not staying inside the layouts, just add Sf_colsOut to each of the examples (match it with the one found in the Sf Base layout).
+
 There are some sample layouts in the CustomLayouts folder. To use them paste this in your config file after the last `</toolbox>`: App_data\Sitefinity\Configuration\ToolboxesConfig.config
 
 ```xml

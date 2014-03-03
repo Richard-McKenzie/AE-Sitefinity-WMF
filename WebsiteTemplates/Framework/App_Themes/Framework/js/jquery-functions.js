@@ -20,42 +20,7 @@ jQuery(function($) {
 	// 	transitionStyle:"fade"
 	// });
 
-	
-	/* Photo Galleries */
 
-	$('.popup').each(function(){
-		$(this).magnificPopup({ 
-			type: 'image'
-		});		
-	});
-
-	$('.popupimage').each(function(){
-		if (/(jpg|gif|png|JPG|GIF|PNG|JPEG|jpeg)$/.test($(this).attr('href'))){
-			$(this).magnificPopup({ 
-				type: 'image'
-			});
-		};
-	});
-
-	$('.gallery').each(function() { // the containers for all your galleries
-		$(this).magnificPopup({
-			delegate: '[data-popup=true]', // the selector for gallery item
-			type: 'image',
-			gallery: {
-				enabled:true
-			}
-		});
-	}); 
-
-	$('.sfproductImgsList').each(function() { // the containers for all your galleries
-		$(this).magnificPopup({
-			delegate: '[rel=fancybox]', // the selector for gallery item
-			type: 'image',
-			gallery: {
-				enabled: true
-			}
-		});
-	}); 
 	//Resizes videos to fit containers
 	$(".container").fitVids();
 
@@ -73,17 +38,18 @@ jQuery(function($) {
 	  $(this).siblings('ul').toggleClass('active');
 	});
 
-	//Wrapping each first level nav in a div to fix a FF bug related to table-cell not using position
-	$('.menu > li').each(function() {
-		$(this).wrapInner('<div class="menu-item-wrap" />');
-	});
+
 
 	//Adding menuSubExand for each item that has more than one level
 	$('.menu').find('a').each(function(){
 	  if ( $(this).siblings('ul').length > 0 ){
 	    $(this).addClass('has-sub');
-	    $(this).after('<a class="menu-sub-expand"/>');
 	  }
+	});
+
+	//Wrapping each first level nav in a div to fix a FF bug related to table-cell not using position
+	$('.menu > li').each(function() {
+		$(this).wrapInner('<div class="menu-item-wrap" />');
 	});
 
 
@@ -128,4 +94,29 @@ jQuery(function($) {
 		});
 	});
 
+	/* Photo Galleries */
+
+	$('.popup').each(function(){
+		$(this).magnificPopup({ 
+			type: 'image'
+		});		
+	});
+
+	$('.popupimage').each(function(){
+		if (/(jpg|gif|png|JPG|GIF|PNG|JPEG|jpeg)$/.test($(this).attr('href'))){
+			$(this).magnificPopup({ 
+				type: 'image'
+			});
+		};
+	});
+
+	$('.gallery').each(function() { // the containers for all your galleries
+		$(this).magnificPopup({
+			delegate: '[data-popup=true]', // the selector for gallery item
+			type: 'image',
+			gallery: {
+				enabled:true
+			}
+		});
+	}); 
 });

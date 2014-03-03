@@ -5,7 +5,7 @@
 $sitemap-indent: 20px !default;
 $sitemap-heading-bg: $color-primary !default;
 $sitemap-heading-bg-hover: darken($color-primary, 10%) !default;
-$sitemap-tree-line: mix($color-primary, $base-bg, 50%) !default;
+$sitemap-tree-line: mix($color-primary, $body-bg, 50%) !default;
 $sitemap-tree-dot: 8px !default;
 
 .sitemap-section-heading {

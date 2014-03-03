@@ -9,6 +9,10 @@ $comments-padding: $grid-gutter !default;
 /* Comments
    ========================================================================== */
 
+.sfcommentsFormWrp, .sfcommentsListWrp {
+	margin-top: $comments-padding;
+}
+
 .sfcommentsTitle {
 	margin-bottom: $comments-padding / 2;
 }

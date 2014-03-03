@@ -1,0 +1,45 @@
+
+/* ================================================================
+
+#Pagination
+
+Standard Sitefinity pager. Builds off of the format: 
+
+`<div class="sf_pagerNumeric"><a class="sf_PagerCurrent" href="#">1</a><a href="#">2</a><a href="#">3</a><a href="#">4</a></div>`
+
+   ================================================================ */
+
+.sf_pagerNumeric {
+	@extend .clearfix;
+	margin: 0 0 1em;
+	text-align: right;
+
+	a {
+		display: inline-block;
+		padding: 0 0.2em;
+		font-family: $font-heading;
+		@include x-rem(font-size, 14px);
+		text-transform: uppercase;
+
+		&.disabled {
+			color: #000;
+		}
+	}
+
+	span {
+		display: inline-block;
+		padding: 0 0.2em;
+		font-family: $font-heading;
+		@include x-rem(font-size, 14px);
+		text-transform: uppercase;
+		color: #000000;		
+	}
+
+	.next {
+		margin-right: 0.2em;
+	}
+
+	.sf_PagerCurrent {
+		color: #000000;
+	}
+}

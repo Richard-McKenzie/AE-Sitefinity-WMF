@@ -1,4 +1,4 @@
-#Boilerplate Documentation
+#Framework Documentation
 
 ##Prepros Config
 - Options

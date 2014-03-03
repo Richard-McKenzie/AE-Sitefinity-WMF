@@ -3,19 +3,30 @@ $svg-gradient-shim-threshold: 0.1;
 @import "compass/css3";
 
 // Color Variables
-$color-base: #222;
-$color-primary: blue;
+$color-base: #7e7e7e;
+$color-heading: #373737;
+$color-subhead: #838383;
+$color-primary: #0069aa;
 
 // Grid
 $grid-gutter: 20px;
 
 // Fonts
-$font-sans: Arial, sans-serif;
-$font-serif: Times New Roman, serif;
-$font-body: Trebuchet;
+$font-body: Arial, sans-serif;
+$font-heading: Times New Roman, serif;
+$font-size-base: 13px;
 
 $body-bg: #fff;
  
+
+// Breadcrumbs
+
+$breadcrumb-color: #231f20;
+$breadcrumb-font-size: 14px;
+$breadcrumb-current-color: $color-primary;
+$breadcrumb-type-font-color: $breadcrumb-color;
+$breadcrumb-type: font;
+
 // SASS Functions and Modules
 @import "modules/utilities";
 
@@ -27,8 +38,20 @@ $body-bg: #fff;
 // Site Specific Styles
 @import "partials/sprites";
 @import "partials/grid-fluid";
+// @import "partials/grid-fixed";
 @import "partials/typography";
+@import "partials/modules";
+@import "partials/faq";
+@import "partials/forms";
 @import "partials/menu";
+@import "partials/comments";
+@import "partials/photos";
+@import "partials/nav-rail";
+@import "partials/page-meta";
+@import "partials/pagination";
+@import "partials/news";
 @import "partials/tabs";
+@import "partials/sitemap";
+//@import "vendor/owltheme";
 @import "partials/base";
 @import "partials/print";

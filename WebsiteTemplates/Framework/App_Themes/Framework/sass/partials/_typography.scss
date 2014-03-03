@@ -3,15 +3,26 @@
    ================================================================ */
 
 h1 {
+	margin: 0 0 1em;
+	font-family: $font-heading;
+	@include x-rem(font-size, 37px);
+	color: $color-heading;
+
 
 }
 
-h2 {
-
+h2 {	
+	margin: 0 0 1em;
+	font-family: $font-heading;
+	@include x-rem(font-size, 20px);
+	color: #000000;
 }
 
 h3 {
-
+	margin: 0 0 1em;
+	font-family: $font-heading;
+	@include x-rem(font-size, 18px);
+	color: #707070;
 }
 
 h4 {
@@ -22,16 +33,17 @@ p {
 	margin: 0 0 1em;
 }
 
-ul {
+ul, ol {
 	padding-left: 1.5em;
+	margin: 0 0 1em;
 }
 
 a {
-	color: #011226;
-	text-decoration: underline;
+	color: $color-primary;
+	text-decoration: none;
 
 	&:hover, &:focus {
-		text-decoration: none;
+		text-decoration: underline;
 	}
 }
 
@@ -56,9 +68,8 @@ tr:nth-child(2n) td {
 	background: $color-primary;
 	color: #fff;
 	border: 0;
-	font-family: $font-sans;
-	font-weight: 700;
-	text-transform: uppercase;
+	font-family: $font-body;
+	text-decoration: none;
 	@include transition(all 0.2s ease-out);
 
 	&:hover, &:focus {

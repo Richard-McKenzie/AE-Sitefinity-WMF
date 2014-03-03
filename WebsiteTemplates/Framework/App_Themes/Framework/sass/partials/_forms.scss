@@ -1,17 +1,85 @@
 /* ================================================================
-   Form Styles
+   Generic Form Styles
    ================================================================ */
 
-.sfFormBox, .sfFormBlock {
+$input-height: 24px !default;
+$input-border-color: $color-base !default;
+$input-border-radius: 0 !default;
 
-	.sfTxt {
-		width: 100%;
-	}
-	
-	.sfTxtLbl {
-		margin-top: 0.2em;
-		display: inline-block;
-	}
+input {
+	border: 1px solid $input-border-color;
+	border-radius: $input-border-radius;
+	@include x-rem(height, $input-height);
+}
+
+input[type="checkbox"], 
+input[type="radio"] {
+	margin-right: 2px;
+	border-radius: 0;
+}
+
+select {
+	border: 1px solid $input-border-color;
+	border-radius: $input-border-radius;
+	@include x-rem(height, $input-height);	
+}
+
+textarea {
+	border: 1px solid $input-border-color;
+	border-radius: $input-border-radius;
+	min-height: 100px;
+}
+
+/* ================================================================
+   Sitefinity Form Styles
+   ================================================================ */
+
+// Form Label Styling
+.sfTxtLbl {
+	font-weight: bold;
+	display: block;
+}
+
+// I think this is used for some text areas. Know for sure comments
+.Sitefinity.RadEditor .reContentCell {
+	border: 1px solid $input-border-color;
+	border-radius: $input-border-radius;
+}
+
+.sfError {
+	color: red;
+}
+
+.sfTxt {
+	width: 100%;
+}
+
+// .sfTxtLbl {
+// 	margin-top: 0.2em;
+// 	display: inline-block;
+// }
+
+.sfCheckListBox, .sfRadioList {
+	display: block;
+	margin-left: 1em;
+}
+
+// Textbox sizes as defined by the backend editor
+.sfTxtBoxSmall .sfTxt{
+	max-width:120px;
+}
+
+.sfTxtBoxMedium .sfTxt {
+	max-width:300px
+}
+
+.sfTxtBoxLarge .sfTxt {
+	max-width:400px
+}
+
+// This should match every input wrapper
+.sfFormBox, .sfFormBlock, .sfFormDropdown, .sfFormCheckboxlist, .sfFormBlock, .sfFormRadiolist {
+	margin-bottom: 1em;
 }
 
 .sfFormSubmit {
@@ -20,4 +88,10 @@
 	[type="button"], [type="submit"] {
 		@extend .btn;
 	}
+}
+
+.sfExample {
+	font-size: 11px;
+	line-height: 1.4em;
+	margin: 0.5em 0 1em;
 }

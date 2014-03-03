@@ -1,19 +1,28 @@
 /* ================================================================
-   Menu Styles
-   ================================================================ */
+Menu Styles
+================================================================ */
+
+.nav-menu {
+}
+
+
+/* Menu Toggle Styles */
 
 .menu-toggle {
 
-	.no-js {
-		display: none; 
-	}
-
-	@include breakpoint(l) {
+	.no-js & {
 		display: none;
 	}
+
+	@include breakpoint(m) {
+		display: none;
+	}
+
 }
 
+/* Menu Core Styles */
 .menu, .menu li, .menu ul {
+	position: relative;
 	display: block;
 	margin: 0;
 	padding: 0;
@@ -26,8 +35,9 @@
 		display: block;
 	}
 
-	li {
-		position: relative;
+	// Shows on medium screens
+	@include breakpoint(m){
+		display: block;
 	}
 
 	a {
@@ -36,12 +46,12 @@
 		display: block;
 		text-decoration: none;
 
-		&:hover,
-		&:focus {
+		&:hover, &:focus {
 			text-decoration: none;
 		}
 	}
 
+	// Second level styles
 	ul {
 		display: none;
 
@@ -50,28 +60,30 @@
 		}
 
 		a {
-			// padding-left: 2em;
+			padding-left: 2em;
+		}
+	}
+}
+
+/* Menu Theme Styles */
+
+.menu {
+
+	// Styles for Small devices
+	@include breakpoint(s-m) {
+		a {
+			padding: 1em;
+			color: #5a5a5a;
+			background: #e8e8e8;
+
+			&:hover, &:focus {
+				background: #dcdcdc;
+			}
 		}
 	}
 
-	.menu-sub-expand {
-		position: absolute;
-		z-index: 10;
-		top: 0;
-		right: 0;
-		cursor: pointer;  
-
-		&:before {
-			content: '\2b';
-		}
-
-		&.active:before {
-			content: '\2013';
-		}
-	}
-
-	// Large Device Styles
-	@include breakpoint(l){
+	// Styles for Medium devices and up
+	@include breakpoint(m) {
 		display: table;
 		width: 100%;
 
@@ -79,34 +91,43 @@
 			display: table-cell;
 		}
 
-		.menu-sub-expand {
-			display: none; 
-		}
-
+		// This is used to allow table-cell to retain it's 'position' attribute in Firefox
 		.menu-item-wrap {
 			position: relative;
 		}
 
+		// Second level styling
 		ul {
 			position: absolute;
 			top: 100%;
 			left: 0;
+			z-index: 5;
 			width: 100%;
+			min-width: 3em; //set a min-width to allow for thin parents.
+			background: #ccc;
 
-			// Might need to change this, this is to over ride the active state added by mobile
-			&.active {
-				display: none;
+			// Third level styling
+			ul { 
+				top: 0;
+				left: 100%;
 			}
 		}
 
-		ul ul {
-			top: 0;
-			left: 100%;
+		li:hover {
+			> .menu-item-wrap > ul, // first level hover styles
+			> ul {
+				display: block;
+			}
 		}
 
-		> li:hover > .menu-item-wrap > ul,
-		li:hover > ul{
-			display: block;
+		// last child aligns to the right
+		> li:last-child ul {
+			right: 0;
+			left: auto;
+
+			 ul {
+			 	right: 100%;
+			 }
 		}
 	}
 }

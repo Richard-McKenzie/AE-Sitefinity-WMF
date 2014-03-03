@@ -1,0 +1,59 @@
+/* ================================================================
+   Search Form
+   ================================================================ */
+
+.sfsearchBox {
+
+}
+
+.sfsearchTxt {
+
+}
+
+.sfsearchSubmit {
+
+}
+
+
+/* ================================================================
+   Search Results
+   ================================================================ */
+
+.sfsearchResultsWrp {
+
+	dd {
+		margin-left: 0;
+	}
+
+	.sfsearchResultTitle {
+		display: inline-block;
+		margin-top: 1em;
+
+		&:first-child {
+			margin-top: 0;
+		}
+	}
+
+	.sfsearchResultSnippet {
+		display: none;
+	}
+
+	.sfsearchResultUrl {
+		display: inline-block;
+		@include x-rem(font-size, 12px);
+
+		a {
+			display: inline-block;
+			font-weight: normal;
+			color: $color-dgrey;
+
+			&:before {
+				content: '(';
+			}
+
+			&:after {
+				content: ')';
+			}
+		}
+	}
+}

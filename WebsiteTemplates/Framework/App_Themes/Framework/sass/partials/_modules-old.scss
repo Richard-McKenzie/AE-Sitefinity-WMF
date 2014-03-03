@@ -1,0 +1,326 @@
+
+/* ==========================================================================
+   Global Modules
+   ========================================================================== */
+
+.mod {
+	position: relative;
+	margin-bottom: $grid-gutter;
+}
+
+.back, .sfimageBack, a.sfimageBack {
+	position: relative;
+	display: inline-block;
+	margin-bottom: 1em;
+	@include x-rem(padding-left, 10px);
+	font-family: $font-sans;
+	text-transform: uppercase;
+	color: $color-grey;
+	text-decoration: none;
+
+	&:before {
+		@extend .icomoon-back;
+		position: absolute;
+		display: inline-block;
+		@include x-rem(top, 5px);
+		left: 0;
+	}
+
+	&:hover, &:focus {
+		text-decoration: underline;
+	}
+}
+
+.mod-title .title {
+	margin: 0;
+}
+
+
+/* Item Lists Content
+   ========================================================================== */
+
+.mod-list { 
+	margin:0; 
+	padding:0; 
+	list-style:none; 
+
+	.item + .item {
+		margin-top: $grid-gutter;
+	}
+
+	.item {
+		position: relative;
+		padding: $grid-gutter;
+		background: hsl(0, 0%, 95%);
+
+		.title { 
+			margin:0; 
+
+			a {
+				text-decoration: none;
+
+				&:hover, &:focus {
+					text-decoration: underline;
+				}
+			}
+		}
+		
+		.meta {
+			margin-bottom: 1em;
+		}
+
+		.desc {
+			margin-bottom: 0.5em;
+		}
+
+		.more {
+			position: absolute;
+			right: $grid-gutter;
+			bottom: $grid-gutter / 3;
+			text-transform: uppercase;
+			text-decoration: none;
+			font-family: $font-sans;
+			color: #6a737b;
+			@include x-rem(font-size, 12px);
+
+			&:hover, &:focus {
+				text-decoration: underline;
+			}
+		}
+	}
+}
+
+.item-content {
+
+	@include breakpoint(m) {
+		display: table-cell;
+		vertical-align: top;
+	}
+}
+
+/* Item Media
+   ========================================================================== */
+
+.aside { 
+	text-align: center;
+	margin: 0 auto;
+
+	@include breakpoint(m) {
+		display: table-cell;
+		padding: 0 15px 0 0; 
+		margin: 0;
+		vertical-align: top;
+	}
+}
+
+.caption {
+	display: block;
+	font-size: 0.8em;
+	line-height: 1.2em;
+}
+
+
+/* Media Queries for Item Lists 
+  ========================================================================== */
+
+// @media (max-width : 400px) { 
+// 	.item { display: block; }
+// 	.item > .item-content { display: block;}
+// 	.item > .aside { display: block;}
+// }
+
+
+/* Banner
+   ========================================================================== */
+
+.mod-banner {
+	text-align: center;
+}
+
+
+/* Events
+   ========================================================================== */
+
+.mod.event-banner {
+	margin-bottom: 0;
+}
+
+.mod-list {
+
+	.item {
+		display: block;
+
+		@include breakpoint(m) {
+			display: table;
+			width: 100%;
+		}
+	}
+
+	.media {
+		position: relative;
+		display: block;
+	}
+
+	.postStamp {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		@include opacity(0.9);
+	}
+
+	.aside {
+		width: 165px;
+	}
+}
+
+.mod-events {
+	@extend .mod-list;
+
+	.media {
+		min-height: 71px;
+	}
+}
+
+/* News
+   ========================================================================== */
+
+.news.mod {
+	margin-bottom: 0;
+}
+
+.article > .aside {
+	float: right; 
+	margin: 1em;
+}
+
+.meta {
+	@include clearfix;
+	margin:0.5em 0;
+}
+
+.meta-item {
+	float: left;	
+	margin-right: 0.5em;
+	font-family: Oswald, sans-serif;
+	text-transform: uppercase;
+}
+
+/* ==========================================================================
+   Filters
+   ========================================================================== */
+
+.filter {
+	padding: 1em;
+	border: 1px solid #444444;
+	background: #cccccc;
+}
+
+.filter-options {
+	float: left;
+}
+
+.filter-actions {
+	float: right;
+}
+
+
+/* Pagination
+   ========================================================================== */
+
+.pager {
+	@extend .clearfix;
+	text-align: right;
+	margin-top: 1em;
+
+	a {
+		display: inline-block;
+		padding: 2px 7px;
+		text-decoration: none;
+		font-family: $font-sans;
+		background: hsl(0, 0%, 95%);
+		@include transition(all 0.2s ease-out);
+		margin-left: 3px;
+
+		&:hover, &:focus, &.sf_PagerCurrent{
+			color: $color-base;
+			background: hsl(0, 0%, 90%);
+		}
+	}
+}
+
+.pager-archive {
+	float: left;
+	margin-top: 1em;
+
+	+ .pager {
+		float: right;
+	}
+
+	a {
+		display: inline-block;
+		padding: 2px 7px;
+		text-decoration: none;
+		font-family: $font-sans;
+		background: hsl(0, 0%, 95%);
+		@include transition(all 0.2s ease-out);
+		margin-right: 3px;
+
+		&:hover, &:focus {
+			color: $color-base;
+			background: hsl(0, 0%, 90%);
+		}
+	}
+}
+
+/* Tags
+   ========================================================================== */
+
+.meta-tags {
+	margin-right: 0;
+	@include breakpoint(m) {
+		float: right;	
+	}
+}
+
+.sfTagsList {
+	display: inline-block;
+	margin: 0;
+	padding: 0;
+
+	li {
+		display: inline-block;
+		margin: 0;
+		padding: 0;
+	}
+
+	span {
+		display: inline-block;
+		padding: 4px 8px;
+		@include x-rem(font-size, 11px);
+		@include x-rem(line-height, 12px);
+		text-transform: uppercase;
+	}
+}
+
+/* News - Detail
+   ========================================================================== */
+
+.news-detail .content {
+	p:first-child {
+		margin-top: 0;
+	}
+}
+
+
+/* Video - Detail
+   ========================================================================== */
+
+.mod-video {
+	.desc {
+		padding-top: $grid-gutter;
+	}
+}
+
+.mod-videos {
+	@extend .mod-list;
+}

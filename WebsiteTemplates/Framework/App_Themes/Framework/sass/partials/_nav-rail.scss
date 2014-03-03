@@ -1,0 +1,118 @@
+
+/* Nav Rail
+================================================================ */
+
+$mod-padding: 10px !default;
+
+.nav-rail {
+	padding: $mod-padding 0; 
+}
+
+.nav-rail-list{
+	display: block;
+	margin: 0;
+	padding: 0 0 15px;
+	background: $color-primary;
+
+	ul, li {
+		display: block;
+		margin: 0;
+		padding: 0;
+	}
+
+	// Section Heading
+	// > li.active > a {
+	// 	display: none;
+	// 	padding: 0 $mod-padding;
+	// 	margin: 0;
+	// 	font-family: $font-heading;
+	// 	color: #231f20;
+	// 	text-transform: uppercase;
+	// 	font-weight: 700;
+	// 	text-decoration: none;
+	// 	@include x-rem(font-size, 16px);		
+
+	// 	&:focus, &:hover {
+	// 		text-decoration: none;
+	// 	}
+	// }
+
+	// li {
+	// 	display: none;
+
+	// 	&.active{
+	// 		display: block;
+
+	// 		> ul > li {
+	// 			display: block;
+	// 		}
+	// 	}
+	// }
+
+	ul {
+		display: none;
+	}
+
+	.active > ul {
+		display: block;
+	}
+
+	// First Level visible
+	a {
+		display: block;
+		position: relative;
+		padding: 10px 30px;
+		background: $color-primary;
+		color: #fff;
+		font-family: $font-heading;
+		@include x-rem(font-size, 18px);
+		@include transition(all 0.2s ease-out);
+
+		&:hover, &:focus {
+			background: darken($color-primary, 10%);
+			text-decoration: none;
+		}
+	}
+
+	> li:first-child > a {
+		padding-top: 25px;
+	}
+
+	.active > a {
+
+		&:after {
+			content: '';
+			display: block;
+			position: absolute;
+			left: 30px;
+			bottom: 5px;
+			height: 3px;
+			width: 35px;
+			background: #fff;
+		}
+	}
+
+	// Second level
+	ul {
+		a {
+			padding: 5px 20px 5px 40px;
+			@include x-rem(font-size, 14px);
+		}
+
+		> li:first-child > a { padding-top: 10px}
+		> li:last-child > a { padding-bottom: 10px}
+
+		.active > a {
+			text-decoration: underline;
+
+			&:after {
+				display: none;
+			}
+		}
+	}
+
+	ul ul a {
+		padding-left: 50px;
+			@include x-rem(font-size, 12px);
+	}
+}

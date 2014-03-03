@@ -1,0 +1,171 @@
+/* ================================================================
+   Page Meta Area
+    - Breadcrumbs
+    - Page Tools
+   ================================================================ */
+
+.page-meta {
+	padding: 1em 0;
+	margin-bottom: 2em;
+	border-bottom: 1px solid #dbdbdb;
+}
+
+
+/* Page Tools (Print | Email | Share)
+   ================================================================ */
+
+.page-tools {
+	display: none;
+	float: right;
+	padding-right: 1em;	
+	@include x-rem(font-size, 13px);
+
+	@include breakpoint(m) {
+		display: block;
+	}
+
+	ul {
+		display: block;
+		margin: 0;
+		padding: 0;
+	}
+
+	li {
+		display: inline-block;
+		margin: 0;
+		padding: 0;
+	}
+
+	a {
+		display: block;
+		padding: 0 0.5em;
+		line-height: 1em;
+		text-transform: uppercase;
+		cursor: pointer;
+		font-family: $font-heading;
+		color: #231f20;
+		@include x-rem(font-size, 14px);
+
+		&:before{
+			margin-right: 0.4em;
+		}
+
+		&[title="Print"]:before {
+			content: '';
+			@extend .icons-print !optional;
+		}
+		&[title="Email"]:before {
+			content: '';
+			@extend .icons-email !optional;
+		}
+		&[title="Share"]:before {
+			content: '';
+			@extend .icons-share !optional;
+		}
+	}
+}
+
+
+/* Breadcrumbs
+   ================================================================ */
+/* Instructions:
+
+#Breadcrumbs
+
+ - Make sure you remove the Separator (or "crumb") from the widget by removing all the contents from the widget's Advanced -> NodeSeperatorMarkup. There's almost never a time when we can't add the behavior we want to a :before state.
+ - We have different crumb styles predefined. Currently we have [triangle, font] but will add [dot, line, image, none]
+
+*/
+
+// A lot of this is resetting the Sf crap. Future versions when we can get rid of their crap will be slimmed down.
+
+$breadcrumb-color: $color-primary !default; // Color to be used for the base (not the current page)
+$breadcrumb-font-size: $font-size-base;
+$breadcrumb-current-color: $color-base !default; // Color of the current page
+$breadcrumb-type: triangle !default; // Valid options will be [triangle, dot, line, image, font, none]
+$breadcrumb-type-triangle-size: 3px !default; // Triangle size
+$breadcrumb-type-font-size: 14px !default;
+$breadcrumb-type-font-color: $breadcrumb-color !default;
+
+.sfBreadcrumbWrp {
+	float: left;
+	@include x-rem(font-size, $breadcrumb-font-size);
+
+	.RadSiteMap {
+		color: inherit;
+		font-family: inherit;
+
+		.rsmFlow {
+			@extend .clearfix;
+			text-align: left;
+			padding-bottom: 0;
+		}
+
+		.rsmItem {
+			position: relative;
+			font-size: inherit;
+			font-weight: normal;
+			display: block;
+			float: left;
+			clear: none;
+
+			+ .rsmItem {
+				padding-left: 20px;
+
+				&:before {
+					content: '';
+					display: block;
+					position: absolute;
+					top: 50%;
+					left: 9px;
+					width: 0px;
+					height: 0px;
+
+					@if $breadcrumb-type == triangle {
+						margin-top: -$breadcrumb-type-triangle-size;
+						border-style: solid;
+						border-width: $breadcrumb-type-triangle-size 0 $breadcrumb-type-triangle-size $breadcrumb-type-triangle-size;
+						border-color: transparent transparent transparent $color-primary;
+					}
+
+					@if $breadcrumb-type == font {
+						content: '>';
+						margin-top: -($breadcrumb-font-size / 2) - 1px;
+						margin-left: -2px;
+						line-height: 1em;
+						font-family: $font-heading;
+						color: $breadcrumb-type-font-color;
+					}
+
+				}
+
+				&:last-child {
+					.rsmLink {
+						color: $breadcrumb-current-color;
+						cursor: default;
+					}
+				}
+			}
+
+			.rsmLink {
+				display: block;
+				padding: 0;
+				color: $breadcrumb-color;
+				text-transform: uppercase;
+				font-family: $font-heading;
+				font-weight: bold;
+				@include x-rem(font-size, $breadcrumb-font-size);
+
+				&:hover, &:focus {
+					border: none;
+					background: none;
+				}
+			}
+		}
+	}
+}
+
+// We're covering the crumb above. This is hiding it in case we forget to remove it from the advanced properties
+.sfBreadcrumbNodeSeparator {
+	display: none;
+}

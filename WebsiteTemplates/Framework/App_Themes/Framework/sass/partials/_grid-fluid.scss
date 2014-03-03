@@ -4,6 +4,7 @@
 
 $grid-gutter: 20px !default;
 
+
 /* ================================================================
    Fluid Grid Styles 
    ================================================================ */
@@ -12,10 +13,14 @@ $grid-gutter: 20px !default;
 	position:relative;
 	margin:0px auto;
 	padding:0px; 
-	width: 87%;
+	width: 100%;
 	min-width:16em; 
 	@include transition(all 0.1s linear);
 	@include clearfix;
+
+	@include breakpoint(m) {
+		width: 87%;
+	}
 }
 
 .container [class*="grid-"] { padding:0 $grid-gutter/2; }
