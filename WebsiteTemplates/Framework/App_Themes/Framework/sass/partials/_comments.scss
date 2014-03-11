@@ -112,6 +112,11 @@ $comments-padding: $grid-gutter !default;
 	}
 }
 
+// Still unsure if this is actually useful. So just hiding it for now.
+
+.sfcommentsField .reBottomTable {
+	display: none;
+}
 .sfcommentsSubmitBtnWrp input[type="submit"] {
 	@extend .btn !optional; // brings in your default button styles if you have a .btn style defined
 }

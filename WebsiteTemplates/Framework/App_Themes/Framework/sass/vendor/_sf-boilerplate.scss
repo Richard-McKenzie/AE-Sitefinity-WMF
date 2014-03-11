@@ -53,10 +53,11 @@ textarea { resize: vertical; }
 
 a[target="_blank"] {cursor: alias}
 
-// Text input areas
-.sfreContentArea {
-	background: #fff;
+body span.gc-cs-link {  // ignores the google voice plugin color
+	color: inherit; 
+	&:hover {text-decoration: none; }
 }
+// insert fix for skype plugin
 
 .Sitefinity.RadEditor, .Sitefinity.RadEditor * {
 	font-family: inherit;

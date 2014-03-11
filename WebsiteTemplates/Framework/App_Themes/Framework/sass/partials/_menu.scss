@@ -33,10 +33,14 @@ Menu Styles
 
 	&.active {
 		display: block;
+
+		@include breakpoint(l){
+			display: table;
+		}
 	}
 
 	// Shows on medium screens
-	@include breakpoint(m){
+	@include breakpoint(l){
 		display: block;
 	}
 
@@ -58,10 +62,6 @@ Menu Styles
 		&.active {
 			display: block;
 		}
-
-		a {
-			padding-left: 2em;
-		}
 	}
 }
 
@@ -70,7 +70,7 @@ Menu Styles
 .menu {
 
 	// Styles for Small devices
-	@include breakpoint(s-m) {
+	@include breakpoint(s-l) {
 		a {
 			padding: 1em;
 			color: #5a5a5a;
@@ -83,7 +83,7 @@ Menu Styles
 	}
 
 	// Styles for Medium devices and up
-	@include breakpoint(m) {
+	@include breakpoint(l) {
 		display: table;
 		width: 100%;
 
@@ -103,7 +103,7 @@ Menu Styles
 			left: 0;
 			z-index: 5;
 			width: 100%;
-			min-width: 3em; //set a min-width to allow for thin parents.
+			min-width: 11em; //set a min-width to allow for thin parents.
 			background: #ccc;
 
 			// Third level styling

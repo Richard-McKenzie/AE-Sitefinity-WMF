@@ -27,16 +27,11 @@
 	-moz-osx-font-smoothing: grayscale;
 }
 
-[class*="icon-"], .icomoonfont {
-	font-family: 'icomoon';
-	speak: none;
-	font-style: normal;
-	font-weight: normal;
-	font-variant: normal;
-	text-transform: none;
-	line-height: 1;
+[data-icon]:before {
+	@include icomoonfont();
+	content: attr(data-icon);
+}
 
-	/* Better Font Rendering =========== */
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
+[class*="icon-"] {
+	@include icomoonfont();
 }

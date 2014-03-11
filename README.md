@@ -6,6 +6,8 @@ Sitefinity
  - Make a generic style for the framework, remove site specific styles from the code
  - Provide more examples, add everything to the sandbox.
  - Redo custom layouts
+ - Find a good jquery validator
+ - Document form updates with the placeholder and form type
 
 Repository of various Sitefinity tools and modules
 
@@ -13,7 +15,13 @@ Sandbox: http://sitefinitybox.idevdesign.net/
 Sandbox Sf 7: http://sitefinity7-demo.idevdesign.net/
 
 
-##Changelog - Major Releases
+##Changelog
+
+**v.0.1.1** - 3/11/2014
+ - Added pagination enhancement
+ - enhanced form sass partial
+ - added instructions on how to update css
+ - bunch of small bug fixes/renaming
 
 **v.0.1** - 3/3/2014
  - Added better support for a pages MetaData.

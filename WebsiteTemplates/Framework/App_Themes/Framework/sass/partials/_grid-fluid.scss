@@ -18,7 +18,7 @@ $grid-gutter: 20px !default;
 	@include transition(all 0.1s linear);
 	@include clearfix;
 
-	@include breakpoint(m) {
+	@include breakpoint(l) {
 		width: 87%;
 	}
 }

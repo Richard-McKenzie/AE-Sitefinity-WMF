@@ -2,6 +2,8 @@
    Typography Styles
    ================================================================ */
 
+$typography-margin-bottom: 1.5em !default;
+
 h1 {
 	margin: 0 0 1em;
 	font-family: $font-heading;
@@ -30,12 +32,12 @@ h4 {
 }
 
 p {
-	margin: 0 0 1em;
+	margin: 0 0 $typography-margin-bottom;
 }
 
 ul, ol {
 	padding-left: 1.5em;
-	margin: 0 0 1em;
+	margin: 0 0 $typography-margin-bottom;
 }
 
 a {
@@ -62,7 +64,7 @@ tr:nth-child(2n) td {
 	background: #fff;
 }
 
-.btn {
+.btn, .button {
 	display: inline-block;
 	padding: 0.4em 1.5em;
 	background: $color-primary;

@@ -25,6 +25,10 @@
 	@include box-sizing(content-box);
 }
 
+.RadDockZone .rdContent * {
+	@include box-sizing(border-box);
+}
+
 .ZoneEditorToolboxContainer h2 {
 	font-family: arial, sans-serif;
 }
@@ -48,7 +52,12 @@ body.sfPageEditor.zeContentMode div#ScriptWrapper .RadDockZone:before {
 	min-height: 15px;
 }
 
-// Move the tools up on the front end
-html .sfPageBrowseAndEditToolbarWrp {
-	top: 5% !important;
+// Move the tools up on the front end to allow for the add this side share
+// html .sfPageBrowseAndEditToolbarWrp {
+// 	top: 5% !important;
+// }
+
+// Fix for the layout editor not showing up.
+#ZoneEditor {
+	overflow: visible !important;
 }

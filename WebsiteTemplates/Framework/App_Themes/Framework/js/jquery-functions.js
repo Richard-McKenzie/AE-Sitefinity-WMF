@@ -1,6 +1,11 @@
 
 jQuery(function($) {
 
+	$('.search-toggle').on('click',function(e){
+		e.preventDefault();
+		$('.sfsearchBox').toggleClass('active');
+		$(this).toggleClass('active');
+	})
 
 	/* Owl Carousel */
 
@@ -30,9 +35,10 @@ jQuery(function($) {
 	$('body').on('click', '.menu-toggle', function(e){
 	  e.preventDefault();
 	  $('.menu').toggleClass('active');
+	  $(this).toggleClass('active')
 	});
 
-	$('body').on('click', '.menu-sub-expand', function(e){
+	$('.menu').on('click', '.has-sub', function(e){
 	  e.preventDefault();
 	  $(this).toggleClass('active');
 	  $(this).siblings('ul').toggleClass('active');
@@ -94,6 +100,23 @@ jQuery(function($) {
 		});
 	});
 
+	/* Pagination Previous / Next */
+
+	$('.sf_pagerNumeric').each(function(j){
+		var pagerPrev = '', pagerNext = '';
+		if($(this).find('.sf_PagerCurrent').prev('a').length > 0) {
+			pagerPrev += '<a href="' + $(this).find('.sf_PagerCurrent').prev('a').attr('href') + '" class="prev" title="Previous" ></a>';
+		}else{
+			pagerPrev += '<span title="Previous" class="prev disabled"></span>';
+		};
+		if($(this).find('.sf_PagerCurrent').next('a').length > 0) {
+			pagerNext += '<a href="' + $(this).find('.sf_PagerCurrent').next('a').attr('href') + '" class="next" title="Next" ></a>';
+		}else{
+			pagerNext += '<span title="Next" class="next disabled"></span>';
+		};
+		$(this).prepend(pagerPrev);
+		$(this).append(pagerNext);
+	});
 	/* Photo Galleries */
 
 	$('.popup').each(function(){
@@ -119,4 +142,33 @@ jQuery(function($) {
 			}
 		});
 	}); 
+	/* Form functions */
+
+	// form-label-hide
+
+	var formsUsePlaceholder = true;
+
+	if(formsUsePlaceholder){
+		// Sets placeholders on text fields
+		$('.sfFormBox').each(function(e){
+			var label = $(this).find('.sfTxtLbl').text();
+			// $(this).find('.sfTxtLbl').addClass('visuallyhidden');
+			$(this).find('input').attr('placeholder', label);
+		});
+
+		// Sets placeholders on textarea
+		$('.sfFormBlock').each(function(e){
+			var label = $(this).find('.sfTxtLbl').text();
+			// $(this).find('.sfTxtLbl').addClass('visuallyhidden');
+			$(this).find('textarea').attr('placeholder', label);
+		});
+	};
+
+	// Changes input type for html5 inputs
+	// Might need to rework this in the future.
+
+	$('[class*="form-type-"]').each(function(e){
+		var inputType = $(this).attr('class').match('form-type-([a-zA-Z]+)')[1];
+		$(this).find('input[type="text"]').get(0).type=inputType;
+	});
 });

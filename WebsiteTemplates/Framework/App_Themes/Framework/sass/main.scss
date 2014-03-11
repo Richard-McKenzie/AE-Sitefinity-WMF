@@ -16,6 +16,8 @@ $font-body: Arial, sans-serif;
 $font-heading: Times New Roman, serif;
 $font-size-base: 13px;
 
+// Hover background color
+$link-selection: rgba($color-primary, 0.75);
 $body-bg: #fff;
  
 
@@ -30,12 +32,14 @@ $breadcrumb-type: font;
 // SASS Functions and Modules
 @import "modules/utilities";
 
-// Third Party Styles
+// Third Party Partials
 @import "vendor/normalize";
 @import "vendor/sf-boilerplate";
-@import "vendor/sf-admin";
+@import "vendor/magnific-popup";
+@import "vendor/owlcarousel";
 
-// Site Specific Styles
+// Theme Partials
+@import "partials/fonts";
 @import "partials/sprites";
 @import "partials/grid-fluid";
 // @import "partials/grid-fixed";
@@ -49,9 +53,11 @@ $breadcrumb-type: font;
 @import "partials/nav-rail";
 @import "partials/page-meta";
 @import "partials/pagination";
-@import "partials/news";
 @import "partials/tabs";
 @import "partials/sitemap";
-//@import "vendor/owltheme";
+@import "vendor/owltheme";
 @import "partials/base";
 @import "partials/print";
+
+// Admin resets and fixes
+@import "vendor/sf-admin";

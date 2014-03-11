@@ -2,32 +2,75 @@
    Generic Form Styles
    ================================================================ */
 
-$input-height: 24px !default;
-$input-border-color: $color-base !default;
-$input-border-radius: 0 !default;
+$input-height: 40px !default;
+$input-background: #ffffff !default;
+$input-border-color: #d4d4d4 !default;
+$input-border-width: 1px !default;
+$input-border-radius: 5px !default;
 
-input {
-	border: 1px solid $input-border-color;
+input[type="text"],
+input[type="password"],
+input[type="tel"],
+input[type="email"] {
+	border: $input-border-width solid $input-border-color;
 	border-radius: $input-border-radius;
 	@include x-rem(height, $input-height);
+	padding: 5px 13px;
+	background: $input-background;
+	vertical-align: top;
+	@include box-shadow(inset 0 1px 5px hsla(0%, 0%, 0%, 0.22));
+	@include x-rem(font-size, 14px);
+	@include transition(all 0.2s ease-out);
+
+	&:focus {
+		outline: none;
+		@include box-shadow(inset 0 1px 5px hsla(0%, 0%, 0%, 0.22), inset 0 0 0 2px $color-primary);
+	}
 }
 
 input[type="checkbox"], 
 input[type="radio"] {
 	margin-right: 2px;
 	border-radius: 0;
+	background: none;
 }
 
 select {
-	border: 1px solid $input-border-color;
+	border: $input-border-width solid $input-border-color;
 	border-radius: $input-border-radius;
+	background: $input-background;
+	@include box-shadow(inset 0 1px 5px hsla(0%, 0%, 0%, 0.22));
 	@include x-rem(height, $input-height);	
+	
+	&:focus {
+		outline: none;
+		@include box-shadow(inset 0 1px 5px hsla(0%, 0%, 0%, 0.22), inset 0 0 0 2px $color-primary);
+	}
 }
 
 textarea {
-	border: 1px solid $input-border-color;
+	padding: 10px 13px;
+	border: $input-border-width solid $input-border-color;
 	border-radius: $input-border-radius;
 	min-height: 100px;
+	background: $input-background;
+	@include box-shadow(inset 0 1px 5px hsla(0%, 0%, 0%, 0.22));
+	@include transition(all 0.2s ease-out);
+
+	&:focus {
+		outline: none;
+		@include box-shadow(inset 0 1px 5px hsla(0%, 0%, 0%, 0.22), inset 0 0 0 2px $color-primary);
+	}
+}
+
+// Text input areas
+.sfreContentArea {
+	background: $input-background;
+}
+
+button, input[type="button"] {
+	@extend .button;
+	@include x-rem(font-size, 18px);
 }
 
 /* ================================================================
@@ -38,12 +81,21 @@ textarea {
 .sfTxtLbl {
 	font-weight: bold;
 	display: block;
+
+	//Since we're using js to add the placeholder, we should really only hide the label if there is a placeholder present.
+	.js .form-label-hide & {
+		@extend .visuallyhidden;
+	}
 }
 
 // I think this is used for some text areas. Know for sure comments
 .Sitefinity.RadEditor .reContentCell {
-	border: 1px solid $input-border-color;
-	border-radius: $input-border-radius;
+	border: none;
+
+	iframe {
+		border: $input-border-width solid $input-border-color;
+		border-radius: $input-border-radius;		
+	}
 }
 
 .sfError {

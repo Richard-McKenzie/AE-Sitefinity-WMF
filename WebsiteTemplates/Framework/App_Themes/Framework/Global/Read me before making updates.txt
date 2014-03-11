@@ -1,0 +1,10 @@
+#Important, read me before making updates
+
+In our Sitefinity projects we use SASS to write and compile our css files. What this means is main.css gets generated from the sass file. So any changes you make to main.css will get replaced the next time the site is compiled.
+
+If you are going to be making multiple style changes on one site, it would be best to learn SASS. Further documentation will be provided, but for now just contact Caleb Kester or Matt Norton.
+
+Otherwise, if you just have a few small changes, you should make them in updates.css and override any styles that you need to.  If updates.css doesn't exist yet in this folder do the following:
+
+1. Create updates.css file
+2. Add `<file>updates.css</file>` after `<file>main.css</file>` in the cssLoadOrder.xml document.

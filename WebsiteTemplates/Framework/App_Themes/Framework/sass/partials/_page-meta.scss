@@ -5,9 +5,8 @@
    ================================================================ */
 
 .page-meta {
-	padding: 1em 0;
 	margin-bottom: 2em;
-	border-bottom: 1px solid #dbdbdb;
+	@extend .clearfix;	
 }
 
 
@@ -83,7 +82,8 @@ $breadcrumb-color: $color-primary !default; // Color to be used for the base (no
 $breadcrumb-font-size: $font-size-base;
 $breadcrumb-current-color: $color-base !default; // Color of the current page
 $breadcrumb-type: triangle !default; // Valid options will be [triangle, dot, line, image, font, none]
-$breadcrumb-type-triangle-size: 3px !default; // Triangle size
+$breadcrumb-type-triangle-height: 3px !default; // Triangle size
+$breadcrumb-type-triangle-width: 3px !default; // Triangle size
 $breadcrumb-type-font-size: 14px !default;
 $breadcrumb-type-font-color: $breadcrumb-color !default;
 
@@ -122,9 +122,9 @@ $breadcrumb-type-font-color: $breadcrumb-color !default;
 					height: 0px;
 
 					@if $breadcrumb-type == triangle {
-						margin-top: -$breadcrumb-type-triangle-size;
+						margin-top: -$breadcrumb-type-triangle-height;
 						border-style: solid;
-						border-width: $breadcrumb-type-triangle-size 0 $breadcrumb-type-triangle-size $breadcrumb-type-triangle-size;
+						border-width: $breadcrumb-type-triangle-height 0 $breadcrumb-type-triangle-height $breadcrumb-type-triangle-width;
 						border-color: transparent transparent transparent $color-primary;
 					}
 
@@ -151,9 +151,7 @@ $breadcrumb-type-font-color: $breadcrumb-color !default;
 				display: block;
 				padding: 0;
 				color: $breadcrumb-color;
-				text-transform: uppercase;
 				font-family: $font-heading;
-				font-weight: bold;
 				@include x-rem(font-size, $breadcrumb-font-size);
 
 				&:hover, &:focus {
