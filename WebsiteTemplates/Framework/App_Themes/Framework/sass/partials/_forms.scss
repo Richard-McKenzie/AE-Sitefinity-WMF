@@ -68,10 +68,11 @@ textarea {
 	background: $input-background;
 }
 
-button, input[type="button"] {
-	@extend .button;
-	@include x-rem(font-size, 18px);
-}
+// TODO: Lets not do this and be more specific
+// button, input[type="button"] {
+// 	@extend .button;
+// 	@include x-rem(font-size, 18px);
+// }
 
 /* ================================================================
    Sitefinity Form Styles

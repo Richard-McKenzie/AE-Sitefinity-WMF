@@ -5,43 +5,45 @@
 // }
 
 //Sets content-box to sitefinity admin so global box-sizing can be changed
-.RadWindow, 
-.sfPageEditorToolbarWrapper .sfWorkflowMenuWrp .sfActionsDDL .rmSlide,
-.sfLayoutPropsContainer,
-.sfVisualLayoutEditor,
-.sfPageContainer,
-// .sfPageEditor [class^="sf"], // Removing this as it breaks grids in the admin
-.sfPageEditor [class^="Rad"],
-.sfPageEditor [class^="rm"],
-.sfPageEditor [class^="rt"],
-.sfPageBrowseAndEditToolbarWrp,
-.sfOpenBrowseAndEditMenuLnk,
-.ZoneEditorToolboxContainer,
-.ZoneEditorToolboxContainer *,
-.ZoneEditorToolboxContainer *:before,
-.ZoneEditorToolboxContainer *:after,
-#fancybox-wrap,
-#fancybox-wrap *{
-	@include box-sizing(content-box);
-}
+// .RadWindow, 
+// .sfPageEditorToolbarWrapper .sfWorkflowMenuWrp .sfActionsDDL .rmSlide,
+// .sfLayoutPropsContainer,
+// .sfVisualLayoutEditor,
+// .sfPageContainer,
+// // .sfPageEditor [class^="sf"], // Removing this as it breaks grids in the admin
+// .sfPageEditor [class^="Rad"],
+// .sfPageEditor [class^="rm"],
+// .sfPageEditor [class^="rt"],
+// .sfPageBrowseAndEditToolbarWrp,
+// .sfOpenBrowseAndEditMenuLnk,
+// .ZoneEditorToolboxContainer,
+// .ZoneEditorToolboxContainer *,
+// .ZoneEditorToolboxContainer *:before,
+// .ZoneEditorToolboxContainer *:after,
+// #fancybox-wrap,
+// #fancybox-wrap *{
+// 	@include box-sizing(content-box);
+// }
 
-.RadDockZone .rdContent * {
-	@include box-sizing(border-box);
-}
+// .RadDockZone .rdContent * {
+// 	@include box-sizing(border-box);
+// }
 
 .ZoneEditorToolboxContainer h2 {
 	font-family: arial, sans-serif;
 }
 
-body.sfPageEditor.zeContentMode div#ScriptWrapper .RadDockZone:before {
-  content: "-- ONLY PLACE STYLE WIDGETS AND SCRIPT WIDGETS BELOW THIS AREA --";
-  display: block;
-  text-align: center;
-  font-size: 12px;
-}
-
 // Hide Add This SmartLayers
 .sfPageEditor .addthis-smartlayers{
+	display: none;
+}
+
+//hide the column adjusters
+.sfPageEditor .sfLayoutWidthSlider {
+	display: none;
+}
+
+.sfLayoutPropsContainer #columnList {
 	display: none;
 }
 

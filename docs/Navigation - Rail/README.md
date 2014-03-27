@@ -21,8 +21,8 @@ The following code with the included sass file will generate our typical rail na
 
 <navigation:SitefinitySiteMapDataSource runat="server" ID="dataSource" />
 
-<div class="mod nav-rail <%= this.GetCssClass() %>">
-	<div class="mod-content">
+<div class="module nav-rail <%= this.GetCssClass() %>">
+	<div class="module-content">
 		<ul class="nav-rail-list" runat="server" id="navigationUl">
 			<navigation:NavigationContainer runat="server" DataSourceID="dataSource">
 				<Templates>

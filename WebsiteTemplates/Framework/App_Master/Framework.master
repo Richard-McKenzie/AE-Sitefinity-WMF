@@ -34,6 +34,7 @@
 			</div>
 		</header>
 		<main id="main" role="main" class="main">
+			<%# Eval("BodyClass")%>
 			<asp:contentplaceholder id="Content" runat="server" />
 		</main>
 		<footer class="footer" role="contentinfo">
@@ -45,11 +46,13 @@
 		</footer>
 
 		<div id="ScriptWrapper" runat="server">
-		<%-- Example calls
-			<script type="text/javascript" src="/Sitefinity/WebsiteTemplates/Framework/App_Themes/Framework/js/jquery-plugins.js"></script>
-			<script type="text/javascript" src="/Sitefinity/WebsiteTemplates/Framework/App_Themes/Framework/js/jquery-functions.js"></script>
-		--%>
-			<asp:ContentPlaceHolder ID="cph_scriptsandstyles" runat="server" />
+			<script src="/Sitefinity/WebsiteTemplates/Framework/App_Themes/Framework/js/lodash.compat.min.js"></script>
+			<script src="/Sitefinity/WebsiteTemplates/Framework/App_Themes/Framework/js/vendor/magnific-popup.min.js"></script>
+			<script src="/Sitefinity/WebsiteTemplates/Framework/App_Themes/Framework/js/vendor/owl.carousel.min.js"></script>
+			<script src="/Sitefinity/WebsiteTemplates/Framework/App_Themes/Framework/js/vendor/jquery.fitvids.js"></script>
+			<script src="/Sitefinity/WebsiteTemplates/Framework/App_Themes/Framework/js/jquery-plugins.js"></script>
+      <script src="/Sitefinity/WebsiteTemplates/Framework/App_Themes/Framework/js/jquery-functions.js"></script>
+			<asp:ContentPlaceHolder ID="ScriptAndStyles" runat="server">Script And Styles</asp:ContentPlaceHolder>
 		</div>
 	</form>
 </body>

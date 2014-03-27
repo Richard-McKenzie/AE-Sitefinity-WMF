@@ -117,7 +117,16 @@ jQuery(function($) {
 		$(this).prepend(pagerPrev);
 		$(this).append(pagerNext);
 	});
+
 	/* Photo Galleries */
+
+	$('[data-popup="true"]').each(function(){
+		$(this).magnificPopup({ 
+			type: 'image'
+		});		
+	});
+
+	// Old stuff
 
 	$('.popup').each(function(){
 		$(this).magnificPopup({ 

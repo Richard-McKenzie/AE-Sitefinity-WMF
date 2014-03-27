@@ -1,6 +1,6 @@
 #Custom Layouts
 
-##NOTE: There might be a bug with these custom layouts in Sf 6.3+ . Further testing has to be done and we'll test in Sf 7. If you experience erratic behavior with content not staying inside the layouts, just add Sf_colsOut to each of the examples (match it with the one found in the Sf Base layout).
+####NOTE: There might be a bug with these custom layouts in Sf 6.3+ . Further testing has to be done and we'll test in Sf 7. If you experience erratic behavior with content not staying inside the layouts, just add Sf_colsOut to each of the examples (match it with the one found in the Sf Base layout).
 
 There are some sample layouts in the CustomLayouts folder. To use them paste this in your config file after the last `</toolbox>`: App_data\Sitefinity\Configuration\ToolboxesConfig.config
 
@@ -9,9 +9,7 @@ There are some sample layouts in the CustomLayouts folder. To use them paste thi
 	<sections>
 		<add enabled="True" title="Framework Layouts" description="Base Framework regions for layout management." name="Framework">
 			<tools>
-				<add title="Grid 8 - 4" description="Grid 8 - 4" cssClass="test" layoutTemplate="~/App_Data/Sitefinity/WebsiteTemplates/Framework/CustomLayouts/Grid-8-4.ascx" visibilityMode="None" name="grid-8main-4" enabled="True" type="Telerik.Sitefinity.Web.UI.LayoutControl" />
-				<add title="Grid 4 - 8" description="Grid 4 - 8" cssClass="test" layoutTemplate="~/App_Data/Sitefinity/WebsiteTemplates/Framework/CustomLayouts/Grid-4-8.ascx" visibilityMode="None" name="grid-4-8" enabled="True" type="Telerik.Sitefinity.Web.UI.LayoutControl" />
-				<add title="Grid 4 - 8 (Main)" description="Grid 4 - 8. Column 8 appears first on small devices." cssClass="test" layoutTemplate="~/App_Data/Sitefinity/WebsiteTemplates/Framework/CustomLayouts/Grid-4-8main.ascx" visibilityMode="None" name="grid-4-8main" enabled="True" type="Telerik.Sitefinity.Web.UI.LayoutControl" />
+				<add title="Grid 4 - 8" description="Grid 4 - 8" layoutTemplate="~/App_Data/Sitefinity/WebsiteTemplates/Framework/CustomLayouts/Grid-4-8.ascx" visibilityMode="None" name="grid-4-8" enabled="True" type="Telerik.Sitefinity.Web.UI.LayoutControl" />
 			</tools>
 		</add>
 	</sections>

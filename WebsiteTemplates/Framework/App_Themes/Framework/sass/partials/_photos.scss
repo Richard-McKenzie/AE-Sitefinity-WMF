@@ -2,64 +2,104 @@
    Photos Styles
    ================================================================ */
 
-.gallery {
-	display: block;
-	margin: 0;
-	padding: 0;
-	font-size:50px;
-	text-align: center;
+$gallery-list-item-margin: 10px;
+$gallery-list-comment-color: #fff !default;
+$gallery-list-comment-background: hsla(0, 0%, 0%, 0.5) !default;
 
-	li {
-		position: relative;
-		display: inline-block;
+.gallery {
+
+	.gallery-list {
+		display: block;
 		margin: 0;
 		padding: 0;
-		@include x-rem(font-size, 14px);
+		text-align: center;
+
+		li {
+			position: relative;
+			display: inline-block;
+			margin: $gallery-list-item-margin 0;
+			padding: 0;
+		}
+	}
+
+	//Thumbnail View
+	&[data-style="thumbnails"] {
+
+		.gallery-list {
+			margin: 0 (-$gallery-list-item-margin); //offsets the spacing
+			text-align: left;	
+
+			li {
+				margin: $gallery-list-item-margin;			
+			}
+		}
+
+		.gallery-list-item {
+			display: block;
+			width: 200px;
+			height: 200px;
+			overflow: hidden;
+			background-size: cover;
+			background-position: 50% 25%;
+			@include transition(all 0.2s ease-out);
+			@include box-shadow(0 0 0em $color-base);
+
+			&:hover, &:focus {
+				@include box-shadow(0 0 1em $color-base);
+			}
+			
+			img {
+				@extend .visuallyhidden;
+			}
+		}
 	}
 }
 
-.gallery-item {
-	display: block;
-	width: 200px;
-	height: 200px;
-	overflow: hidden;
-	@include transition(all 0.2s ease-out);
-	@include box-shadow(0 0 0em $color-base);
-
-	&:hover, &:focus {
-		@include box-shadow(0 0 1em $color-base);
-	}
-	
-	img {
-		min-width: 200px;
-		min-height: 200px;
-		max-width: initial;
-	}
-}
-
-.gallery-item-comment {
+.gallery-list-item-comment {
 	position: absolute;
 	bottom: 0;
 	right: 0;
 	display: inline-block;
 	padding: 4px 8px;
-	text-transform: uppercase;
-	background-color: lighten($color-base, 50%);
-	color: #fff;
 	text-decoration: none;
+	background-color: $gallery-list-comment-background;
+	color: $gallery-list-comment-color;
 	@include x-rem(font-size, 11px);
 	@include x-rem(line-height, 12px);
+	@include transition(all 0.2s ease-out);
 
-	&:after{
-		@extend .icomoon-bubbles !optional; // TODO: Add this icon into core
+	&:after {
+		@extend .iconfont-comments;
+		display: inline-block;
 		padding-left: 2px;
 	}
 
 	&:hover, &:focus {
-		background-color: lighten($color-base, 20%);
+		text-decoration: none;
+		background-color: rgba($gallery-list-comment-background, alpha($gallery-list-comment-background)*1.5);
 	}
 
 	&.sfcommentsEmpty {
 		display: none;
 	}
+
+	//Hide if it's associated with a popup
+	[data-popup="true"] + & {
+		display: none;
+	}
 }
+
+
+// Sitefinity inheritance
+
+// .sfimagesTmbList {
+// 	@extend .gallery-list;
+
+// 	li a:first-child{
+// 		@extend .gallery-list-item;
+// 	}
+// }
+
+// .sfCommentsCounter {
+// 	@extend .gallery-list-item-comment;
+// }

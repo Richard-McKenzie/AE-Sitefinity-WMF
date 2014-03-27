@@ -8,9 +8,9 @@
 
 <asp:Repeater ID="resultsList" runat="server">
 	<HeaderTemplate>
-		<div class="mod news">
-			<div class="mod-content">
-				<ul class="mod-list">
+		<div class="module search-results">
+			<div class="module-content">
+				<ul class="module-list">
 	</HeaderTemplate>
 	<ItemTemplate>
 		<li class="item clearfix">

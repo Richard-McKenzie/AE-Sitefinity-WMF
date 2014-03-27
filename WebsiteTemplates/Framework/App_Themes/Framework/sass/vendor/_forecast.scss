@@ -6,11 +6,11 @@
 	// If you have an iconfont already in use, import this font into that font and comment out the below font-face
 @font-face {
 	font-family: "forecast";
-	src: url("../Fonts/forecast.eot");
-	src: url("../Fonts/forecast.eot?#iefix") format("embedded-opentype"),
-	     url("../Fonts/forecast.woff") format("woff"),
-	     url("../Fonts/forecast.ttf") format("truetype"),
-	     url("../Fonts/forecast.svg#forecast") format("svg");
+	src: url("../Fonts/forecast/forecast.eot");
+	src: url("../Fonts/forecast/forecast.eot?#iefix") format("embedded-opentype"),
+	     url("../Fonts/forecast/forecast.woff") format("woff"),
+	     url("../Fonts/forecast/forecast.ttf") format("truetype"),
+	     url("../Fonts/forecast/forecast.svg#forecast") format("svg");
 	font-weight: normal;
 	font-style: normal;
 }
