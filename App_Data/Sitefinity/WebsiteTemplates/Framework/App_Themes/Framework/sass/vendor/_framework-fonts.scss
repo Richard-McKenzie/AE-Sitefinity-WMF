@@ -37,21 +37,24 @@
 .icon-comments:before {
 	content: "\f086";
 }
-
+.iconfont-chevron-right {
+	@include iconfont();
+	content: "\f054";
+}
+.icon-chevron-right:before {
+	content: "\f054";
+}
 .iconfont-chevron-left {
 	@include iconfont();
 	content: "\f053";
 }
-
 .icon-chevron-left:before {
 	content: "\f053";
 }
-
 .iconfont-arrow-left {
 	@include iconfont();
 	content: "\f060";
 }
-
 .icon-arrow-left:before {
 	content: "\f060";
 }
@@ -293,9 +296,6 @@
 }
 .icon-eject:before {
 	content: "\f052";
-}
-.icon-chevron-right:before {
-	content: "\f054";
 }
 .icon-plus-circle:before {
 	content: "\f055";

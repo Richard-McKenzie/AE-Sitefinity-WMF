@@ -20,7 +20,7 @@
 		<ul class="meta">
 			<%-- Publication Date --%>
 			<li class="meta-item date" itemprop="dateCreated">
-				<time datetime='<sf:FieldListView ID="PublicationTime" runat="server" Format="{PublicationDate.ToLocal():yyyy-MM-dd}" />'><sf:FieldListView ID="PublicationDate" runat="server" Format="{PublicationDate.ToLocal():MMM dd, yyyy}" /></time>
+				<time datetime='<sf:FieldListView ID="PublicationTime" runat="server" Format="{PublicationDate.ToLocal():yyyy-MM-dd}" />'><sf:FieldListView ID="PublicationDate" runat="server" Format="{PublicationDate.ToLocal():MMM d, yyyy}" /></time>
 
 			<%-- Author field --%>
 			<sf:Conditional If='<%# Eval("Author").ToString().Trim() != string.Empty %>' runat="server">

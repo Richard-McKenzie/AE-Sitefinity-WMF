@@ -78,6 +78,7 @@ tr:nth-child(2n) td {
 	background: $color-primary;
 	color: #fff;
 	border: 0;
+	border-radius: 4px;
 	font-family: $font-body;
 	text-decoration: none;
 	@include transition(all 0.2s ease-out);
@@ -94,6 +95,7 @@ tr:nth-child(2n) td {
 	background: $color-primary;
 	color: #fff;
 	border: 0;
+	border-radius: 4px;
 	font-family: $font-body;
 	font-size: 13px;
 	text-decoration: none;

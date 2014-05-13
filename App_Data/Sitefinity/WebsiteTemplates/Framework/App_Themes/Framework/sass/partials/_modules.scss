@@ -20,18 +20,17 @@
 .meta-item {
 	display: inline-block;
 
-	&:before {
+	&:after {
 		content: '\2022';
 		display: inline-block;
-		padding: 0 0.5em;
+		padding: 0 0.5em 0 0.2em; // offset left padding fixes spaces left in .meta-item
 	}
 
-	&:first-child {
-		&:before {
+	&:last-child {
+		&:after {
 			display: none;
 		}
 	}
-
 }
 
 // Tags
@@ -61,6 +60,7 @@
 		color: hsl(0, 0%, 50%);
 		text-transform: uppercase;
 		border-radius: 4px;
+		vertical-align: text-bottom;
 
 		// Example styling for a specific tag powered by jquery-functions
 		&[data-tag="Featured"] {
@@ -109,6 +109,49 @@
 }
 
 
+/* Core List Styles
+   - Provides core styling for item list
+   ========================================================================== */
+
+.list {
+	display: block;
+	margin: 0 0 $grid-gutter;
+	padding: 0;
+
+	> .item {
+		position: relative;
+		display: block;
+		padding: 0;
+
+		+ .item {
+			margin-top: $grid-gutter;
+			padding-top: $grid-gutter - 5px; // offset for line-height on title 
+			border-top: 1px solid rgba($color-primary, 0.2);
+		}
+
+		// Supports aside content in the list
+		.aside {
+			margin: 1em auto;
+			max-width: 200px;
+			max-height: 200px;
+
+			@include breakpoint(m){
+				display: table-cell;
+				width: 125px;
+				vertical-align: top;
+
+				.sfimageWrp {
+					margin: 5px 15px 0 0; //Margin top is for line-height offset
+				}
+
+				+ .item-content {
+					display: table-cell;
+					vertical-align: top;
+				}
+			}
+		}
+	}
+}
 
 // #Modules
 // Below you will find a lot of helper classes for modules.
@@ -117,22 +160,9 @@
    ========================================================================== */
 
 .module-list { 
-	display: block;
-	margin:0; 
-	padding:0; 
-
 	.item {
-		position: relative;
-		display: block;
-		margin: 0;
-		padding: 0;
-
-		+ .item {
-			margin-top: $grid-gutter * 2;
-		}
-
-		.title { 
-			@include x-rem(margin, 0 0 10px);
+		.title {
+			margin: 0 0 10px;
 
 			a {
 				text-decoration: none;
@@ -142,23 +172,27 @@
 				}
 			}
 		}
-		
+
 		.meta {
-			@include x-rem(margin-bottom, 10px);
+			margin-bottom: 10px;
+			font-size: 0.85em;
 		}
 
 		.summary {
-			@include x-rem(margin-bottom, 10px);
+			margin-bottom: 10px;
 		}
 
+		// Provides simple styling to go to the list view
 		.more {
-			@extend .btn !optional;
-			text-transform: uppercase;
-			font-size: 0.8em; //insures the more button is always smaller then the module text
+			@extend .button-small !optional;
+			text-transform: capitalize;
+
+			&:after {
+				@extend .iconfont-chevron-right !optional;
+			}
 		}
 	}
 }
-
 
 
 /* ==========================================================================

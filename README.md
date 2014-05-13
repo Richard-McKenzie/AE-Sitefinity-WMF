@@ -12,6 +12,9 @@ Sitefinity
  - WYSIWYG styles: http://www.sitefinity.com/blogs/gabe-sumners-blog/2011/09/23/my_3_favorite_customizations_to_sitefinity_rsquo_s_rich_text_editor
  - explain `<%# string.Format(Eval("SourceName").ToString().Trim() != string.Empty ? "<div class='meta-item citization' itemprop='citization'><a href='{0}' target='_blank'>{1}</a></div>" : "", Eval("SourceSite"), Eval("SourceName")) %>`
 
+##Time
+http://msdn.microsoft.com/en-us/library/8kb3ddd4(v=vs.110).aspx
+
 ##Tags
 
 ```<%-- Tags, Currently doesn't hide if no tags :( --%>

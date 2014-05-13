@@ -1669,7 +1669,27 @@ img.mfp-img {
   content: "\f086";
 }
 
-/* line 41, ../sass/vendor/_framework-fonts.scss */
+/* line 40, ../sass/vendor/_framework-fonts.scss */
+.iconfont-chevron-right, .module-list .item .more:after {
+  font-family: 'framework';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  content: "\f054";
+}
+
+/* line 44, ../sass/vendor/_framework-fonts.scss */
+.icon-chevron-right:before {
+  content: "\f054";
+}
+
+/* line 47, ../sass/vendor/_framework-fonts.scss */
 .iconfont-chevron-left, .module .back:before {
   font-family: 'framework';
   speak: none;
@@ -1684,12 +1704,12 @@ img.mfp-img {
   content: "\f053";
 }
 
-/* line 46, ../sass/vendor/_framework-fonts.scss */
+/* line 51, ../sass/vendor/_framework-fonts.scss */
 .icon-chevron-left:before {
   content: "\f053";
 }
 
-/* line 50, ../sass/vendor/_framework-fonts.scss */
+/* line 54, ../sass/vendor/_framework-fonts.scss */
 .iconfont-arrow-left {
   font-family: 'framework';
   speak: none;
@@ -1704,404 +1724,399 @@ img.mfp-img {
   content: "\f060";
 }
 
-/* line 55, ../sass/vendor/_framework-fonts.scss */
+/* line 58, ../sass/vendor/_framework-fonts.scss */
 .icon-arrow-left:before {
   content: "\f060";
 }
 
-/* line 63, ../sass/vendor/_framework-fonts.scss */
+/* line 66, ../sass/vendor/_framework-fonts.scss */
 .icon-glass:before {
   content: "\f000";
 }
 
-/* line 66, ../sass/vendor/_framework-fonts.scss */
+/* line 69, ../sass/vendor/_framework-fonts.scss */
 .icon-music:before {
   content: "\f001";
 }
 
-/* line 69, ../sass/vendor/_framework-fonts.scss */
+/* line 72, ../sass/vendor/_framework-fonts.scss */
 .icon-search:before {
   content: "\f002";
 }
 
-/* line 72, ../sass/vendor/_framework-fonts.scss */
+/* line 75, ../sass/vendor/_framework-fonts.scss */
 .icon-envelope-o:before {
   content: "\f003";
 }
 
-/* line 75, ../sass/vendor/_framework-fonts.scss */
+/* line 78, ../sass/vendor/_framework-fonts.scss */
 .icon-heart:before {
   content: "\f004";
 }
 
-/* line 78, ../sass/vendor/_framework-fonts.scss */
+/* line 81, ../sass/vendor/_framework-fonts.scss */
 .icon-star:before {
   content: "\f005";
 }
 
-/* line 81, ../sass/vendor/_framework-fonts.scss */
+/* line 84, ../sass/vendor/_framework-fonts.scss */
 .icon-star-o:before {
   content: "\f006";
 }
 
-/* line 84, ../sass/vendor/_framework-fonts.scss */
+/* line 87, ../sass/vendor/_framework-fonts.scss */
 .icon-user:before {
   content: "\f007";
 }
 
-/* line 87, ../sass/vendor/_framework-fonts.scss */
+/* line 90, ../sass/vendor/_framework-fonts.scss */
 .icon-film:before {
   content: "\f008";
 }
 
-/* line 90, ../sass/vendor/_framework-fonts.scss */
+/* line 93, ../sass/vendor/_framework-fonts.scss */
 .icon-th-large:before {
   content: "\f009";
 }
 
-/* line 93, ../sass/vendor/_framework-fonts.scss */
+/* line 96, ../sass/vendor/_framework-fonts.scss */
 .icon-th:before {
   content: "\f00a";
 }
 
-/* line 96, ../sass/vendor/_framework-fonts.scss */
+/* line 99, ../sass/vendor/_framework-fonts.scss */
 .icon-th-list:before {
   content: "\f00b";
 }
 
-/* line 99, ../sass/vendor/_framework-fonts.scss */
+/* line 102, ../sass/vendor/_framework-fonts.scss */
 .icon-check:before {
   content: "\f00c";
 }
 
-/* line 102, ../sass/vendor/_framework-fonts.scss */
+/* line 105, ../sass/vendor/_framework-fonts.scss */
 .icon-times:before {
   content: "\f00d";
 }
 
-/* line 105, ../sass/vendor/_framework-fonts.scss */
+/* line 108, ../sass/vendor/_framework-fonts.scss */
 .icon-search-plus:before {
   content: "\f00e";
 }
 
-/* line 108, ../sass/vendor/_framework-fonts.scss */
+/* line 111, ../sass/vendor/_framework-fonts.scss */
 .icon-search-minus:before {
   content: "\f010";
 }
 
-/* line 111, ../sass/vendor/_framework-fonts.scss */
+/* line 114, ../sass/vendor/_framework-fonts.scss */
 .icon-power-off:before {
   content: "\f011";
 }
 
-/* line 114, ../sass/vendor/_framework-fonts.scss */
+/* line 117, ../sass/vendor/_framework-fonts.scss */
 .icon-signal:before {
   content: "\f012";
 }
 
-/* line 117, ../sass/vendor/_framework-fonts.scss */
+/* line 120, ../sass/vendor/_framework-fonts.scss */
 .icon-gear:before {
   content: "\f013";
 }
 
-/* line 120, ../sass/vendor/_framework-fonts.scss */
+/* line 123, ../sass/vendor/_framework-fonts.scss */
 .icon-trash-o:before {
   content: "\f014";
 }
 
-/* line 123, ../sass/vendor/_framework-fonts.scss */
+/* line 126, ../sass/vendor/_framework-fonts.scss */
 .icon-home:before {
   content: "\f015";
 }
 
-/* line 126, ../sass/vendor/_framework-fonts.scss */
+/* line 129, ../sass/vendor/_framework-fonts.scss */
 .icon-file-o:before {
   content: "\f016";
 }
 
-/* line 129, ../sass/vendor/_framework-fonts.scss */
+/* line 132, ../sass/vendor/_framework-fonts.scss */
 .icon-clock-o:before {
   content: "\f017";
 }
 
-/* line 132, ../sass/vendor/_framework-fonts.scss */
+/* line 135, ../sass/vendor/_framework-fonts.scss */
 .icon-road:before {
   content: "\f018";
 }
 
-/* line 135, ../sass/vendor/_framework-fonts.scss */
+/* line 138, ../sass/vendor/_framework-fonts.scss */
 .icon-download:before {
   content: "\f019";
 }
 
-/* line 138, ../sass/vendor/_framework-fonts.scss */
+/* line 141, ../sass/vendor/_framework-fonts.scss */
 .icon-arrow-circle-o-down:before {
   content: "\f01a";
 }
 
-/* line 141, ../sass/vendor/_framework-fonts.scss */
+/* line 144, ../sass/vendor/_framework-fonts.scss */
 .icon-arrow-circle-o-up:before {
   content: "\f01b";
 }
 
-/* line 144, ../sass/vendor/_framework-fonts.scss */
+/* line 147, ../sass/vendor/_framework-fonts.scss */
 .icon-inbox:before {
   content: "\f01c";
 }
 
-/* line 147, ../sass/vendor/_framework-fonts.scss */
+/* line 150, ../sass/vendor/_framework-fonts.scss */
 .icon-play-circle-o:before {
   content: "\f01d";
 }
 
-/* line 150, ../sass/vendor/_framework-fonts.scss */
+/* line 153, ../sass/vendor/_framework-fonts.scss */
 .icon-rotate-right:before {
   content: "\f01e";
 }
 
-/* line 153, ../sass/vendor/_framework-fonts.scss */
+/* line 156, ../sass/vendor/_framework-fonts.scss */
 .icon-refresh:before {
   content: "\f021";
 }
 
-/* line 156, ../sass/vendor/_framework-fonts.scss */
+/* line 159, ../sass/vendor/_framework-fonts.scss */
 .icon-list-alt:before {
   content: "\f022";
 }
 
-/* line 159, ../sass/vendor/_framework-fonts.scss */
+/* line 162, ../sass/vendor/_framework-fonts.scss */
 .icon-lock:before {
   content: "\f023";
 }
 
-/* line 162, ../sass/vendor/_framework-fonts.scss */
+/* line 165, ../sass/vendor/_framework-fonts.scss */
 .icon-flag:before {
   content: "\f024";
 }
 
-/* line 165, ../sass/vendor/_framework-fonts.scss */
+/* line 168, ../sass/vendor/_framework-fonts.scss */
 .icon-headphones:before {
   content: "\f025";
 }
 
-/* line 168, ../sass/vendor/_framework-fonts.scss */
+/* line 171, ../sass/vendor/_framework-fonts.scss */
 .icon-volume-off:before {
   content: "\f026";
 }
 
-/* line 171, ../sass/vendor/_framework-fonts.scss */
+/* line 174, ../sass/vendor/_framework-fonts.scss */
 .icon-volume-down:before {
   content: "\f027";
 }
 
-/* line 174, ../sass/vendor/_framework-fonts.scss */
+/* line 177, ../sass/vendor/_framework-fonts.scss */
 .icon-volume-up:before {
   content: "\f028";
 }
 
-/* line 177, ../sass/vendor/_framework-fonts.scss */
+/* line 180, ../sass/vendor/_framework-fonts.scss */
 .icon-qrcode:before {
   content: "\f029";
 }
 
-/* line 180, ../sass/vendor/_framework-fonts.scss */
+/* line 183, ../sass/vendor/_framework-fonts.scss */
 .icon-barcode:before {
   content: "\f02a";
 }
 
-/* line 183, ../sass/vendor/_framework-fonts.scss */
+/* line 186, ../sass/vendor/_framework-fonts.scss */
 .icon-tag:before {
   content: "\f02b";
 }
 
-/* line 186, ../sass/vendor/_framework-fonts.scss */
+/* line 189, ../sass/vendor/_framework-fonts.scss */
 .icon-tags:before {
   content: "\f02c";
 }
 
-/* line 189, ../sass/vendor/_framework-fonts.scss */
+/* line 192, ../sass/vendor/_framework-fonts.scss */
 .icon-book:before {
   content: "\f02d";
 }
 
-/* line 192, ../sass/vendor/_framework-fonts.scss */
+/* line 195, ../sass/vendor/_framework-fonts.scss */
 .icon-bookmark:before {
   content: "\f02e";
 }
 
-/* line 195, ../sass/vendor/_framework-fonts.scss */
+/* line 198, ../sass/vendor/_framework-fonts.scss */
 .icon-print:before {
   content: "\f02f";
 }
 
-/* line 198, ../sass/vendor/_framework-fonts.scss */
+/* line 201, ../sass/vendor/_framework-fonts.scss */
 .icon-camera:before {
   content: "\f030";
 }
 
-/* line 201, ../sass/vendor/_framework-fonts.scss */
+/* line 204, ../sass/vendor/_framework-fonts.scss */
 .icon-font:before {
   content: "\f031";
 }
 
-/* line 204, ../sass/vendor/_framework-fonts.scss */
+/* line 207, ../sass/vendor/_framework-fonts.scss */
 .icon-bold:before {
   content: "\f032";
 }
 
-/* line 207, ../sass/vendor/_framework-fonts.scss */
+/* line 210, ../sass/vendor/_framework-fonts.scss */
 .icon-italic:before {
   content: "\f033";
 }
 
-/* line 210, ../sass/vendor/_framework-fonts.scss */
+/* line 213, ../sass/vendor/_framework-fonts.scss */
 .icon-text-height:before {
   content: "\f034";
 }
 
-/* line 213, ../sass/vendor/_framework-fonts.scss */
+/* line 216, ../sass/vendor/_framework-fonts.scss */
 .icon-text-width:before {
   content: "\f035";
 }
 
-/* line 216, ../sass/vendor/_framework-fonts.scss */
+/* line 219, ../sass/vendor/_framework-fonts.scss */
 .icon-align-left:before {
   content: "\f036";
 }
 
-/* line 219, ../sass/vendor/_framework-fonts.scss */
+/* line 222, ../sass/vendor/_framework-fonts.scss */
 .icon-align-center:before {
   content: "\f037";
 }
 
-/* line 222, ../sass/vendor/_framework-fonts.scss */
+/* line 225, ../sass/vendor/_framework-fonts.scss */
 .icon-align-right:before {
   content: "\f038";
 }
 
-/* line 225, ../sass/vendor/_framework-fonts.scss */
+/* line 228, ../sass/vendor/_framework-fonts.scss */
 .icon-align-justify:before {
   content: "\f039";
 }
 
-/* line 228, ../sass/vendor/_framework-fonts.scss */
+/* line 231, ../sass/vendor/_framework-fonts.scss */
 .icon-list:before {
   content: "\f03a";
 }
 
-/* line 231, ../sass/vendor/_framework-fonts.scss */
+/* line 234, ../sass/vendor/_framework-fonts.scss */
 .icon-dedent:before {
   content: "\f03b";
 }
 
-/* line 234, ../sass/vendor/_framework-fonts.scss */
+/* line 237, ../sass/vendor/_framework-fonts.scss */
 .icon-indent:before {
   content: "\f03c";
 }
 
-/* line 237, ../sass/vendor/_framework-fonts.scss */
+/* line 240, ../sass/vendor/_framework-fonts.scss */
 .icon-video-camera:before {
   content: "\f03d";
 }
 
-/* line 240, ../sass/vendor/_framework-fonts.scss */
+/* line 243, ../sass/vendor/_framework-fonts.scss */
 .icon-picture-o:before {
   content: "\f03e";
 }
 
-/* line 243, ../sass/vendor/_framework-fonts.scss */
+/* line 246, ../sass/vendor/_framework-fonts.scss */
 .icon-pencil:before {
   content: "\f040";
 }
 
-/* line 246, ../sass/vendor/_framework-fonts.scss */
+/* line 249, ../sass/vendor/_framework-fonts.scss */
 .icon-map-marker:before {
   content: "\f041";
 }
 
-/* line 249, ../sass/vendor/_framework-fonts.scss */
+/* line 252, ../sass/vendor/_framework-fonts.scss */
 .icon-adjust:before {
   content: "\f042";
 }
 
-/* line 252, ../sass/vendor/_framework-fonts.scss */
+/* line 255, ../sass/vendor/_framework-fonts.scss */
 .icon-tint:before {
   content: "\f043";
 }
 
-/* line 255, ../sass/vendor/_framework-fonts.scss */
+/* line 258, ../sass/vendor/_framework-fonts.scss */
 .icon-edit:before {
   content: "\f044";
 }
 
-/* line 258, ../sass/vendor/_framework-fonts.scss */
+/* line 261, ../sass/vendor/_framework-fonts.scss */
 .icon-share-square-o:before {
   content: "\f045";
 }
 
-/* line 261, ../sass/vendor/_framework-fonts.scss */
+/* line 264, ../sass/vendor/_framework-fonts.scss */
 .icon-check-square-o:before {
   content: "\f046";
 }
 
-/* line 264, ../sass/vendor/_framework-fonts.scss */
+/* line 267, ../sass/vendor/_framework-fonts.scss */
 .icon-arrows:before {
   content: "\f047";
 }
 
-/* line 267, ../sass/vendor/_framework-fonts.scss */
+/* line 270, ../sass/vendor/_framework-fonts.scss */
 .icon-step-backward:before {
   content: "\f048";
 }
 
-/* line 270, ../sass/vendor/_framework-fonts.scss */
+/* line 273, ../sass/vendor/_framework-fonts.scss */
 .icon-fast-backward:before {
   content: "\f049";
 }
 
-/* line 273, ../sass/vendor/_framework-fonts.scss */
+/* line 276, ../sass/vendor/_framework-fonts.scss */
 .icon-backward:before {
   content: "\f04a";
 }
 
-/* line 276, ../sass/vendor/_framework-fonts.scss */
+/* line 279, ../sass/vendor/_framework-fonts.scss */
 .icon-play:before {
   content: "\f04b";
 }
 
-/* line 279, ../sass/vendor/_framework-fonts.scss */
+/* line 282, ../sass/vendor/_framework-fonts.scss */
 .icon-pause:before {
   content: "\f04c";
 }
 
-/* line 282, ../sass/vendor/_framework-fonts.scss */
+/* line 285, ../sass/vendor/_framework-fonts.scss */
 .icon-stop:before {
   content: "\f04d";
 }
 
-/* line 285, ../sass/vendor/_framework-fonts.scss */
+/* line 288, ../sass/vendor/_framework-fonts.scss */
 .icon-forward:before {
   content: "\f04e";
 }
 
-/* line 288, ../sass/vendor/_framework-fonts.scss */
+/* line 291, ../sass/vendor/_framework-fonts.scss */
 .icon-fast-forward:before {
   content: "\f050";
 }
 
-/* line 291, ../sass/vendor/_framework-fonts.scss */
+/* line 294, ../sass/vendor/_framework-fonts.scss */
 .icon-step-forward:before {
   content: "\f051";
 }
 
-/* line 294, ../sass/vendor/_framework-fonts.scss */
+/* line 297, ../sass/vendor/_framework-fonts.scss */
 .icon-eject:before {
   content: "\f052";
-}
-
-/* line 297, ../sass/vendor/_framework-fonts.scss */
-.icon-chevron-right:before {
-  content: "\f054";
 }
 
 /* line 300, ../sass/vendor/_framework-fonts.scss */
@@ -4205,6 +4220,7 @@ tr:nth-child(2n) td {
   background: #0069aa;
   color: #fff;
   border: 0;
+  border-radius: 4px;
   font-family: Arial, sans-serif;
   text-decoration: none;
   -moz-transition: all 0.2s ease-out;
@@ -4212,19 +4228,20 @@ tr:nth-child(2n) td {
   -webkit-transition: all 0.2s ease-out;
   transition: all 0.2s ease-out;
 }
-/* line 85, ../sass/partials/_typography.scss */
+/* line 86, ../sass/partials/_typography.scss */
 .button:hover, .sfcommentsSubmitBtnWrp [type="submit"]:hover, .button:focus, .sfcommentsSubmitBtnWrp [type="submit"]:focus {
   text-decoration: none;
   background: #004977;
 }
 
-/* line 91, ../sass/partials/_typography.scss */
-.button-small, .module .back {
+/* line 92, ../sass/partials/_typography.scss */
+.button-small, .module .back, .module-list .item .more {
   display: inline-block;
   padding: 0.3em 1em;
   background: #0069aa;
   color: #fff;
   border: 0;
+  border-radius: 4px;
   font-family: Arial, sans-serif;
   font-size: 13px;
   text-decoration: none;
@@ -4233,8 +4250,8 @@ tr:nth-child(2n) td {
   -webkit-transition: all 0.2s ease-out;
   transition: all 0.2s ease-out;
 }
-/* line 104, ../sass/partials/_typography.scss */
-.button-small:before, .module .back:before {
+/* line 106, ../sass/partials/_typography.scss */
+.button-small:before, .module .back:before, .module-list .item .more:before {
   position: relative;
   left: 0;
   padding-right: 5px;
@@ -4244,8 +4261,8 @@ tr:nth-child(2n) td {
   -webkit-transition: left 0.2s ease-out;
   transition: left 0.2s ease-out;
 }
-/* line 112, ../sass/partials/_typography.scss */
-.button-small:after, .module .back:after {
+/* line 114, ../sass/partials/_typography.scss */
+.button-small:after, .module .back:after, .module-list .item .more:after {
   position: relative;
   right: 0;
   padding-left: 5px;
@@ -4255,17 +4272,17 @@ tr:nth-child(2n) td {
   -webkit-transition: right 0.2s ease-out;
   transition: right 0.2s ease-out;
 }
-/* line 120, ../sass/partials/_typography.scss */
-.button-small:hover, .module .back:hover, .button-small:focus, .module .back:focus {
+/* line 122, ../sass/partials/_typography.scss */
+.button-small:hover, .module .back:hover, .module-list .item .more:hover, .button-small:focus, .module .back:focus, .module-list .item .more:focus {
   text-decoration: none;
   background: #004977;
 }
-/* line 124, ../sass/partials/_typography.scss */
-.button-small:hover:before, .module .back:hover:before, .button-small:focus:before, .module .back:focus:before {
+/* line 126, ../sass/partials/_typography.scss */
+.button-small:hover:before, .module .back:hover:before, .module-list .item .more:hover:before, .button-small:focus:before, .module .back:focus:before, .module-list .item .more:focus:before {
   left: -5px;
 }
-/* line 128, ../sass/partials/_typography.scss */
-.button-small:hover:after, .module .back:hover:after, .button-small:focus:after, .module .back:focus:after {
+/* line 130, ../sass/partials/_typography.scss */
+.button-small:hover:after, .module .back:hover:after, .module-list .item .more:hover:after, .button-small:focus:after, .module .back:focus:after, .module-list .item .more:focus:after {
   right: -5px;
 }
 
@@ -4290,34 +4307,34 @@ tr:nth-child(2n) td {
   display: inline-block;
 }
 /* line 23, ../sass/partials/_modules.scss */
-.meta-item:before {
+.meta-item:after {
   content: '\2022';
   display: inline-block;
-  padding: 0 0.5em;
+  padding: 0 0.5em 0 0.2em;
 }
 /* line 30, ../sass/partials/_modules.scss */
-.meta-item:first-child:before {
+.meta-item:last-child:after {
   display: none;
 }
 
-/* line 39, ../sass/partials/_modules.scss */
+/* line 38, ../sass/partials/_modules.scss */
 .sfTags {
   display: inline-block;
 }
 
-/* line 43, ../sass/partials/_modules.scss */
+/* line 42, ../sass/partials/_modules.scss */
 .sfTagsList {
   display: inline-block;
   margin: 0;
   padding: 0;
 }
-/* line 48, ../sass/partials/_modules.scss */
+/* line 47, ../sass/partials/_modules.scss */
 .sfTagsList li {
   display: inline-block;
   margin: 0;
   padding: 0;
 }
-/* line 54, ../sass/partials/_modules.scss */
+/* line 53, ../sass/partials/_modules.scss */
 .sfTagsList span {
   display: inline-block;
   padding: 2px 6px;
@@ -4329,6 +4346,7 @@ tr:nth-child(2n) td {
   color: gray;
   text-transform: uppercase;
   border-radius: 4px;
+  vertical-align: text-bottom;
 }
 /* line 66, ../sass/partials/_modules.scss */
 .sfTagsList span[data-tag="Featured"] {
@@ -4358,52 +4376,77 @@ tr:nth-child(2n) td {
   text-transform: capitalize;
 }
 
-/* Item Lists Content
+/* Core List Styles
+   - Provides core styling for item list
    ========================================================================== */
-/* line 119, ../sass/partials/_modules.scss */
-.module-list {
+/* line 116, ../sass/partials/_modules.scss */
+.list {
   display: block;
-  margin: 0;
+  margin: 0 0 20px;
   padding: 0;
 }
-/* line 124, ../sass/partials/_modules.scss */
-.module-list .item {
+/* line 121, ../sass/partials/_modules.scss */
+.list > .item {
   position: relative;
   display: block;
-  margin: 0;
   padding: 0;
 }
-/* line 130, ../sass/partials/_modules.scss */
-.module-list .item + .item {
-  margin-top: 40px;
+/* line 126, ../sass/partials/_modules.scss */
+.list > .item + .item {
+  margin-top: 20px;
+  padding-top: 15px;
+  border-top: 1px solid rgba(0, 105, 170, 0.2);
 }
-/* line 134, ../sass/partials/_modules.scss */
+/* line 133, ../sass/partials/_modules.scss */
+.list > .item .aside {
+  margin: 1em auto;
+  max-width: 200px;
+  max-height: 200px;
+}
+@media (min-width: 48em) {
+  /* line 133, ../sass/partials/_modules.scss */
+  .list > .item .aside {
+    display: table-cell;
+    width: 125px;
+    vertical-align: top;
+  }
+  /* line 143, ../sass/partials/_modules.scss */
+  .list > .item .aside .sfimageWrp {
+    margin: 5px 15px 0 0;
+  }
+  /* line 147, ../sass/partials/_modules.scss */
+  .list > .item .aside + .item-content {
+    display: table-cell;
+    vertical-align: top;
+  }
+}
+
+/* Item Lists Content
+   ========================================================================== */
+/* line 164, ../sass/partials/_modules.scss */
 .module-list .item .title {
   margin: 0 0 10px;
-  margin: 0 0 0.625rem;
 }
-/* line 137, ../sass/partials/_modules.scss */
+/* line 167, ../sass/partials/_modules.scss */
 .module-list .item .title a {
   text-decoration: none;
 }
-/* line 140, ../sass/partials/_modules.scss */
+/* line 170, ../sass/partials/_modules.scss */
 .module-list .item .title a:hover, .module-list .item .title a:focus {
   text-decoration: underline;
 }
-/* line 146, ../sass/partials/_modules.scss */
+/* line 176, ../sass/partials/_modules.scss */
 .module-list .item .meta {
   margin-bottom: 10px;
-  margin-bottom: 0.625rem;
+  font-size: 0.85em;
 }
-/* line 150, ../sass/partials/_modules.scss */
+/* line 181, ../sass/partials/_modules.scss */
 .module-list .item .summary {
   margin-bottom: 10px;
-  margin-bottom: 0.625rem;
 }
-/* line 154, ../sass/partials/_modules.scss */
+/* line 186, ../sass/partials/_modules.scss */
 .module-list .item .more {
-  text-transform: uppercase;
-  font-size: 0.8em;
+  text-transform: capitalize;
 }
 
 /* ==========================================================================
