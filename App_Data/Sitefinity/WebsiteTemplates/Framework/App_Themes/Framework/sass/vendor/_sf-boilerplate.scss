@@ -1,0 +1,68 @@
+/* ================================================================
+   Boilerplate - Base Styles 
+   ================================================================ */
+
+$font-body: Arial, sans-serif !default;
+$link-selection: #b3d4fc !default;
+$color-base: #222 !default;
+$body-bg: #fff !default;
+
+html, button, input, select, textarea { color: $color-base; }
+body { font-family: $font-body; line-height: 1.4; overflow-y: scroll; background: $body-bg}
+
+::-moz-selection { background: $link-selection; text-shadow: none; }
+::selection { background: $link-selection; text-shadow: none; }
+
+hr { display: block; height: 1px; border: 0; border-top: 1px solid #ccc; margin: 1em 0; padding: 0;}
+img { vertical-align: middle; width: auto; height: auto; max-width: 100%; }
+.image-fluid, .image-fluid img { max-width: none; width: 100%; height: auto; }
+.image-fixed, .image-fixed img { max-width: none; }
+
+fieldset {border: 0;margin: 0; padding: 0; }
+textarea { resize: vertical; }
+
+.ir { background-color: transparent; border: 0; overflow: hidden; *text-indent: -9999px; }
+.ir:before { content: ""; display: block; width: 0; height: 100%; }
+
+.hidden { display: none !important; visibility: hidden; }
+.visuallyhidden { border: 0; clip: rect(0 0 0 0); height: 1px;  margin: -1px; overflow: hidden; padding: 0; position: absolute; width: 1px; }
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus { clip: auto; height: auto; margin: 0; overflow: visible; position: static; width: auto; }
+.invisible { visibility: hidden; }
+
+.clearfix {
+	&:before, &:after {
+		content: " ";
+		display: table;
+	}
+
+	&:after {
+		clear: both;
+	}
+}
+
+.smallest {font-size: 0.8em;}
+.smaller {font-size: 0.9em;}
+.larger {font-size: 1.1em;}
+.largest {font-size: 1.2em;}
+.bold {font-weight: bold;}
+.italic {font-style: italic;}
+.strike {text-decoration: line-through;}
+.align-center {text-align: center;}
+.align-right {text-align: right;}
+.align-left {text-align: left;}
+.nowrap {white-space: nowrap;}
+.breakforprint {page-break-after: always;}
+.float-right {float: right}
+.float-left {float: left}
+.important {color: red; font-weight: bold; text-transform: uppercase; }
+
+*, *:before, *:after { @include box-sizing(border-box); }
+
+a[target="_blank"] {cursor: alias}
+
+body span.gc-cs-link {  // ignores the google voice plugin color
+	color: inherit; 
+	&:hover {text-decoration: none; }
+}
+// insert fix for skype plugin

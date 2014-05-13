@@ -8,6 +8,35 @@ Sitefinity
  - Redo custom layouts
  - Find a good jquery validator
  - Document form updates with the placeholder and form type
+ - Explain legacy browser support and policy
+ - WYSIWYG styles: http://www.sitefinity.com/blogs/gabe-sumners-blog/2011/09/23/my_3_favorite_customizations_to_sitefinity_rsquo_s_rich_text_editor
+ - explain `<%# string.Format(Eval("SourceName").ToString().Trim() != string.Empty ? "<div class='meta-item citization' itemprop='citization'><a href='{0}' target='_blank'>{1}</a></div>" : "", Eval("SourceSite"), Eval("SourceName")) %>`
+
+##Tags
+
+```<%-- Tags, Currently doesn't hide if no tags :( --%>
+<sitefinity:FlatTaxonField CssClass="meta-item meta-tags" ID="FlatFieldControl" DisplayMode="Read" runat="server" WebServiceUrl="~/Sitefinity/Services/Taxonomies/FlatTaxon.svc" AllowMultipleSelection="true" TaxonomyId="CB0F3A19-A211-48a7-88EC-77495C0F5374" TaxonomyMetafieldName="Tags" Expanded="false" ExpandText="ClickToAddTags" BindOnServer="true" />```
+
+```<%# string.Format(Eval("Author").ToString().Trim() != string.Empty ? "" : "hidden", Eval("Author")) %>```
+
+```
+
+    <sf:Conditional If='<%# Eval("TestField") %>' runat="server">
+    <Then>
+        <div class="article_reclame">
+    print something if yes
+   </div>                                   
+    </Then>
+    <Else>
+        <div>
+     print something else if no
+   </div>
+    </Else>
+</sf:Conditional>
+```
+```
+<asp:HyperLink NavigateUrl='<%# Eval("GoogleMapUrl")%>' Visible='<%# string.IsNullOrEmpty(Eval("GoogleMapUrl").ToString()) ? false : true %>' Text="Directions to It!" runat="server" />
+```
 
 Repository of various Sitefinity tools and modules
 

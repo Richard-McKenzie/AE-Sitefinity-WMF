@@ -1,0 +1,181 @@
+
+/* ==========================================================================
+   Global Modules
+   - We define modules as larger content that usually have a listing and detailed view.
+   - Examples: Events, News, Testimonials
+   ========================================================================== */
+
+
+/* Meta Content
+   - This is content that extends or defines the content that it is pared with.
+   - Examples: date, author, tag
+   ========================================================================== */
+
+.meta {
+	display: block;
+	margin: 0 0 $typography-margin-bottom;
+	padding: 0;
+}
+
+.meta-item {
+	display: inline-block;
+
+	&:before {
+		content: '\2022';
+		display: inline-block;
+		padding: 0 0.5em;
+	}
+
+	&:first-child {
+		&:before {
+			display: none;
+		}
+	}
+
+}
+
+// Tags
+
+.sfTags {
+	display: inline-block;
+}
+
+.sfTagsList {
+	display: inline-block;
+	margin: 0;
+	padding: 0;
+
+	li {
+		display: inline-block;
+		margin: 0;
+		padding: 0;
+	}
+
+	span {
+		display: inline-block;
+		padding: 2px 6px;
+		@include x-rem(font-size, 10px);
+		font-weight: bold;
+		font-family: Arial, sans-serif;
+		background: hsl(0, 0%, 90%);
+		color: hsl(0, 0%, 50%);
+		text-transform: uppercase;
+		border-radius: 4px;
+
+		// Example styling for a specific tag powered by jquery-functions
+		&[data-tag="Featured"] {
+			background: #eea236;
+			color: #fff;
+		}
+	}
+}
+
+
+/* Core Module Styles
+   - Provides core styling for modules
+   ========================================================================== */
+
+.module {
+
+	// Title of the Module
+	> .title {
+		margin-bottom: $typography-margin-bottom;
+	}
+
+	// See the above section for meta styling. All module specific styling goes here.
+	.meta {
+
+	}
+
+	.summary {
+		margin-bottom: $typography-margin-bottom;
+		font-weight: bold;
+		font-style: italic;
+	}
+
+	.content {
+		margin-bottom: $typography-margin-bottom;
+	}
+
+	// Provides simple styling to go to the list view
+	.back {
+		@extend .button-small !optional;
+		text-transform: capitalize;
+
+		&:before {
+			@extend .iconfont-chevron-left !optional;
+		}
+	}
+}
+
+
+
+// #Modules
+// Below you will find a lot of helper classes for modules.
+
+/* Item Lists Content
+   ========================================================================== */
+
+.module-list { 
+	display: block;
+	margin:0; 
+	padding:0; 
+
+	.item {
+		position: relative;
+		display: block;
+		margin: 0;
+		padding: 0;
+
+		+ .item {
+			margin-top: $grid-gutter * 2;
+		}
+
+		.title { 
+			@include x-rem(margin, 0 0 10px);
+
+			a {
+				text-decoration: none;
+
+				&:hover, &:focus {
+					text-decoration: underline;
+				}
+			}
+		}
+		
+		.meta {
+			@include x-rem(margin-bottom, 10px);
+		}
+
+		.summary {
+			@include x-rem(margin-bottom, 10px);
+		}
+
+		.more {
+			@extend .btn !optional;
+			text-transform: uppercase;
+			font-size: 0.8em; //insures the more button is always smaller then the module text
+		}
+	}
+}
+
+
+
+/* ==========================================================================
+   Rail Modules
+   ========================================================================== */
+
+.module-rail {
+
+}
+
+.faq-rail {
+	// @extend .module-rail;
+
+}
+
+.news-rail {
+	// @extend .module-rail;
+
+
+}

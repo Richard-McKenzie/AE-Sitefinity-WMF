@@ -3,12 +3,7 @@ Sitefinity
 
 Repository of various Sitefinity tools and modules
 
-Sandbox: http://sitefinitybox.idevdesign.net/
-
-
-##Custom Fields
- - To add a custom image field, Type: Short Text, Interface widget: Custom `Telerik.Sitefinity.Web.UI.Fields.ImageField` 
-
+Sandbox: http://sitefinity7-demo.idevdesign.net/
 
 ##Prepros Config
 - Options
@@ -61,8 +56,9 @@ Sometimes you need to create custom layout controls instead of using the prebuil
 	- Whenever you need to use images on your templates, always add them through the admin. Create an image library called "Layout" and upload all layout related images to that.
 
 
-##IE Edget
-Set this to remove the option for IE to use compatibility mode.
+##IE Edge
+Set this to remove the option for IE to use compatibility mode. Put this in web.config before `</system.webServer>`
+
 ```
 <httpProtocol>
   <customHeaders>

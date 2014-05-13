@@ -18,6 +18,16 @@ At it's core, a module will most likely have the following:
 
 Basic styling for each of these items is provided in the modules partial.  If you need to style one module separately from the other modules, either override it with that module's class, or use a different naming convention.
 
+##Module Templates
+These are the built in Sitefinity templates for the news and our designation for them. Feel free to create more or remove them as needed on a per site basis.
+
+###News
+- Titles and Dates - Rail Module
+- Titles Only - Rail Module
+- Titles, dates and summaries - Listing Module
+- Titles, dates and full content - Listing Module
+
+
 ##Microformats
 We're working on providing built in support for different microformats. Currently supported are:
 

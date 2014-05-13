@@ -1,0 +1,51 @@
+/* ================================================================
+   PRIMARY LAYOUT STYLES 
+   ================================================================ */
+
+/// FRAMEWORK SPECIFIC STYLES. DELETE EVERYTHING BELOW ME.
+
+
+/* ================================================================
+   Header
+   ================================================================ */
+
+.header {
+	padding: 0.5em 1em;
+	margin: 0 0 2em;
+	background: $color-primary;
+
+	.logo {
+		color: #fff;
+		font-weight: bold;
+		text-decoration: none;
+
+		&:before {
+			content: '';
+			position: relative;
+			top: -1px;
+			display: inline-block;
+			width: 10px;
+			height: 10px;
+			margin-right: 5px;
+			background: #fff;
+			border-radius: 50px;
+			// @include transition(all 0.2s ease-out);
+		}
+
+		&:hover, &:focus {
+			text-decoration: none;
+
+			&:before {
+				background: hsla(0, 0%, 100%, 0.5);
+			}
+		}
+	}
+}
+
+/* ================================================================
+   Main
+   ================================================================ */
+
+.main {
+	padding-bottom: 3em;
+}

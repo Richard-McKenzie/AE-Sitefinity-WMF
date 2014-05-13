@@ -19,6 +19,7 @@ $mod-padding: 10px !default;
 		padding: 0;
 	}
 
+	// Section Header
 	> li.active > a {
 		padding: 0 $mod-padding;
 		margin: 0;
@@ -43,6 +44,7 @@ $mod-padding: 10px !default;
 		}
 	}
 
+	// Current page and siblings
 	ul {
 		a {
 			display: block;

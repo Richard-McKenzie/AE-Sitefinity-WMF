@@ -5,11 +5,11 @@
 ###HTML
 In Sitefinity (6.3) the search form template isn't accessible. However, we can get around this and provide our own file for use.
 
-1. Grab the custom SearchBox.ascx file and place it `~\Custom\Widgets\Search\SearchBox.ascx`
+1. Grab the custom SearchBox.ascx file and place it `~\Custom\Search\SearchBox.ascx`
 2. Go to Administration -> Settings -> Advanced -> Controls -> View Map
 3. Create a new item here with the following data:
   - HostType: `Telerik.Sitefinity.Services.Search.Web.UI.Public.SearchBox, Telerik.Sitefinity.Search.Impl`
-  - LayoutTemplatePath: `~/Custom/Widgets/Search/SearchBox.ascx`
+  - LayoutTemplatePath: `~/Custom/Search/SearchBox.ascx`
 4. This will override the built in form style. So just drag and drop the normal widget onto the page and it will pull it's design template from this file.
 
 ###CSS

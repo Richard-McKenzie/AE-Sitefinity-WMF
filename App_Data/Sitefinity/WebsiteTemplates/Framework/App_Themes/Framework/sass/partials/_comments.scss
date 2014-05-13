@@ -9,7 +9,7 @@ $comments-padding: $grid-gutter !default;
 /* Comments
    ========================================================================== */
 
-.sfcommentsFormWrp {
+.sfcommentsFormWrp, .sfcommentsListWrp {
 	margin-top: 2em;
 }
 
@@ -107,3 +107,16 @@ $comments-padding: $grid-gutter !default;
 		@extend .button;
 	}
 }
+
+/* Error Message
+   ========================================================================== */
+
+// If this class shows up elsewhere let me know - Caleb Kester
+.sfError {
+	margin-top: $comments-padding / 4;
+	padding: $comments-padding / 2 $grid-gutter;
+	background: red;
+	color: #fff;
+	@include x-rem(font-size, 12px);
+}
+

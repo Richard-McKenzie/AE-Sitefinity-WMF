@@ -1,7 +1,5 @@
 #Custom Layouts
 
-####NOTE: There might be a bug with these custom layouts in Sf 6.3+ . Further testing has to be done and we'll test in Sf 7. If you experience erratic behavior with content not staying inside the layouts, just add Sf_colsOut to each of the examples (match it with the one found in the Sf Base layout).
-
 There are some sample layouts in the CustomLayouts folder. To use them paste this in your config file after the last `</toolbox>`: App_data\Sitefinity\Configuration\ToolboxesConfig.config
 
 ```xml
@@ -24,18 +22,6 @@ There are some sample layouts in the CustomLayouts folder. To use them paste thi
 ###Oddities and Bugs
  - When you edit the CustomLayout file, you need to go back into the page template that it's used on and save the page to refresh the CustomLayout.
  - If you add a new layout, you'll need the admin to recognize it. This is done by just loading up Settings -> Administration -> Toolboxes -> PageLayouts -> Framework -> Tools . Just by loading up this page it will recognize your new layout.
-
-##Basic Layout
-Stripped out version of the layout control. Just allows you to change the class of the container.
-
-```ascx
-<div runat="server" class="sf_cols container">
-	<div runat="server" class="sf_colsIn grid-8">
-	</div>
-	<div runat="server" class="sf_colsIn grid-4">
-	</div>
-</div>
-```
 
 ##Sitefinity Base Layout
 
