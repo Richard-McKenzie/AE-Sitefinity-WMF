@@ -14,19 +14,39 @@ jQuery(function($) {
 		$(this).attr('data-tag', $(this).text().replace(/\s+/g, ''));
 	});
 
-	// Not sure what this does, think it's for the listing, keeping it for now.
-	$('.item .sfTagsList').each(function(i){
-		var myTags = '';
-		_.forEach(_.pluck($(this).find('[data-tag]'), 'innerHTML'), function(i){
-			// console.log(i);
-			myTags += i.replace(/\s+/g, '') + " ";
-		});
-		$(this).closest('.item').find('.postStamp time').attr('data-tag', $.trim(myTags));
+
+	/**
+	* Pagination
+	*
+	* Extends the default pagination
+	* Including:
+	* - Next/Prev : Adds Next/Prev buttons
+	* - Duplicate Pager : Adds support for a second pager so we can wrap the list in a pager
+	*/
+
+	// Adds in Pagination Previous / Next
+
+	$('.sf_pagerNumeric').each(function(j){
+		var pagerPrev = '', pagerNext = '';
+		if($(this).find('.sf_PagerCurrent').prev('a').length > 0) {
+			pagerPrev += '<a href="' + $(this).find('.sf_PagerCurrent').prev('a').attr('href') + '" class="prev" title="Previous" ></a>';
+		}else{
+			pagerPrev += '<span title="Previous" class="prev disabled"></span>';
+		};
+		if($(this).find('.sf_PagerCurrent').next('a').length > 0) {
+			pagerNext += '<a href="' + $(this).find('.sf_PagerCurrent').next('a').attr('href') + '" class="next" title="Next" ></a>';
+		}else{
+			pagerNext += '<span title="Next" class="next disabled"></span>';
+		};
+		$(this).prepend(pagerPrev);
+		$(this).append(pagerNext);
 	});
 
-
-
-
+	// Clone the pager and add it after the list
+	$('.pager').each(function(){
+		var pager = $(this).clone().find('[id]').removeAttr('id');
+		$(this).siblings('.list:first').append(pager);
+	});
 
 
 
@@ -132,23 +152,6 @@ jQuery(function($) {
 		});
 	});
 
-	/* Pagination Previous / Next */
-
-	$('.sf_pagerNumeric').each(function(j){
-		var pagerPrev = '', pagerNext = '';
-		if($(this).find('.sf_PagerCurrent').prev('a').length > 0) {
-			pagerPrev += '<a href="' + $(this).find('.sf_PagerCurrent').prev('a').attr('href') + '" class="prev" title="Previous" ></a>';
-		}else{
-			pagerPrev += '<span title="Previous" class="prev disabled"></span>';
-		};
-		if($(this).find('.sf_PagerCurrent').next('a').length > 0) {
-			pagerNext += '<a href="' + $(this).find('.sf_PagerCurrent').next('a').attr('href') + '" class="next" title="Next" ></a>';
-		}else{
-			pagerNext += '<span title="Next" class="next disabled"></span>';
-		};
-		$(this).prepend(pagerPrev);
-		$(this).append(pagerNext);
-	});
 
 	/* Photo Galleries */
 

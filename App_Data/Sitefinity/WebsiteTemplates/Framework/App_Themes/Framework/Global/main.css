@@ -4421,37 +4421,62 @@ tr:nth-child(2n) td {
   }
 }
 
-/* Item Lists Content
+/* Module List
+   - Provides core styling for Module Lists
    ========================================================================== */
-/* line 164, ../sass/partials/_modules.scss */
+/* line 162, ../sass/partials/_modules.scss */
 .module-list .item .title {
   margin: 0 0 10px;
 }
-/* line 167, ../sass/partials/_modules.scss */
+/* line 165, ../sass/partials/_modules.scss */
 .module-list .item .title a {
   text-decoration: none;
 }
-/* line 170, ../sass/partials/_modules.scss */
+/* line 168, ../sass/partials/_modules.scss */
 .module-list .item .title a:hover, .module-list .item .title a:focus {
   text-decoration: underline;
 }
-/* line 176, ../sass/partials/_modules.scss */
+/* line 174, ../sass/partials/_modules.scss */
 .module-list .item .meta {
   margin-bottom: 10px;
   font-size: 0.85em;
 }
-/* line 181, ../sass/partials/_modules.scss */
+/* line 179, ../sass/partials/_modules.scss */
 .module-list .item .summary {
   margin-bottom: 10px;
 }
-/* line 186, ../sass/partials/_modules.scss */
+/* line 184, ../sass/partials/_modules.scss */
 .module-list .item .more {
   text-transform: capitalize;
 }
 
-/* ==========================================================================
-   Rail Modules
+/* Module Rail
+   - Provides core styling for rail modules
    ========================================================================== */
+/* line 200, ../sass/partials/_modules.scss */
+.module-rail {
+  background: #f2f2f2;
+}
+/* line 204, ../sass/partials/_modules.scss */
+.module-rail .module-header .title {
+  margin: 0;
+  padding: 10px;
+  background: #0069aa;
+  color: #fff;
+}
+/* line 212, ../sass/partials/_modules.scss */
+.module-rail > .list {
+  padding: 10px;
+}
+/* line 215, ../sass/partials/_modules.scss */
+.module-rail > .list .title {
+  margin-bottom: 0;
+}
+/* line 219, ../sass/partials/_modules.scss */
+.module-rail > .list .meta {
+  font-size: 0.85em;
+}
+
 /* ==========================================================================
    FAQ Modules
    ========================================================================== */

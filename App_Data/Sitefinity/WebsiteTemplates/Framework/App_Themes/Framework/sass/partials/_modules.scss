@@ -153,10 +153,8 @@
 	}
 }
 
-// #Modules
-// Below you will find a lot of helper classes for modules.
-
-/* Item Lists Content
+/* Module List
+   - Provides core styling for Module Lists
    ========================================================================== */
 
 .module-list { 
@@ -195,21 +193,31 @@
 }
 
 
-/* ==========================================================================
-   Rail Modules
+/* Module Rail
+   - Provides core styling for rail modules
    ========================================================================== */
 
 .module-rail {
+	background: hsl(0, 0%, 95%);
 
-}
+	.module-header {
+		.title {
+			margin: 0;
+			padding: 10px;
+			background: $color-primary;
+			color: #fff;
+		}
+	}
 
-.faq-rail {
-	// @extend .module-rail;
+	> .list {
+		padding: 10px;
 
-}
+		.title {
+			margin-bottom: 0;
+		}
 
-.news-rail {
-	// @extend .module-rail;
-
-
+		.meta {
+			font-size: 0.85em;
+		}
+	}
 }

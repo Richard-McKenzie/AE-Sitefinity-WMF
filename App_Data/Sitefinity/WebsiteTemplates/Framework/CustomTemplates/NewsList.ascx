@@ -10,7 +10,7 @@
 <sf:SitefinityLabel id="title" runat="server" WrapperTagName="div" HideIfNoText="true" HideIfNoTextMode="Server" /> 
 <telerik:RadListView ID="NewsList" ItemPlaceholderID="ItemsContainer" runat="server" EnableEmbeddedSkins="false" EnableEmbeddedBaseStylesheet="false">
 	<LayoutTemplate>
-		<div class="module-list news-list">
+		<div class="news module-list">
 			<ul class="list">
 				<asp:PlaceHolder ID="ItemsContainer" runat="server" />
 			</ul>
@@ -28,6 +28,7 @@
 				<h2 class="title">
 					<sf:DetailsViewHyperLink TextDataField="Title" ToolTipDataField="Description" data-sf-field="Title" data-sf-ftype="ShortText" runat="server" />
 				</h2>
+
 				<div class="meta">
 					<div class="meta-item date">
 						<time datetime='<sf:FieldListView ID="PublicationTime" runat="server" Format="{PublicationDate.ToLocal():yyyy-MM-dd}'" />"><sf:FieldListView ID="PublicationDate" runat="server" Format="{PublicationDate.ToLocal():MMM d, yyyy}" /></time>
