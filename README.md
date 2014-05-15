@@ -1,6 +1,8 @@
 Sitefinity
 ==========
 
+To get started go [here](./docs/README.md) for directions
+
 ##TODO
 
  - Make a generic style for the framework, remove site specific styles from the code
