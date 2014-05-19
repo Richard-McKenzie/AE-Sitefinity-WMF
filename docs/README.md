@@ -66,5 +66,6 @@ Set this to remove the option for IE to use compatibility mode. Put this in web.
 ##Next Steps
 *TODO Remove this next text* While we are working on documentation, we're going to go through all of the folders and make sure each folder is up to date with the current release. Use this list below for a 
 
--[SASS](./SASS.md)
--[Modules](./Modules/README.md)
+- [SASS](./SASS.md)
+- [Modules](./Modules/README.md)
+- [Site Map](./Navigation/Sitemap/README.md)

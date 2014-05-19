@@ -4357,21 +4357,25 @@ tr:nth-child(2n) td {
 /* Core Module Styles
    - Provides core styling for modules
    ========================================================================== */
-/* line 81, ../sass/partials/_modules.scss */
+/* line 78, ../sass/partials/_modules.scss */
+.module {
+  margin-bottom: 1em;
+}
+/* line 82, ../sass/partials/_modules.scss */
 .module > .title {
   margin-bottom: 20px;
 }
-/* line 90, ../sass/partials/_modules.scss */
+/* line 91, ../sass/partials/_modules.scss */
 .module .summary {
   margin-bottom: 20px;
   font-weight: bold;
   font-style: italic;
 }
-/* line 96, ../sass/partials/_modules.scss */
+/* line 97, ../sass/partials/_modules.scss */
 .module .content {
   margin-bottom: 20px;
 }
-/* line 101, ../sass/partials/_modules.scss */
+/* line 102, ../sass/partials/_modules.scss */
 .module .back {
   text-transform: capitalize;
 }
@@ -4379,42 +4383,42 @@ tr:nth-child(2n) td {
 /* Core List Styles
    - Provides core styling for item list
    ========================================================================== */
-/* line 116, ../sass/partials/_modules.scss */
+/* line 117, ../sass/partials/_modules.scss */
 .list {
   display: block;
   margin: 0 0 20px;
   padding: 0;
 }
-/* line 121, ../sass/partials/_modules.scss */
+/* line 122, ../sass/partials/_modules.scss */
 .list > .item {
   position: relative;
   display: block;
   padding: 0;
 }
-/* line 126, ../sass/partials/_modules.scss */
+/* line 127, ../sass/partials/_modules.scss */
 .list > .item + .item {
   margin-top: 20px;
   padding-top: 15px;
   border-top: 1px solid rgba(0, 105, 170, 0.2);
 }
-/* line 133, ../sass/partials/_modules.scss */
+/* line 134, ../sass/partials/_modules.scss */
 .list > .item .aside {
   margin: 1em auto;
   max-width: 200px;
   max-height: 200px;
 }
 @media (min-width: 48em) {
-  /* line 133, ../sass/partials/_modules.scss */
+  /* line 134, ../sass/partials/_modules.scss */
   .list > .item .aside {
     display: table-cell;
     width: 125px;
     vertical-align: top;
   }
-  /* line 143, ../sass/partials/_modules.scss */
+  /* line 144, ../sass/partials/_modules.scss */
   .list > .item .aside .sfimageWrp {
     margin: 5px 15px 0 0;
   }
-  /* line 147, ../sass/partials/_modules.scss */
+  /* line 148, ../sass/partials/_modules.scss */
   .list > .item .aside + .item-content {
     display: table-cell;
     vertical-align: top;
@@ -4424,28 +4428,28 @@ tr:nth-child(2n) td {
 /* Module List
    - Provides core styling for Module Lists
    ========================================================================== */
-/* line 162, ../sass/partials/_modules.scss */
+/* line 164, ../sass/partials/_modules.scss */
 .module-list .item .title {
   margin: 0 0 10px;
 }
-/* line 165, ../sass/partials/_modules.scss */
+/* line 167, ../sass/partials/_modules.scss */
 .module-list .item .title a {
   text-decoration: none;
 }
-/* line 168, ../sass/partials/_modules.scss */
+/* line 170, ../sass/partials/_modules.scss */
 .module-list .item .title a:hover, .module-list .item .title a:focus {
   text-decoration: underline;
 }
-/* line 174, ../sass/partials/_modules.scss */
+/* line 176, ../sass/partials/_modules.scss */
 .module-list .item .meta {
   margin-bottom: 10px;
   font-size: 0.85em;
 }
-/* line 179, ../sass/partials/_modules.scss */
+/* line 181, ../sass/partials/_modules.scss */
 .module-list .item .summary {
   margin-bottom: 10px;
 }
-/* line 184, ../sass/partials/_modules.scss */
+/* line 186, ../sass/partials/_modules.scss */
 .module-list .item .more {
   text-transform: capitalize;
 }
@@ -4453,26 +4457,31 @@ tr:nth-child(2n) td {
 /* Module Rail
    - Provides core styling for rail modules
    ========================================================================== */
-/* line 200, ../sass/partials/_modules.scss */
+/* line 202, ../sass/partials/_modules.scss */
 .module-rail {
+  margin-bottom: 1em;
   background: #f2f2f2;
 }
-/* line 204, ../sass/partials/_modules.scss */
+/* line 207, ../sass/partials/_modules.scss */
 .module-rail .module-header .title {
   margin: 0;
   padding: 10px;
   background: #0069aa;
   color: #fff;
 }
-/* line 212, ../sass/partials/_modules.scss */
+/* line 213, ../sass/partials/_modules.scss */
+.module-rail .module-header .title a {
+  color: #fff;
+}
+/* line 219, ../sass/partials/_modules.scss */
 .module-rail > .list {
   padding: 10px;
 }
-/* line 215, ../sass/partials/_modules.scss */
+/* line 222, ../sass/partials/_modules.scss */
 .module-rail > .list .title {
   margin-bottom: 0;
 }
-/* line 219, ../sass/partials/_modules.scss */
+/* line 226, ../sass/partials/_modules.scss */
 .module-rail > .list .meta {
   font-size: 0.85em;
 }
@@ -5077,95 +5086,78 @@ Menu Styles
 }
 
 /* Nav Rail
-================================================================ */
-/* line 7, ../sass/partials/_nav-rail.scss */
-.nav-rail {
-  padding: 10px 0;
+   ================================================================ */
+/* line 8, ../sass/partials/_nav-rail.scss */
+.nav-rail-heading, .nav-rail-list > li.active > a {
+  display: block;
+  margin: 0 0 5px;
+  padding: 10px;
+  background: #0069aa;
+  color: #fff;
+  font-size: 24px;
+  font-size: 1.5rem;
+}
+/* line 16, ../sass/partials/_nav-rail.scss */
+.nav-rail-heading:focus, .nav-rail-list > li.active > a:focus, .nav-rail-heading:hover, .nav-rail-list > li.active > a:hover {
+  text-decoration: none;
 }
 
-/* line 11, ../sass/partials/_nav-rail.scss */
+/* line 21, ../sass/partials/_nav-rail.scss */
+.nav-rail {
+  margin: 0 0 1em;
+  background: #f2f2f2;
+}
+
+/* line 26, ../sass/partials/_nav-rail.scss */
 .nav-rail-list {
   display: block;
   margin: 0;
-  padding: 0 0 15px;
-  background: #0069aa;
+  padding: 0;
 }
-/* line 17, ../sass/partials/_nav-rail.scss */
+/* line 31, ../sass/partials/_nav-rail.scss */
 .nav-rail-list ul, .nav-rail-list li {
   display: block;
   margin: 0;
   padding: 0;
 }
-/* line 52, ../sass/partials/_nav-rail.scss */
-.nav-rail-list ul {
+/* line 43, ../sass/partials/_nav-rail.scss */
+.nav-rail-list li {
   display: none;
 }
-/* line 56, ../sass/partials/_nav-rail.scss */
-.nav-rail-list .active > ul {
+/* line 46, ../sass/partials/_nav-rail.scss */
+.nav-rail-list li.active {
   display: block;
 }
-/* line 61, ../sass/partials/_nav-rail.scss */
-.nav-rail-list a {
+/* line 49, ../sass/partials/_nav-rail.scss */
+.nav-rail-list li.active > ul > li {
   display: block;
-  position: relative;
-  padding: 10px 30px;
-  background: #0069aa;
-  color: #fff;
-  font-family: Times New Roman, serif;
-  font-size: 18px;
-  font-size: 1.125rem;
+}
+/* line 57, ../sass/partials/_nav-rail.scss */
+.nav-rail-list ul a {
+  display: block;
+  padding: 0.3em 10px;
+  color: #0069aa;
+  font-weight: bold;
   -moz-transition: all 0.2s ease-out;
   -o-transition: all 0.2s ease-out;
   -webkit-transition: all 0.2s ease-out;
   transition: all 0.2s ease-out;
 }
-/* line 71, ../sass/partials/_nav-rail.scss */
-.nav-rail-list a:hover, .nav-rail-list a:focus {
-  background: #004977;
-  text-decoration: none;
+/* line 64, ../sass/partials/_nav-rail.scss */
+.nav-rail-list ul a:hover, .nav-rail-list ul a:focus {
+  color: #002a44;
+}
+/* line 69, ../sass/partials/_nav-rail.scss */
+.nav-rail-list ul .active > a {
+  color: #002a44;
+}
+/* line 73, ../sass/partials/_nav-rail.scss */
+.nav-rail-list ul ul a {
+  padding-left: 20px;
 }
 /* line 77, ../sass/partials/_nav-rail.scss */
-.nav-rail-list > li:first-child > a {
-  padding-top: 25px;
-}
-/* line 83, ../sass/partials/_nav-rail.scss */
-.nav-rail-list .active > a:after {
-  content: '';
-  display: block;
-  position: absolute;
-  left: 30px;
-  bottom: 5px;
-  height: 3px;
-  width: 35px;
-  background: #fff;
-}
-/* line 97, ../sass/partials/_nav-rail.scss */
-.nav-rail-list ul a {
-  padding: 5px 20px 5px 40px;
-  font-size: 14px;
-  font-size: 0.875rem;
-}
-/* line 102, ../sass/partials/_nav-rail.scss */
-.nav-rail-list ul > li:first-child > a {
-  padding-top: 10px;
-}
-/* line 103, ../sass/partials/_nav-rail.scss */
-.nav-rail-list ul > li:last-child > a {
-  padding-bottom: 10px;
-}
-/* line 105, ../sass/partials/_nav-rail.scss */
-.nav-rail-list ul .active > a {
-  text-decoration: underline;
-}
-/* line 108, ../sass/partials/_nav-rail.scss */
-.nav-rail-list ul .active > a:after {
-  display: none;
-}
-/* line 114, ../sass/partials/_nav-rail.scss */
-.nav-rail-list ul ul a {
-  padding-left: 50px;
-  font-size: 12px;
-  font-size: 0.75rem;
+.nav-rail-list ul ul ul a {
+  padding-left: 30px;
 }
 
 /* ================================================================
@@ -5732,11 +5724,12 @@ Standard Sitefinity pager. Builds off of the format:
 }
 /* line 17, ../sass/partials/_base.scss */
 .header .logo {
+  display: inline-block;
   color: #fff;
   font-weight: bold;
   text-decoration: none;
 }
-/* line 22, ../sass/partials/_base.scss */
+/* line 23, ../sass/partials/_base.scss */
 .header .logo:before {
   content: '';
   position: relative;
@@ -5748,19 +5741,42 @@ Standard Sitefinity pager. Builds off of the format:
   background: #fff;
   border-radius: 50px;
 }
-/* line 35, ../sass/partials/_base.scss */
+/* line 36, ../sass/partials/_base.scss */
 .header .logo:hover, .header .logo:focus {
   text-decoration: none;
 }
-/* line 38, ../sass/partials/_base.scss */
+/* line 39, ../sass/partials/_base.scss */
 .header .logo:hover:before, .header .logo:focus:before {
   background: rgba(255, 255, 255, 0.5);
+}
+
+/* line 48, ../sass/partials/_base.scss */
+.nav-menu {
+  display: inline-block;
+  position: relative;
+  top: 5px;
+  margin-left: 15px;
+  padding-left: 18px;
+  border-left: 1px solid #fff;
+}
+/* line 56, ../sass/partials/_base.scss */
+.nav-menu a {
+  margin: 0 25px;
+  color: #fff;
+}
+/* line 60, ../sass/partials/_base.scss */
+.nav-menu a:hover, .nav-menu a:focus {
+  text-decoration: underline;
+}
+/* line 65, ../sass/partials/_base.scss */
+.nav-menu .on a {
+  font-weight: bold;
 }
 
 /* ================================================================
    Main
    ================================================================ */
-/* line 49, ../sass/partials/_base.scss */
+/* line 74, ../sass/partials/_base.scss */
 .main {
   padding-bottom: 3em;
 }

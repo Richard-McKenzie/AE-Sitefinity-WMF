@@ -1,18 +1,32 @@
 
 /* Nav Rail
-================================================================ */
+   ================================================================ */
 
-$mod-padding: 10px !default;
+$nav-rail-padding: 10px !default;
+
+// Stying for the nav-rail-heading anchor tag
+.nav-rail-heading {
+	display: block;
+	margin: 0 0 5px;
+	padding: $nav-rail-padding;
+	background: $color-primary;
+	color: #fff;
+	@include x-rem(font-size, 24px);
+
+	&:focus, &:hover {
+		text-decoration: none;
+	}
+}
 
 .nav-rail {
-	padding: $mod-padding 0; 
+	margin: 0 0 1em;
+	background: hsl(0, 0%, 95%);
 }
 
 .nav-rail-list{
 	display: block;
 	margin: 0;
-	padding: 0 0 15px;
-	background: $color-primary;
+	padding: 0;
 
 	ul, li {
 		display: block;
@@ -20,99 +34,48 @@ $mod-padding: 10px !default;
 		padding: 0;
 	}
 
-	// Section Heading
-	// > li.active > a {
-	// 	display: none;
-	// 	padding: 0 $mod-padding;
-	// 	margin: 0;
-	// 	font-family: $font-heading;
-	// 	color: #231f20;
-	// 	text-transform: uppercase;
-	// 	font-weight: 700;
-	// 	text-decoration: none;
-	// 	@include x-rem(font-size, 16px);		
+	// Section Header
+	> li.active > a {
+		@extend .nav-rail-heading;
+	}
 
-	// 	&:focus, &:hover {
-	// 		text-decoration: none;
-	// 	}
-	// }
-
-	// li {
-	// 	display: none;
-
-	// 	&.active{
-	// 		display: block;
-
-	// 		> ul > li {
-	// 			display: block;
-	// 		}
-	// 	}
-	// }
-
-	ul {
+	// Hides all of the navigation items not under the active section
+	li {
 		display: none;
-	}
 
-	.active > ul {
-		display: block;
-	}
-
-	// First Level visible
-	a {
-		display: block;
-		position: relative;
-		padding: 10px 30px;
-		background: $color-primary;
-		color: #fff;
-		font-family: $font-heading;
-		@include x-rem(font-size, 18px);
-		@include transition(all 0.2s ease-out);
-
-		&:hover, &:focus {
-			background: darken($color-primary, 10%);
-			text-decoration: none;
-		}
-	}
-
-	> li:first-child > a {
-		padding-top: 25px;
-	}
-
-	.active > a {
-
-		&:after {
-			content: '';
+		&.active{
 			display: block;
-			position: absolute;
-			left: 30px;
-			bottom: 5px;
-			height: 3px;
-			width: 35px;
-			background: #fff;
-		}
-	}
 
-	// Second level
-	ul {
-		a {
-			padding: 5px 20px 5px 40px;
-			@include x-rem(font-size, 14px);
-		}
-
-		> li:first-child > a { padding-top: 10px}
-		> li:last-child > a { padding-bottom: 10px}
-
-		.active > a {
-			text-decoration: underline;
-
-			&:after {
-				display: none;
+			> ul > li {
+				display: block;
 			}
 		}
 	}
 
-	ul ul a {
-		padding-left: 50px;
-			@include x-rem(font-size, 12px);
+	// Current page and siblings
+	ul {
+		a {
+			display: block;
+			padding: 0.3em $nav-rail-padding;
+			color: $color-primary;
+			font-weight: bold;
+			@include transition(all 0.2s ease-out);
+
+			&:hover, &:focus {
+				color: darken($color-primary, 20%);
+			}
+		}
+
+		.active > a {
+			color: darken($color-primary, 20%);
+		}
+
+		ul a {
+			padding-left: $nav-rail-padding * 2;
+		}
+
+		ul ul a {
+			padding-left: $nav-rail-padding * 3;
+		}
 	}
 }

@@ -43,9 +43,11 @@ jQuery(function($) {
 	});
 
 	// Clone the pager and add it after the list
+	// We should probably come up with a better solution for this. Wanted to avoid using 
+	// a placeholder div because if the pager doesn't render the placeholder will still be there
 	$('.pager').each(function(){
 		var pager = $(this).clone().find('[id]').removeAttr('id');
-		$(this).siblings('.list:first').append(pager);
+		$(this).siblings('ol, ul').append(pager);
 	});
 
 

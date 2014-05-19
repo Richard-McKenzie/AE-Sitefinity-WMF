@@ -3,24 +3,21 @@
 <%@ Register TagPrefix="sf" Namespace="Telerik.Sitefinity.Web.UI.PublicControls.BrowseAndEdit" Assembly="Telerik.Sitefinity" %>
 
 <div class="faq module-rail">
-	<telerik:RadListView id="listsControl" runat="server" ItemPlaceholderId="ListContainer" EnableEmbeddedSkins="false"         EnableEmbeddedBaseStylesheet="false">
+	<telerik:RadListView id="listsControl" runat="server" ItemPlaceholderId="ListContainer" EnableEmbeddedSkins="false" EnableEmbeddedBaseStylesheet="false">
 	<LayoutTemplate>
 			<asp:PlaceHolder id="ListContainer" runat="server" />
 	</LayoutTemplate>
 	<ItemTemplate>
-		<div class="module-head">
+		<div class="module-header">
 			<h2 class="title">
-				<asp:Literal runat="server" Text='<%# Eval("Title") %>' />
+				<a href="/faq/"><asp:Literal runat="server" Text='<%# Eval("Title") %>' /></a>
 			</h2>
-			<a href="/faq/" class="more">View All</a>
 		</div>
 		<telerik:RadListView 	ID="listItemsControl"	runat="server"	ItemPlaceholderID="ItemsContainer"	EnableEmbeddedSkins="false"	EnableEmbeddedBaseStylesheet="false">
 		<LayoutTemplate>
-			<div class="list">
-				<ul>
-					<asp:PlaceHolder ID="ItemsContainer" runat="server" />
-				</ul>
-			</div>
+			<ul class="list">
+				<asp:PlaceHolder ID="ItemsContainer" runat="server" />
+			</ul>
 		</LayoutTemplate>
 		<ItemTemplate>
 			<li class="item">

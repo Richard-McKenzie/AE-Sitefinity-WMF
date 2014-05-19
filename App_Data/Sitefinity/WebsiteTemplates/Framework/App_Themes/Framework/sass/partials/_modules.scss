@@ -76,6 +76,7 @@
    ========================================================================== */
 
 .module {
+	margin-bottom: 1em;
 
 	// Title of the Module
 	> .title {
@@ -157,7 +158,8 @@
    - Provides core styling for Module Lists
    ========================================================================== */
 
-.module-list { 
+.module-list {
+
 	.item {
 		.title {
 			margin: 0 0 10px;
@@ -198,6 +200,7 @@
    ========================================================================== */
 
 .module-rail {
+	margin-bottom: 1em;
 	background: hsl(0, 0%, 95%);
 
 	.module-header {
@@ -206,6 +209,10 @@
 			padding: 10px;
 			background: $color-primary;
 			color: #fff;
+
+			a {
+				color: #fff;
+			}
 		}
 	}
 
