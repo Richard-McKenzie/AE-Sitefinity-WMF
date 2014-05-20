@@ -1,6 +1,12 @@
-/* ================================================================
-   Search Form
-   ================================================================ */
+/* ==========================================================================
+   Search
+   - All search related styles will go here.
+   - Examples: Header Search, Search details
+   ========================================================================== */
+
+/* Search Box Basic
+   - Basic styling for the search box
+   ========================================================================== */
 
 .sfsearchBox {
 
@@ -12,6 +18,46 @@
 
 .sfsearchSubmit {
 
+}
+
+.sfSearchButton {
+	@extend .button;
+}
+
+
+/* Search Box Header
+   - Styling for the search box found in the header
+   ========================================================================== */
+
+.header .sfsearchBox {
+	position: absolute;
+	top: 0;
+	right: 0;
+
+	.sfsearchSubmit {
+		position: relative;
+		top: 2px;
+		left: 2px;		
+		color: #fff;
+		font-size: 24px;
+
+		&:hover, &:focus {
+			color: hsla(0, 0%, 100%, 0.75);
+		}
+
+		&:before {
+			@extend .iconfont-search;
+		}
+	}
+
+	.sfSearchButton {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		@include opacity(0);
+	}
 }
 
 
@@ -45,7 +91,6 @@
 		a {
 			display: inline-block;
 			font-weight: normal;
-			color: $color-dgrey;
 
 			&:before {
 				content: '(';

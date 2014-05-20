@@ -58,6 +58,13 @@
 .icon-arrow-left:before {
 	content: "\f060";
 }
+.iconfont-search {
+	@include iconfont();
+	content: "\f002";
+}
+.icon-search:before {
+	content: "\f002";
+}
 
 
 // Unused below:
@@ -68,9 +75,6 @@
 }
 .icon-music:before {
 	content: "\f001";
-}
-.icon-search:before {
-	content: "\f002";
 }
 .icon-envelope-o:before {
 	content: "\f003";

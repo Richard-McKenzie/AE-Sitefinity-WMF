@@ -89,17 +89,75 @@ $gallery-list-comment-background: hsla(0, 0%, 0%, 0.5) !default;
 	}
 }
 
+/* Photo Gallery
+   - Here are the styles to work with Owl Carousel in doing the gallery template
+   ========================================================================== */
 
-// Sitefinity inheritance
+$gallery-max-height: none !default;
+$gallery-thumb-spacing: 10px !default;
+$gallery-thumb-background: hsla(0, 0%, 0%, 0.15) !default;
 
-// .sfimagesTmbList {
-// 	@extend .gallery-list;
+.gallery-slider-large .item {
+	position: relative;
+	text-align: center;
 
-// 	li a:first-child{
-// 		@extend .gallery-list-item;
-// 	}
-// }
+	.desc {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		padding: 15px;
+		background: hsla(0, 0%, 0%, 0.5);
+		color: #fff;
+	}
+}
 
-// .sfCommentsCounter {
-// 	@extend .gallery-list-item-comment;
-// }
+.gallery-slider-large img {
+	max-height: $gallery-max-height;
+}
+
+.gallery-slider-thumb {
+	.item {
+		margin-right: $gallery-thumb-spacing;
+	}
+
+	.owl-prev, .owl-next {
+		@include x-rem(font-size, 14px);
+	}
+}
+
+// This guy is in here to offset the margin-right on all of the items.
+// Should still try and figure out if we can get a better solution
+.gallery-slider-thumb {
+	padding-left: $gallery-thumb-spacing;
+	padding-top: $gallery-thumb-spacing;
+	padding-bottom: $gallery-thumb-spacing;
+	background: $gallery-thumb-background;
+
+	.owl-prev {
+		left: 15px;
+	}
+
+	.owl-next {
+		right: 15px;
+	}
+}
+
+.gallery-slider-thumb-item {
+	position: relative;
+	padding-top: 100%;
+}
+
+.gallery-slider-thumb-img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	background-position: 50% 50%;
+	background-size: cover;
+
+	&:hover {
+		@include box-shadow(inset 0 0 0 2px $color-primary);
+	}
+}

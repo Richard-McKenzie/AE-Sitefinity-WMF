@@ -30,6 +30,12 @@ $breadcrumb-current-color: $color-primary;
 $breadcrumb-type-font-color: $breadcrumb-color;
 $breadcrumb-type: font;
 
+// Slideshow
+
+$gallery-max-height: 400px;
+
+
+
 // SASS Functions and Modules
 @import "modules/utilities";
 
@@ -47,17 +53,20 @@ $breadcrumb-type: font;
 // @import "partials/grid-fixed";
 @import "partials/typography";
 @import "partials/modules";
+
 @import "partials/faq";
 @import "partials/forms";
+@import "partials/gallery";
 @import "partials/comments";
 @import "partials/menu";
-@import "partials/photos";
 @import "partials/nav-rail";
 @import "partials/page-meta";
 @import "partials/pagination";
 @import "partials/tabs";
 @import "partials/sitemap";
+@import "partials/search";
 @import "vendor/owltheme";
+
 @import "partials/base";
 @import "partials/print";
 
