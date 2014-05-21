@@ -648,11 +648,6 @@ textarea {
   box-sizing: border-box;
 }
 
-/* line 62, ../sass/vendor/_sf-boilerplate.scss */
-a[target="_blank"] {
-  cursor: alias;
-}
-
 /* line 64, ../sass/vendor/_sf-boilerplate.scss */
 body span.gc-cs-link {
   color: inherit;

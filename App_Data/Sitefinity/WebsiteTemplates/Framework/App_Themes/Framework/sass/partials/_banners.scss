@@ -1,0 +1,36 @@
+/* ==========================================================================
+   Banners
+   - Basic styling for the Banner modules
+   - Includes: Banner Single and Banner Rotator
+   ========================================================================== */
+
+
+/* Banner Single
+   - Controls the basic style for a single banner.
+   - Includes options for: Image and Text Overlay
+   ========================================================================== */
+
+.banner {
+	display: block;
+	position: relative;
+
+	.media {
+		margin: 0;
+		padding: 0;
+
+		img {
+			width: 100%;
+			max-width: none;
+		}
+	}
+
+	.content {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		padding: 15px;
+		background: hsla(0, 0%, 0%, 0.5);
+		color: #fff;
+	}
+}

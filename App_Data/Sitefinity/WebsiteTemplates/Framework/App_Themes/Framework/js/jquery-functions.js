@@ -1,3 +1,18 @@
+/* ==========================================================================
+ * JQUERY FUNCTIONS
+ * ----------------
+ * Home of all of the jquery and javascript configurations and function calls
+ * ========================================================================== */
+
+
+//Owl Carousel Randomizer
+function owlRandom(owlSelector){
+  owlSelector.children().sort(function(){
+      return Math.round(Math.random()) - 0.5;
+  }).each(function(){
+    $(this).appendTo(owlSelector);
+  });
+};
 
 jQuery(function($) {
 
@@ -57,6 +72,7 @@ jQuery(function($) {
 	* Support for the different slideshows/carousels that we have on the site.
 	* Including:
 	* - Main Slideshow
+	* - Banner Rotate
 	* - Image Gallery
 	*/
 
@@ -76,6 +92,26 @@ jQuery(function($) {
 		rewindNav : true,
 		scrollPerPage : false,
 		transitionStyle:"fade"
+	});
+
+
+	/* Banner Rotate with random init */
+	$(".banner-rotate").owlCarousel({
+		autoPlay : 10000,
+		stopOnHover : true,
+		navigation:false,
+		paginationSpeed : 1000,
+		goToFirstSpeed : 2000,
+		singleItem : true,
+		autoHeight : true,
+		// Navigation
+		navigation : false,
+		rewindNav : true,
+		scrollPerPage : false,
+		transitionStyle:"fade",
+		beforeInit : function(elem){
+			owlRandom(elem);
+		}
 	});
 
 

@@ -650,11 +650,6 @@ textarea {
   box-sizing: border-box;
 }
 
-/* line 62, ../sass/vendor/_sf-boilerplate.scss */
-a[target="_blank"] {
-  cursor: alias;
-}
-
 /* line 64, ../sass/vendor/_sf-boilerplate.scss */
 body span.gc-cs-link {
   color: inherit;
@@ -4499,6 +4494,41 @@ tr:nth-child(2n) td {
 /* line 225, ../sass/partials/_modules.scss */
 .module-rail > .list .meta {
   font-size: 0.85em;
+}
+
+/* ==========================================================================
+   Banners
+   - Basic styling for the Banner modules
+   - Includes: Banner Single and Banner Rotator
+   ========================================================================== */
+/* Banner Single
+   - Controls the basic style for a single banner.
+   - Includes options for: Image and Text Overlay
+   ========================================================================== */
+/* line 13, ../sass/partials/_banners.scss */
+.banner {
+  display: block;
+  position: relative;
+}
+/* line 17, ../sass/partials/_banners.scss */
+.banner .media {
+  margin: 0;
+  padding: 0;
+}
+/* line 21, ../sass/partials/_banners.scss */
+.banner .media img {
+  width: 100%;
+  max-width: none;
+}
+/* line 27, ../sass/partials/_banners.scss */
+.banner .content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 15px;
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
 }
 
 /* ==========================================================================
