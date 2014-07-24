@@ -26,4 +26,4 @@
 			</Templates>
 		</navigation:NavigationContainer>
 	</ul>
-</div>
+</nav>
