@@ -14,6 +14,7 @@ function owlRandom(owlSelector){
   });
 };
 
+
 jQuery(function($) {
 
 	/**
@@ -76,7 +77,7 @@ jQuery(function($) {
 	* - Image Gallery
 	*/
 
-	/* Main Slideshow */
+	/* Main Slideshow 
 
 	$(".slideshow").owlCarousel({
 		autoPlay : 10000,
@@ -92,10 +93,10 @@ jQuery(function($) {
 		rewindNav : true,
 		scrollPerPage : false,
 		transitionStyle:"fade"
-	});
+	});*/
 
 
-	/* Banner Rotate with random init */
+	/* Banner Rotate with random init 
 	$(".banner-rotate").owlCarousel({
 		autoPlay : 10000,
 		stopOnHover : true,
@@ -112,7 +113,7 @@ jQuery(function($) {
 		beforeInit : function(elem){
 			owlRandom(elem);
 		}
-	});
+	});*/
 
 
 	/* Image Gallery
@@ -123,7 +124,7 @@ jQuery(function($) {
 	// 	$(this).find('.gallery-slider-thumb-img').attr('data-src', ele.attr('data-src') );
 	// 	ele.remove();
 	// });
-
+/*
 	$('.gallery-slider').each(function(){
 
 		var mySelf = $(this);
@@ -208,21 +209,7 @@ jQuery(function($) {
 		};
 	}); 
 
-
-
-
-	// Old stuff / untested below here
-
-	$('.search-toggle').on('click',function(e){
-		e.preventDefault();
-		$('.sfsearchBox').toggleClass('active');
-		$(this).toggleClass('active');
-	})
-
-
-
-	//Resizes videos to fit containers
-	$(".container").fitVids();
+    */
 
 	/* Main Nav */
 
@@ -308,34 +295,12 @@ jQuery(function($) {
 
 	$('iframe').each(function(){
 		var url = $(this).attr("src");
-		$(this).attr("src",url+"?wmode=transparent");
+        
+        if(url){
+		  $(this).attr("src",url+"?wmode=transparent");
+        }
 	});
 
-	// Old stuff
-
-	$('.popup').each(function(){
-		$(this).magnificPopup({ 
-			type: 'image'
-		});		
-	});
-
-	$('.popupimage').each(function(){
-		if (/(jpg|gif|png|JPG|GIF|PNG|JPEG|jpeg)$/.test($(this).attr('href'))){
-			$(this).magnificPopup({ 
-				type: 'image'
-			});
-		};
-	});
-
-	$('.gallery').each(function() { // the containers for all your galleries
-		$(this).magnificPopup({
-			delegate: '[data-popup=true]', // the selector for gallery item
-			type: 'image',
-			gallery: {
-				enabled:true
-			}
-		});
-	}); 
 	/* Form functions */
 
 	// form-label-hide
