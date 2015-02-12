@@ -11,8 +11,8 @@ preferred_syntax = :scss
 
 # To disable debugging comments that display the original location of your selectors. Uncomment:
 # line_comments = false
-output_style = :expanded
-#output_style = :compressed
+#output_style = :expanded
+output_style = :compressed
 
 # Make a copy of sprites with a name that has no uniqueness of the hash.
 on_sprite_saved do |filename|
