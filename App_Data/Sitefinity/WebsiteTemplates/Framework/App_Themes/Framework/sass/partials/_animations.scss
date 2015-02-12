@@ -1,0 +1,62 @@
+/* ================================================================
+   Keyframes
+   ================================================================ */
+
+
+/* Keyframes */
+
+/*empty*/
+@include keyframes(empty){
+    0% {opacity: 1}
+}
+
+@include keyframes(fadeIn){
+  from { opacity:0; }
+  to { opacity:1; }
+}
+
+@include keyframes(fadeOut){
+  0% { opacity:1; }
+  100% { opacity:0; }
+}
+
+@include keyframes(fadeInPushUp){
+  0% { opacity:0; padding-top:15px }
+  100% { opacity:1; padding-top:0; }
+}
+
+@include keyframes(backSlideOut){
+  25% { opacity: .5; -webkit-transform: translateZ(-500px); }
+  75% { opacity: .5; -webkit-transform: translateZ(-500px) translateX(-200%); }
+  100% { opacity: .5; -webkit-transform: translateZ(-500px) translateX(-200%); }
+}
+
+@include keyframes(backSlideIn){
+  0%, 25% { opacity: .5; -webkit-transform: translateZ(-500px) translateX(200%); }
+  75% { opacity: .5; -webkit-transform: translateZ(-500px); }
+  100% { opacity: 1; -webkit-transform: translateZ(0) translateX(0); }
+}
+
+
+@include keyframes(scaleToFade){
+  to { opacity: 0; -webkit-transform: scale(.8); }
+}
+
+@include keyframes(goDown){
+  from { -webkit-transform: translateY(-100%); }
+}
+
+@include keyframes(scaleUpFrom){
+  from { opacity: 0; -webkit-transform: scale(1.5); }
+}
+
+@include keyframes(scaleUpTo){
+  to { opacity: 0; -webkit-transform: scale(1.5); }
+}
+
+
+
+/* ================================================================
+   Site Specific Below
+   ================================================================ */
+

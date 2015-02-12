@@ -11,16 +11,13 @@ $grid-gutter: 20px !default;
 
 .container {
 	position:relative;
-	margin:0px auto;
+	margin:0 auto;
 	padding:0px; 
 	width: 100%;
 	min-width:16em;
+    max-width:1200px;
 	@include transition(all 0.1s linear);
 	@include clearfix;
-
-	@include breakpoint(l) {
-		width: 87%;
-	}
 }
 
 // Just like container, but full width

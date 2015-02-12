@@ -2,16 +2,11 @@
 
 $font-em-base: 14 !default;
 
-$breakpoint-s: 0em !default;
-$breakpoint-m: 48em !default;   //  768px
-$breakpoint-l: 60em !default;   //  960px 
-$breakpoint-xl: 72em !default;  // 1152px
-$breakpoint-xxl: 84em !default; // 1344px
-
-// Use this if you want, x-rem function is better.
-@function em($target, $font-em-base: 14) {
-	@return ($target / $font-em-base) * 1em;
-}
+$breakpoint-s: 0 !default;
+$breakpoint-m: 768px !default;   
+$breakpoint-l: 960px !default;  
+$breakpoint-xl: 1152px !default; 
+$breakpoint-xxl: 1344px !default;
 
 // a small mixin for easy use of rem with px as fallback
 // usage: @include x-rem(font-size, 14px)
@@ -61,6 +56,7 @@ $breakpoint-xxl: 84em !default; // 1344px
   #{$property}: $rem-values;
 }
 
+
 @mixin clearfix {
 	&:after {
 		content: "";
@@ -69,7 +65,34 @@ $breakpoint-xxl: 84em !default; // 1344px
 	}
 }
 
-// TODO: Change to EM breakpoints
+// Animate Mixin
+@mixin animation($animate...) {
+    $max: length($animate);
+    $animations: '';
+
+    @for $i from 1 through $max {
+        $animations: #{$animations + nth($animate, $i)};
+
+        @if $i < $max {
+            $animations: #{$animations + ", "};
+        }
+    }
+    -webkit-animation: $animations;
+       -moz-animation: $animations;
+         -o-animation: $animations;
+            animation: $animations;
+}
+
+
+// Keyframe Mixin
+@mixin keyframes($animationName) {
+    @-webkit-keyframes #{$animationName} { @content; }
+    @-moz-keyframes #{$animationName} { @content; }
+    @-o-keyframes #{$animationName} { @content; }
+    @keyframes #{$animationName} { @content; }
+}
+
+
 @mixin breakpoint($point) {
 	@if $point == retina {
 		@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) { @content; }
@@ -79,14 +102,14 @@ $breakpoint-xxl: 84em !default; // 1344px
 		@media (min-width: $breakpoint-s) { @content; }
 	}	// 16px baseline (256px - 767px) s-m = small TO medium
 	@else if $point == s-m {
-		@media (min-width:$breakpoint-s) and (max-width:$breakpoint-m - 0.1em)  { @content; }
+		@media (min-width:$breakpoint-s) and (max-width:$breakpoint-m)  { @content; }
 	}
 	// 16px baseline (256px - 959px) s-l = small TO large
 	@else if $point == s-l {
-		@media (min-width:$breakpoint-s) and (max-width:$breakpoint-l - 0.1em)  { @content; }
+		@media (min-width:$breakpoint-s) and (max-width:$breakpoint-l)  { @content; }
 	}
 	@else if $point == s-xl {
-		@media (min-width:$breakpoint-s) and (max-width:$breakpoint-xl - 0.1em)  { @content; }
+		@media (min-width:$breakpoint-s) and (max-width:$breakpoint-xl)  { @content; }
 	}
 	// 16px baseline (768px) m = medium
 	@else if $point == m {
@@ -94,11 +117,11 @@ $breakpoint-xxl: 84em !default; // 1344px
 	}
 	// 16px baseline (768px - 959px) m-l = medium TO large
 	@else if $point == m-l {
-		@media (min-width:$breakpoint-m) and (max-width:$breakpoint-l - 0.1em)  { @content; }
+		@media (min-width:$breakpoint-m) and (max-width:$breakpoint-l)  { @content; }
 	}
 	// 16px baseline (768px - 1152) m-l = medium TO xlarge
 	@else if $point == m-xl {
-		@media (min-width:$breakpoint-m) and (max-width:$breakpoint-xl - 0.1em)  { @content; }
+		@media (min-width:$breakpoint-m) and (max-width:$breakpoint-xl)  { @content; }
 	}
 	// 16px baseline (960px) l = large
 	@else if $point == l {
@@ -111,4 +134,7 @@ $breakpoint-xxl: 84em !default; // 1344px
 	@else if $point == xxl {
 		@media (min-width: $breakpoint-xxl) { @content; }
 	}
+    @else {
+		@media (min-width: $point) { @content; }
+    }
 }

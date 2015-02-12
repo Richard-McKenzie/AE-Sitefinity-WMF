@@ -7,7 +7,6 @@ To get started go [here](./docs/README.md) for directions
 
  - Make a generic style for the framework, remove site specific styles from the code
  - Provide more examples, add everything to the sandbox.
- - Redo custom layouts
  - Find a good jquery validator
  - Document form updates with the placeholder and form type
  - Explain legacy browser support and policy
@@ -50,6 +49,18 @@ Sandbox Sf 7: http://sitefinity7-demo.idevdesign.net/
 
 
 ##Changelog
+
+**v 0.1.2** - 2/12/2015
+ - Updates to custom layouts
+ - Framework.master clean up
+ - Updated Folder names and templates locations
+ - Moving grid to pixel based format
+ - Begin addition to grid mixin to allow for custom values
+ - Commented out meta deta items 
+ - Removed modules-old (for good) and wysiwyg.scss (for now)
+ - Updated config.rb to compress files by default
+ - Updating grid-flud to use max-width
+ - Added animation and keyframes mixins alond with creating an _animation.scss 
 
 **v 0.1.1** - 3/11/2014
  - Added pagination enhancement

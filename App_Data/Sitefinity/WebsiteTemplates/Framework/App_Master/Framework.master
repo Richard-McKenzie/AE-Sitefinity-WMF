@@ -8,8 +8,9 @@
 <%@ Import Namespace="Telerik.Sitefinity.Localization" %>
 
 <!DOCTYPE html>
-<!--[if lt IE 9]>     <html class="no-js lt-ie10 lt-ie9" lang="en"><![endif]-->
-<!--[if IE 9]>        <html class="no-js lt-ie10" lang="en"><![endif]-->
+
+<!--[if lt IE 9]><html class="no-js lt-ie10 lt-ie9" lang="en"><![endif]-->
+<!--[if IE 9]><html class="no-js lt-ie10" lang="en"><![endif]-->
 <!--[if gt IE 9]><!--><html lang="en" class="no-js"><!--<![endif]-->
 
 <head id="head" runat="server">
