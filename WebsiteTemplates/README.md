@@ -42,6 +42,7 @@ Once you have your masterpage file created, it's time to create a page template 
 ##Step 3: Custom Layout Widgets
 Sometimes you need to create custom layout controls instead of using the prebuilt ones.
 
+Test
 
  Add this to web.config inside one of the <system.webServer> (should be already added)
 
