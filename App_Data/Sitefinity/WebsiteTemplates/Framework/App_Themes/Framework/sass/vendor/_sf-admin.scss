@@ -1,0 +1,73 @@
+//Admin resets
+
+// .sfPageBrowseAndEditToolbarWrp {
+// 	z-index: 5000;
+// }
+
+// Sitefinity frontend
+.Sitefinity.RadEditor, .Sitefinity.RadEditor * {
+	font-family: inherit;
+}
+
+//Sets content-box to sitefinity admin so global box-sizing can be changed
+// .RadWindow, 
+// .sfPageEditorToolbarWrapper .sfWorkflowMenuWrp .sfActionsDDL .rmSlide,
+// .sfLayoutPropsContainer,
+// .sfVisualLayoutEditor,
+// .sfPageContainer,
+// // .sfPageEditor [class^="sf"], // Removing this as it breaks grids in the admin
+// .sfPageEditor [class^="Rad"],
+// .sfPageEditor [class^="rm"],
+// .sfPageEditor [class^="rt"],
+// .sfPageBrowseAndEditToolbarWrp,
+// .sfOpenBrowseAndEditMenuLnk,
+// .ZoneEditorToolboxContainer,
+// .ZoneEditorToolboxContainer *,
+// .ZoneEditorToolboxContainer *:before,
+// .ZoneEditorToolboxContainer *:after,
+// #fancybox-wrap,
+// #fancybox-wrap *{
+// 	@include box-sizing(content-box);
+// }
+
+// Adds box sizing back to content inside of the admin
+.RadDockZone .rdContent * {
+	@include box-sizing(border-box);
+}
+
+.ZoneEditorToolboxContainer h2 {
+	font-family: arial, sans-serif;
+}
+
+// Makes sure the template inputs have black text
+.sfLayoutPropsContainer .sfTxt {
+	color: #000;
+}
+
+// Hide Add This SmartLayers
+.sfPageEditor .addthis-smartlayers{
+	display: none;
+}
+
+//hide the column adjusters in the template editor
+.sfTemplateEditor .sfLayoutWidthSlider,
+.sfTemplateEditor #columnList {
+	display: none !important;
+}
+
+// Test style to figure out if we can hide the min height
+
+.zeContentMode .sfPageContainer .RadDock_Sitefinity .rdContent {
+	// background: rgba(red, 0.5);
+	min-height: 15px;
+}
+
+// Move the tools up on the front end to allow for the add this side share
+// html .sfPageBrowseAndEditToolbarWrp {
+// 	top: 5% !important;
+// }
+
+// Fix for the layout editor not showing up.
+#ZoneEditor {
+	overflow: visible !important;
+}

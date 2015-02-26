@@ -1,0 +1,82 @@
+
+/* Nav Rail
+   ================================================================ */
+
+$nav-rail-padding: 10px !default;
+
+// Stying for the nav-rail-heading anchor tag
+.nav-rail-heading {
+	display: block;
+	margin: 0 0 5px;
+	padding: $nav-rail-padding;
+	background: $color-primary;
+	color: #fff;
+	@include x-rem(font-size, 24px);
+
+	&:focus, &:hover {
+		text-decoration: none;
+	}
+}
+
+.nav-rail {
+	margin: 0 0 1em;
+	background: hsl(0, 0%, 95%);
+}
+
+.nav-rail-list{
+	display: block;
+	margin: 0;
+	padding: 0;
+
+	ul, li {
+		display: block;
+		margin: 0;
+		padding: 0;
+	}
+
+	// Section Header
+	> li.active > a {
+		@extend .nav-rail-heading;
+	}
+
+	// Hides all of the navigation items not under the active section
+	li {
+		display: none;
+
+		&.active{
+			display: block;
+
+			> ul > li {
+				display: block;
+			}
+		}
+	}
+
+	// Current page and siblings
+	ul {
+		a {
+			display: block;
+			padding: 0.3em $nav-rail-padding;
+			color: $color-primary;
+			font-weight: bold;
+			@include transition(all 0.2s ease-out);
+
+			&:hover, &:focus {
+				color: darken($color-primary, 20%);
+			}
+		}
+
+		.active > a {
+			color: darken($color-primary, 20%);
+		}
+
+		ul a {
+			padding-left: $nav-rail-padding * 2;
+			font-size: 0.85em;
+		}
+
+		ul ul a {
+			padding-left: $nav-rail-padding * 3;
+		}
+	}
+}

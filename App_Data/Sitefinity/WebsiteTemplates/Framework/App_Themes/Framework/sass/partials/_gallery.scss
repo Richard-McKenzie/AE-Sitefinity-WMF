@@ -1,0 +1,163 @@
+/* ================================================================
+   Photos Styles
+   ================================================================ */
+
+$gallery-list-item-margin: 10px;
+$gallery-list-comment-color: #fff !default;
+$gallery-list-comment-background: hsla(0, 0%, 0%, 0.5) !default;
+
+.gallery {
+
+	.gallery-list {
+		display: block;
+		margin: 0;
+		padding: 0;
+		text-align: center;
+
+		li {
+			position: relative;
+			display: inline-block;
+			margin: $gallery-list-item-margin 0;
+			padding: 0;
+		}
+	}
+
+	//Thumbnail View
+	&[data-style="thumbnails"] {
+
+		.gallery-list {
+			margin: 0 (-$gallery-list-item-margin); //offsets the spacing
+			text-align: left;	
+
+			li {
+				margin: $gallery-list-item-margin;			
+			}
+		}
+
+		.gallery-list-item {
+			display: block;
+			width: 200px;
+			height: 200px;
+			overflow: hidden;
+			background-size: cover;
+			background-position: 50% 25%;
+			@include transition(all 0.2s ease-out);
+			@include box-shadow(0 0 0em $color-base);
+
+			&:hover, &:focus {
+				@include box-shadow(0 0 1em $color-base);
+			}
+			
+			img {
+				@extend .visuallyhidden;
+			}
+		}
+	}
+}
+
+.gallery-list-item-comment {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	display: inline-block;
+	padding: 4px 8px;
+	text-decoration: none;
+	background-color: $gallery-list-comment-background;
+	color: $gallery-list-comment-color;
+	@include x-rem(font-size, 11px);
+	@include x-rem(line-height, 12px);
+	@include transition(all 0.2s ease-out);
+
+	&:after {
+		@extend .iconfont-comments;
+		display: inline-block;
+		padding-left: 2px;
+	}
+
+	&:hover, &:focus {
+		text-decoration: none;
+		background-color: rgba($gallery-list-comment-background, alpha($gallery-list-comment-background)*1.5);
+	}
+
+	&.sfcommentsEmpty {
+		display: none;
+	}
+
+	//Hide if it's associated with a popup
+	[data-popup="true"] + & {
+		display: none;
+	}
+}
+
+/* Photo Gallery
+   - Here are the styles to work with Owl Carousel in doing the gallery template
+   ========================================================================== */
+
+$gallery-max-height: none !default;
+$gallery-thumb-spacing: 10px !default;
+$gallery-thumb-background: hsla(0, 0%, 0%, 0.15) !default;
+
+.gallery-slider-large .item {
+	position: relative;
+	text-align: center;
+
+	.desc {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		padding: 15px;
+		background: hsla(0, 0%, 0%, 0.5);
+		color: #fff;
+	}
+}
+
+.gallery-slider-large img {
+	max-height: $gallery-max-height;
+}
+
+.gallery-slider-thumb {
+	.item {
+		margin-right: $gallery-thumb-spacing;
+	}
+
+	.owl-prev, .owl-next {
+		@include x-rem(font-size, 14px);
+	}
+}
+
+// This guy is in here to offset the margin-right on all of the items.
+// Should still try and figure out if we can get a better solution
+.gallery-slider-thumb {
+	padding-left: $gallery-thumb-spacing;
+	padding-top: $gallery-thumb-spacing;
+	padding-bottom: $gallery-thumb-spacing;
+	background: $gallery-thumb-background;
+
+	.owl-prev {
+		left: 15px;
+	}
+
+	.owl-next {
+		right: 15px;
+	}
+}
+
+.gallery-slider-thumb-item {
+	position: relative;
+	padding-top: 100%;
+}
+
+.gallery-slider-thumb-img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	background-position: 50% 50%;
+	background-size: cover;
+
+	&:hover {
+		@include box-shadow(inset 0 0 0 2px $color-primary);
+	}
+}
