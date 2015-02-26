@@ -235,11 +235,8 @@ jQuery(function($) {
 	  }
 	});
 
-	//Wrapping each first level nav in a div to fix a FF bug related to table-cell not using position
-	$('.menu > li').each(function() {
-		$(this).wrapInner('<div class="menu-item-wrap" />');
-	});
-
+    
+    
 
 	/* Tabs Nav */
 
