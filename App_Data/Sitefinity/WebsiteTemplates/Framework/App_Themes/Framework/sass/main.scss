@@ -1,3 +1,4 @@
+
 // Use Compass 
 $svg-gradient-shim-threshold: 0.1;
 @import "compass/css3";
@@ -43,6 +44,8 @@ $gallery-max-height: 400px;
 @import "vendor/sf-boilerplate";
 @import "vendor/magnific-popup";
 @import "vendor/owlcarousel";
+@import "vendor/slick";
+// @import "vendor/slick-theme";
 @import "vendor/framework-fonts";
 
 // Theme Partials
