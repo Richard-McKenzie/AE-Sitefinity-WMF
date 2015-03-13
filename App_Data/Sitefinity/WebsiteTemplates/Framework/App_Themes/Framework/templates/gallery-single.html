@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<!--[if lt IE 8]><html class="no-js lt-ie10 lt-ie9 lt-ie8" lang="en"><![endif]-->
+<!--[if IE 8]><html class="no-js lt-ie10 lt-ie9" lang="en"><![endif]-->
+<!--[if IE 9]><html class="no-js lt-ie10" lang="en"><![endif]-->
+<!--[if gt IE 9]><!--><html lang="en" class="no-js"><!--<![endif]-->
+
+<head>
+	<title>Page Home</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../Global/main.css">
+		<!--[if lt IE 9]>
+		<script src="../js/respond.js"></script>
+		<![endif]-->
+		<script src="../js/modernizr.custom.js"></script>
+	</head>
+	
+	<body class="template-home debug">
+		
+		<div class="container">
+
+		<!--Normal Slider-->	
+			<h1>Single Slider</h1>
+			<div class="gallery-list slider">
+				<div class="gallery-list-item">
+					<img src="http://placehold.it/1200x350/118400/ffffff&text=Slide 1">
+				</div>
+				<div class="gallery-list-item">
+					<img src="http://placehold.it/1200x350/004aaa/ffffff&text=Slide 2">
+				</div>
+				<div class="gallery-list-item">
+					<img src="http://placehold.it/1200x350/960000/ffffff&text=Slide 3">
+				</div>
+			</div>
+		</div>
+
+
+		<script src="../js/jquery-1.9.1.min.js"></script>
+		<script src="../js/vendor/slick.min.js"></script>
+		<script>
+			$('.slider').slick({
+		  		infinite: true,
+		  		dots: true,
+			});
+		</script>
+	</body>
+	</html>

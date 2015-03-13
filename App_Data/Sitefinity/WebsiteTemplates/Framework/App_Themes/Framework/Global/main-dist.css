@@ -529,7 +529,7 @@ textarea {
 }
 
 /* line 28, ../sass/vendor/_sf-boilerplate.scss */
-.visuallyhidden, .js .form-label-hide .sfTxtLbl, .gallery[data-style="thumbnails"] .gallery-list-item img {
+.visuallyhidden, .js .form-label-hide .sfTxtLbl {
   border: 0;
   clip: rect(0 0 0 0);
   height: 1px;
@@ -541,10 +541,9 @@ textarea {
 }
 
 /* line 29, ../sass/vendor/_sf-boilerplate.scss */
-.visuallyhidden.focusable:active, .js .form-label-hide .focusable.sfTxtLbl:active, .gallery[data-style="thumbnails"] .gallery-list-item img.focusable:active,
+.visuallyhidden.focusable:active, .js .form-label-hide .focusable.sfTxtLbl:active,
 .visuallyhidden.focusable:focus,
-.js .form-label-hide .focusable.sfTxtLbl:focus,
-.gallery[data-style="thumbnails"] .gallery-list-item img.focusable:focus {
+.js .form-label-hide .focusable.sfTxtLbl:focus {
   clip: auto;
   height: auto;
   margin: 0;
@@ -1607,7 +1606,7 @@ img.mfp-img {
 }
 
 /* line 33, ../sass/vendor/_framework-fonts.scss */
-.iconfont-comments, .gallery-list-item-comment:after {
+.iconfont-comments {
   font-family: 'framework';
   speak: none;
   font-style: normal;
@@ -4733,138 +4732,206 @@ textarea:focus {
 
 /* ================================================================
    Photos / Gallery Styles
+
+	jQuery Options
+	- # of slides shown at vasrious breakpoints
+	- Arrows true/false
+	- dots true/false
+	- Lazy Load 
+	- Additional options here: http://kenwheeler.github.io/slick/
+
    ================================================================ */
-/* line 23, ../sass/partials/_gallery.scss */
-.slick-prev, .slick-next {
+/* line 54, ../sass/partials/_gallery.scss */
+.slick-prev, .slick-next, .gallery-nav .slick-prev, .gallery-nav .slick-next, .gallery-vertical .slick-prev, .gallery-vertical .slick-next, .slick-dots li button {
+  cursor: pointer;
+  color: transparent;
+  border: 0;
+  outline: none;
+  background: transparent;
+}
+
+/* line 66, ../sass/partials/_gallery.scss */
+.slick-prev, .slick-next, .gallery-nav .slick-prev, .gallery-nav .slick-next, .gallery-vertical .slick-prev, .gallery-vertical .slick-next {
   position: absolute;
   display: block;
-  cursor: pointer;
-  background: transparent;
-  color: transparent;
   top: 50%;
-  padding: 15px;
   font-size: 0;
-  border: none;
-  outline: none;
-  -ms-transform: translate(0, -50%);
-  -webkit-transform: translate(0, -50%);
-  transform: translate(0, -50%);
-  top: auto;
-  bottom: 0;
-  -ms-transform: tanslate(0, 0%);
-  -webkit-transform: tanslate(0, 0%);
-  transform: tanslate(0, 0%);
 }
-/* line 35, ../sass/partials/_gallery.scss */
-.slick-prev:before, .slick-next:before {
+/* line 72, ../sass/partials/_gallery.scss */
+.slick-prev:before, .slick-next:before, .gallery-nav .slick-prev:before, .gallery-nav .slick-next:before, .gallery-vertical .slick-prev:before, .gallery-vertical .slick-next:before {
   background: #cccccc;
   color: #333333;
-  font-size: 28px;
-  padding: 5px;
+  font-size: 48px;
+  width: 70px;
+  height: 70px;
+  display: inline-block;
   border-radius: 36px;
 }
-/* line 43, ../sass/partials/_gallery.scss */
+/* line 82, ../sass/partials/_gallery.scss */
 .slick-prev:hover:before, .slick-next:hover:before, .slick-prev:focus:before, .slick-next:focus:before {
   color: #cccccc;
   background: #333333;
 }
+
 @media (min-width: 0) and (max-width: 960px) {
-  /* line 23, ../sass/partials/_gallery.scss */
+  /* line 90, ../sass/partials/_gallery.scss */
   .slick-prev, .slick-next {
-    visibility: visible;
+    visibility: hidden;
   }
 }
 
-/* line 70, ../sass/partials/_gallery.scss */
+/* line 96, ../sass/partials/_gallery.scss */
 .slick-prev {
   left: 0;
 }
-/* line 72, ../sass/partials/_gallery.scss */
+/* line 98, ../sass/partials/_gallery.scss */
 .slick-prev:before {
-  content: "◄";
+  content: "￩";
 }
 
-/* line 77, ../sass/partials/_gallery.scss */
+/* line 103, ../sass/partials/_gallery.scss */
 .slick-next {
   right: 0;
 }
-/* line 79, ../sass/partials/_gallery.scss */
+/* line 105, ../sass/partials/_gallery.scss */
 .slick-next:before {
-  content: "►";
+  content: "￫";
 }
 
-/* line 95, ../sass/partials/_gallery.scss */
-.gallery .gallery-list {
-  display: block;
+/* line 113, ../sass/partials/_gallery.scss */
+.slick-dots {
   margin: 0;
   padding: 0;
   text-align: center;
 }
-/* line 101, ../sass/partials/_gallery.scss */
-.gallery .gallery-list li {
+/* line 117, ../sass/partials/_gallery.scss */
+.slick-dots li {
   position: relative;
   display: inline-block;
-  margin: 10px 0;
+  margin: 0 5px;
   padding: 0;
+  cursor: pointer;
 }
-/* line 112, ../sass/partials/_gallery.scss */
-.gallery[data-style="thumbnails"] .gallery-list {
-  margin: 0 -10px;
-  text-align: left;
-}
-/* line 116, ../sass/partials/_gallery.scss */
-.gallery[data-style="thumbnails"] .gallery-list li {
-  margin: 10px;
-}
-/* line 121, ../sass/partials/_gallery.scss */
-.gallery[data-style="thumbnails"] .gallery-list-item {
+/* line 124, ../sass/partials/_gallery.scss */
+.slick-dots li button {
+  font-size: 0;
+  line-height: 0;
   display: block;
-  width: 200px;
-  height: 200px;
-  overflow: hidden;
-  background-size: cover;
-  background-position: 50% 25%;
-  transition: all 0.2s ease-out;
-  box-shadow: 0 0 0em #000;
+  padding: 5px;
 }
-/* line 131, ../sass/partials/_gallery.scss */
-.gallery[data-style="thumbnails"] .gallery-list-item:hover, .gallery[data-style="thumbnails"] .gallery-list-item:focus {
-  box-shadow: 0 0 1em #000;
+/* line 130, ../sass/partials/_gallery.scss */
+.slick-dots li button:before {
+  content: "";
+  background: #333333;
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 36px;
+}
+/* line 139, ../sass/partials/_gallery.scss */
+.slick-dots li button:hover:before, .slick-dots li button:focus:before {
+  background: #00a0d6;
+}
+/* line 144, ../sass/partials/_gallery.scss */
+.slick-dots .slick-active button:before {
+  background: #00a0d6;
 }
 
-/* line 142, ../sass/partials/_gallery.scss */
-.gallery-list-item-comment {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  display: inline-block;
-  padding: 4px 8px;
-  text-decoration: none;
-  background-color: rgba(0, 0, 0, 0.5);
-  color: #fff;
-  font-size: 11px;
-  font-size: 0.6875rem;
-  line-height: 12px;
-  line-height: 0.75rem;
-  transition: all 0.2s ease-out;
-}
 /* line 155, ../sass/partials/_gallery.scss */
-.gallery-list-item-comment:after {
-  display: inline-block;
-  padding-left: 2px;
+.gallery-for .wrapper {
+  width: 800px;
+  max-width: 100%;
+  margin: 0 auto;
 }
+
 /* line 161, ../sass/partials/_gallery.scss */
-.gallery-list-item-comment:hover, .gallery-list-item-comment:focus {
-  text-decoration: none;
-  background-color: rgba(0, 0, 0, 0.75);
+.gallery-nav {
+  padding: 20px 0 0;
 }
-/* line 166, ../sass/partials/_gallery.scss */
-.gallery-list-item-comment.sfcommentsEmpty {
-  display: none;
+/* line 165, ../sass/partials/_gallery.scss */
+.gallery-nav .slick-prev:before, .gallery-nav .slick-next:before {
+  font-size: 28px;
+  width: 45px;
+  height: 42px;
 }
 /* line 171, ../sass/partials/_gallery.scss */
-[data-popup="true"] + .gallery-list-item-comment {
-  display: none;
+.gallery-nav .slick-next {
+  right: 0;
+}
+@media (min-width: 0) and (max-width: 960px) {
+  /* line 171, ../sass/partials/_gallery.scss */
+  .gallery-nav .slick-next {
+    right: 0;
+  }
+}
+/* line 177, ../sass/partials/_gallery.scss */
+.gallery-nav .slick-prev {
+  left: 0;
+}
+@media (min-width: 0) and (max-width: 960px) {
+  /* line 177, ../sass/partials/_gallery.scss */
+  .gallery-nav .slick-prev {
+    left: 0;
+  }
+}
+/* line 183, ../sass/partials/_gallery.scss */
+.gallery-nav .slick-slide {
+  transition: all 0.15s ease;
+}
+/* line 186, ../sass/partials/_gallery.scss */
+.gallery-nav .wrapper {
+  width: 125px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+/* line 193, ../sass/partials/_gallery.scss */
+.gallery-nav .slick-center img {
+  box-shadow: 0 0 25px #333333;
+}
+/* line 197, ../sass/partials/_gallery.scss */
+.gallery-nav .gallery-list-item {
+  cursor: pointer;
+}
+
+@media (min-width: 960px) {
+  /* line 210, ../sass/partials/_gallery.scss */
+  .gallery-vertical {
+    display: table;
+  }
+}
+@media (min-width: 960px) {
+  /* line 214, ../sass/partials/_gallery.scss */
+  .gallery-vertical .gallery-col {
+    display: table-cell;
+  }
+}
+/* line 219, ../sass/partials/_gallery.scss */
+.gallery-vertical .gallery-nav {
+  padding: 0;
+}
+/* line 222, ../sass/partials/_gallery.scss */
+.gallery-vertical .slick-prev, .gallery-vertical .slick-next {
+  top: auto;
+  left: 50%;
+  -ms-transform: translate(-50%, 0);
+  -webkit-transform: translate(-50%, 0);
+  transform: translate(-50%, 0);
+}
+/* line 227, ../sass/partials/_gallery.scss */
+.gallery-vertical .slick-prev:before, .gallery-vertical .slick-next:before {
+  -ms-transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+/* line 231, ../sass/partials/_gallery.scss */
+.gallery-vertical .slick-prev {
+  top: 0;
+}
+/* line 234, ../sass/partials/_gallery.scss */
+.gallery-vertical .slick-next {
+  bottom: 0;
 }
 
 /* ==========================================================================

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<!--[if lt IE 8]><html class="no-js lt-ie10 lt-ie9 lt-ie8" lang="en"><![endif]-->
+<!--[if IE 8]><html class="no-js lt-ie10 lt-ie9" lang="en"><![endif]-->
+<!--[if IE 9]><html class="no-js lt-ie10" lang="en"><![endif]-->
+<!--[if gt IE 9]><!--><html lang="en" class="no-js"><!--<![endif]-->
+
+<head>
+	<title>Page Home</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../Global/main.css">
+		<!--[if lt IE 9]>
+		<script src="../js/respond.js"></script>
+		<![endif]-->
+		<script src="../js/modernizr.custom.js"></script>
+	</head>
+	
+	<body class="template-home debug">	
+		<div class="container">
+			<h1>Slider with Horizontal Thumbnails</h1>
+			<div class="gallery-list gallery-for">
+				<div class="gallery-list-item">
+					<div class="wrapper">
+						<img src="http://placehold.it/800x600/118400/ffffff&text=Slide 1">
+					</div>
+				</div>
+				<div class="gallery-list-item">
+					<div class="wrapper">
+						<img src="http://placehold.it/800x600/004aaa/ffffff&text=Slide 2">
+					</div>
+				</div>
+				<div class="gallery-list-item">
+					<div class="wrapper">
+						<img src="http://placehold.it/800x600/960000/ffffff&text=Slide 3">
+					</div>
+				</div>
+				<div class="gallery-list-item">
+					<div class="wrapper">
+						<img src="http://placehold.it/800x600/222222/ffffff&text=Slide 4">
+					</div>
+				</div>
+				<div class="gallery-list-item">
+					<div class="wrapper">
+						<img src="http://placehold.it/800x600/333333/ffffff&text=Slide 5">
+					</div>
+				</div>
+				<div class="gallery-list-item">
+					<div class="wrapper">
+						<img src="http://placehold.it/800x600/444444/ffffff&text=Slide 6">
+					</div>
+				</div>
+				<div class="gallery-list-item">
+					<div class="wrapper">
+						<img src="http://placehold.it/800x600/555555/ffffff&text=Slide 7">
+					</div>
+				</div>
+			</div>
+			<div class="gallery-list gallery-nav">
+				<div class="gallery-list-item">
+					<div class="wrapper">
+						<img src="http://placehold.it/150x150/118400/ffffff&text=Slide 1">
+					</div>
+				</div>
+				<div class="gallery-list-item">
+					<div class="wrapper">
+						<img src="http://placehold.it/150x150/004aaa/ffffff&text=Slide 2">
+					</div>
+				</div>
+				<div class="gallery-list-item">
+					<div class="wrapper">
+						<img src="http://placehold.it/150x150/960000/ffffff&text=Slide 3">
+					</div>
+				</div>
+				<div class="gallery-list-item">
+					<div class="wrapper">
+						<img src="http://placehold.it/150x150/222222/ffffff&text=Slide 4">
+					</div>
+				</div>
+				<div class="gallery-list-item">
+					<div class="wrapper">
+						<img src="http://placehold.it/150x150/333333/ffffff&text=Slide 5">
+					</div>
+				</div>
+				<div class="gallery-list-item">
+					<div class="wrapper">
+						<img src="http://placehold.it/150x150/444444/ffffff&text=Slide 6">
+					</div>
+				</div>
+				<div class="gallery-list-item">
+					<div class="wrapper">
+						<img src="http://placehold.it/150x150/555555/ffffff&text=Slide 7">
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<script src="../js/jquery-1.9.1.min.js"></script>
+		<script src="../js/vendor/slick.min.js"></script>
+		<script>
+			// Slider with Thumbnails Horizontal
+			 $('.gallery-for').slick({
+			  slidesToShow: 1,
+			  slidesToScroll: 1,
+			  asNavFor: '.gallery-nav',
+			  arrows:false,
+			});
+			$('.gallery-nav').slick({
+			  slidesToShow: 6,
+			  slidesToScroll: 1,
+			  asNavFor: '.gallery-for',
+			  lazyLoad: 'ondemand',
+			  centerMode: true,
+			  focusOnSelect: true,
+			  responsive: [
+			    {
+			      breakpoint: 1024,
+			      settings: {
+			        slidesToShow: 5,
+			         centerPadding: '0',
+			         
+			      }
+			    },
+			    {
+			      breakpoint: 600,
+			      settings: {
+			        slidesToShow: 3,
+			        centerPadding: '0',
+			      }
+			    }
+			  ]
+			});
+		</script>
+	</body>
+	</html>

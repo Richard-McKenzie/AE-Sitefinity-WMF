@@ -1,42 +1,81 @@
 /* ================================================================
    Photos / Gallery Styles
+
+	jQuery Options
+	- # of slides shown at vasrious breakpoints
+	- Arrows true/false
+	- dots true/false
+	- Lazy Load 
+	- Additional options here: http://kenwheeler.github.io/slick/
+
    ================================================================ */
 
-
-// Conditionals
-// Arrows or Dots? 
-// $arrow-option: dots/arrow;
-$nav-location: bottom; 
-$nav-mobile: 'true'; // true/false
-
+// Dots
+$gal-dot-font:                 '\0095' !default; 
+$gal-dot-bg:                   #333333 !default;
+$gal-dot-bg-hover:             #00a0d6 !default; //also used as active state
+$gal-dot-width:                10px !default; 
+$gal-dot-height:               10px !default; 
+$gal-dot-radius:               36px !default;
 
 // Arrows 
-$gal-arrow-font-prev: '\25C4';
-$gal-arrow-font-next: '\25BA'; 
-$gal-arrow-color: #333333;
-$gal-arrow-size: 28px;
-$gal-arrow-bg: #cccccc;
-$gal-arrow-radius: 36px; // makes arrow background circle
-$gal-arrow-padding: 15px;
+$gal-arrow-font-prev:          '\FFE9' !default;
+$gal-arrow-font-next:          '\FFEB' !default; 
+$gal-arrow-color:              #333333 !default;
+$gal-arrow-bg:                 #cccccc !default;
+$gal-arrow-fontsize:           48px !default;
+$gal-arrow-radius:             36px !default; // makes arrow background circle
+$gal-arrow-width:              70px !default;
+$gal-arrow-height:             70px !default;
 
-// Single Slider
+
+// Gallery with Arrow Nav - Specific to thumbnails
+
+// nav arrows: 
+$gal-nav-padding:              20px 0 0 !default; //seperation between thumbnail nav & image window
+$gal-arrow-nav-fs:             28px !default;
+$gal-arrow-nav-width:          45px !default;
+$gal-arrow-nav-height:         42px !default;
+$gal-arrow-nav-prev-pos:	   0 !default; //desktop level only
+$gal-arrow-nav-next-pos:	   0 !default; //desktop level only
+
+// Nav arrow conditional (is the gallery vertical?)
+$gal-nav-arrow-vert:           true; //Set 'true' if there is a vertical nav.
+
+// thumbnail
+$gal-thumb-wrpr-width:         125px !default; // used for centering
+
+// Main Image
+$gal-image-wrpr-width:         800px !default; //used for centering
+
+//-----------------------------------------------------
+//	Universal Hide Button Default Styling
+//-----------------------------------------------------
+%button-reset{
+	cursor: pointer;
+	color: transparent;
+	border: 0;
+	outline: none;
+	background: transparent;
+}
+
+//-----------------------------------------------------
+//	Arrows (Affects Arrows Across Site)
+//-----------------------------------------------------
+
 %gal-arrow{ // affects both arrows positioning.
+	@extend %button-reset;
 	position: absolute;
     display: block;
-    cursor: pointer;
-    background: transparent;
-    color: transparent;
     top: 50%;
-    padding: $gal-arrow-padding;
     font-size: 0;
-    border: none; //removes border of button
-    outline: none; //removes outline of button;
-    @include transform(translate(0, -50%)); //Centers arrows regardless of font-size.
     &:before{
 		background:$gal-arrow-bg;
 		color: $gal-arrow-color;
-		font-size: $gal-arrow-size;
-		padding:5px;
+		font-size: $gal-arrow-fontsize;
+		width: $gal-arrow-width;
+		height: $gal-arrow-height;
+		display: inline-block;
 		@include border-radius($gal-arrow-radius);
     }
     &:hover, &:focus{
@@ -45,27 +84,14 @@ $gal-arrow-padding: 15px;
     		background:$gal-arrow-color;
     	}
     }
-
-    @if $nav-mobile == 'true'{
-    	@include breakpoint(s-l){
-    		visibility: visible;
-    	}
-    } @else{
-    	@include breakpoint(s-l){
-    		visibility: hidden;
-    	}
-    }
-
-    @if $nav-location == bottom{
-    	top:auto;
-    	bottom:0;
-    	@include transform(tanslate(0, 0%));
-    }
 }
 
 
 .slick-prev, .slick-next{
 	@extend %gal-arrow;
+	@include breakpoint(s-l){
+		visibility: hidden;
+	}
 }
 .slick-prev{
 	left:0;
@@ -81,94 +107,132 @@ $gal-arrow-padding: 15px;
 	}
 }
 
-
-// End of Arrow
-
-$gallery-list-item-margin: 10px;
-$gallery-list-comment-color: #fff !default;
-$gallery-list-comment-background: hsla(0, 0%, 0%, 0.5) !default;
-
-
-
-.gallery {
-
-	.gallery-list {
-		display: block;
-		margin: 0;
-		padding: 0;
-		text-align: center;
-
-		li {
-			position: relative;
-			display: inline-block;
-			margin: $gallery-list-item-margin 0;
-			padding: 0;
-		}
-	}
-
-	//Thumbnail View
-	&[data-style="thumbnails"] {
-
-		.gallery-list {
-			margin: 0 (-$gallery-list-item-margin); //offsets the spacing
-			text-align: left;	
-
-			li {
-				margin: $gallery-list-item-margin;			
-			}
-		}
-
-		.gallery-list-item {
-			display: block;
-			width: 200px;
-			height: 200px;
-			overflow: hidden;
-			background-size: cover;
-			background-position: 50% 25%;
-			@include transition(all 0.2s ease-out);
-			@include box-shadow(0 0 0em $color-base);
-
-			&:hover, &:focus {
-				@include box-shadow(0 0 1em $color-base);
-			}
-			
-			img {
-				@extend .visuallyhidden;
-			}
-		}
-	}
-}
-
-.gallery-list-item-comment {
-	position: absolute;
-	bottom: 0;
-	right: 0;
-	display: inline-block;
-	padding: 4px 8px;
-	text-decoration: none;
-	background-color: $gallery-list-comment-background;
-	color: $gallery-list-comment-color;
-	@include x-rem(font-size, 11px);
-	@include x-rem(line-height, 12px);
-	@include transition(all 0.2s ease-out);
-
-	&:after {
-		@extend .iconfont-comments;
+//-----------------------------------------------------
+//		DOTS (Affects Arrows Across Site)
+//-----------------------------------------------------
+.slick-dots{
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	li{
+		position: relative;
 		display: inline-block;
-		padding-left: 2px;
+		margin: 0 5px;
+		padding: 0;
+		cursor: pointer;
 	}
-
-	&:hover, &:focus {
-		text-decoration: none;
-		background-color: rgba($gallery-list-comment-background, alpha($gallery-list-comment-background)*1.5);
+	li button{
+		@extend %button-reset;
+		font-size: 0;
+		line-height: 0;
+		display: block;
+		padding: 5px;
+		&:before{
+			content:$gal-dot-font;
+			background: $gal-dot-bg;
+			width: $gal-dot-width;
+			height:$gal-dot-height;
+			position: absolute;
+			top:0; left:0;
+			@include border-radius($gal-dot-radius);
+		}
+		&:hover:before, 
+		&:focus:before{
+			background:$gal-dot-bg-hover;
+		}
 	}
-
-	&.sfcommentsEmpty {
-		display: none;
-	}
-
-	//Hide if it's associated with a popup
-	[data-popup="true"] + & {
-		display: none;
+	.slick-active button:before{
+		background:$gal-dot-bg-hover;
 	}
 }
+
+
+//-----------------------------------------------------
+//			Gallery with thumbnails 
+//-----------------------------------------------------
+
+.gallery-for{
+	.wrapper{
+		width:$gal-image-wrpr-width;
+		max-width:100%;
+		margin: 0 auto;
+	}
+}
+.gallery-nav{
+	padding: $gal-nav-padding;
+	.slick-prev, .slick-next{
+		@extend %gal-arrow;
+		&:before{
+			font-size: $gal-arrow-nav-fs;
+			width: $gal-arrow-nav-width;
+			height:$gal-arrow-nav-height;
+		}
+	}
+	.slick-next{
+		right:$gal-arrow-nav-next-pos;
+		@include breakpoint(s-l){
+			right:0;
+		}
+	}
+	.slick-prev{
+		left:$gal-arrow-nav-prev-pos;
+		@include breakpoint(s-l){
+			left:0;
+		}
+	}
+	.slick-slide{
+		@include transition(all 0.15s ease);
+	}
+	.wrapper{
+		width:$gal-thumb-wrpr-width;
+		max-width:100%;
+		margin: 0 auto;
+	}
+	.slick-center{
+		// active state change to how you want the current active thumb to be viewed. 
+		img{
+			box-shadow:0 0 25px #333333;
+		}
+	}
+	.gallery-list-item{
+		cursor: pointer;
+	}
+}
+
+
+
+
+
+//-----------------------------------------------------
+//			Gallery Vertical
+//-----------------------------------------------------
+
+.gallery-vertical{
+	@include breakpoint(l){
+		display:table;
+	}
+	.gallery-col{
+		@include breakpoint(l){
+			display: table-cell;			
+		}
+	}
+	.gallery-nav{
+		padding: 0;
+	}
+	.slick-prev, .slick-next{
+		@extend %gal-arrow;
+		top:auto;
+		left: 50%;
+		@include transform(translate(-50%, 0));
+		&:before{
+			@include transform(rotate(90deg)); //used if you want the same default arrows. Delete if not needed.
+		}
+	}
+	.slick-prev{
+		top:0;
+	}
+	.slick-next{
+		bottom:0;
+	}
+}
+  // @include transform(translate(0, -50%)); //used for centering;
