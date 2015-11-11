@@ -42,12 +42,17 @@ $gallery-max-height: 400px;
 @import "vendor/normalize";
 @import "vendor/sf-boilerplate";
 @import "vendor/magnific-popup";
-@import "vendor/owlcarousel";
+
+// Switched to slick vs owl
+// -----------------
+// @import "vendor/owlcarousel";
+// -------------------------
+
 @import "vendor/framework-fonts";
 
 // Theme Partials
 // @import "partials/fonts";
-@import "partials/sprites";
+// @import "partials/sprites";
 @import "partials/grid-fluid";
 // @import "partials/grid-fixed";
 @import "partials/typography";
